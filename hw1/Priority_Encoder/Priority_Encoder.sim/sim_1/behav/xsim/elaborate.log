@@ -1,0 +1,31 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot simulated_priority_encoder_tb_behav xil_defaultlib.simulated_priority_encoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:69]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:71]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:73]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:75]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:77]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:79]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:81]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:83]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:85]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:87]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:89]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:91]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:93]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:95]
+WARNING: [VRFC 10-8856] comparison between unequal length arrays always returns FALSE; left argument length 2 is different from right argument length 4 for 'std_logic_vector_93' array [C:/Users/C28Asher.Speicher/Documents/ece383_code/hw1/Priority_Encoder/Priority_Encoder.srcs/sources_1/new/simulated_priority_encoder_tb.vhd:97]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.simulated_priority_encoder [simulated_priority_encoder_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.simulated_priority_encoder_tb
+Built simulation snapshot simulated_priority_encoder_tb_behav
