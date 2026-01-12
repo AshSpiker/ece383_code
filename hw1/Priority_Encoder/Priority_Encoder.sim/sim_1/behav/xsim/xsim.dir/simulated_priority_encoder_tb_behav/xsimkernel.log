@@ -2,3 +2,6 @@ Running: xsim.dir/simulated_priority_encoder_tb_behav/xsimk.exe -simmode gui -wd
 Design successfully loaded
 Design Loading Memory Usage: 27404 KB (Peak: 27404 KB)
 Design Loading CPU Usage: 624 ms
+Simulation completed
+Simulation Memory Usage: 28508 KB (Peak: 28508 KB)
+Simulation CPU Usage: 655 ms
