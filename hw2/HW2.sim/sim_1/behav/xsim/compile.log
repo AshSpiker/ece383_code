@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C28Asher.Speicher/Documents/ece383_code/hw2/HW2.srcs/sources_1/new/scan_code.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'scan_code'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C28Asher.Speicher/Documents/ece383_code/hw2/HW2.srcs/sim_1/new/scan_code_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'scan_code_tb'

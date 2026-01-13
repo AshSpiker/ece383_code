@@ -11,6 +11,6 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.scan_code [scan_code_default]
+Compiling architecture behavioral of entity xil_defaultlib.scancode_decoder [scancode_decoder_default]
 Compiling architecture behavioral of entity xil_defaultlib.scan_code_tb
 Built simulation snapshot scan_code_tb_behav

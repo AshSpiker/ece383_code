@@ -16,6 +16,7 @@
 -- Revision 0.01 - File Created
 -- Additional Comments:
 -- 
+-- Documentation Statement: This assignment is all my own work, no help.
 ----------------------------------------------------------------------------------
 
 
@@ -31,15 +32,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity scan_code is
+entity scancode_decoder is
     Port ( 
     scancode : std_logic_vector (7 downto 0);
     decoded_value : out std_logic_vector (3 downto 0)
     );
     
-end scan_code;
+end scancode_decoder;
 
-architecture Behavioral of scan_code is
+architecture Behavioral of scancode_decoder is
 
 begin
 decoded_value <= x"0" when (scancode = x"45") else

@@ -36,7 +36,7 @@ entity scan_code_tb is
 end scan_code_tb;
 
 architecture Behavioral of scan_code_tb is
-    component scan_code is 
+    component scancode_decoder is 
         port(
         scancode : std_logic_vector (7 downto 0);
         decoded_value : out std_logic_vector (3 downto 0)
@@ -47,7 +47,7 @@ architecture Behavioral of scan_code_tb is
     signal w_O : std_logic_vector (3 downto 0) := (others => '0');
 begin
 
-    scan_code_inst : scan_code port map(
+    scan_code_inst : scancode_decoder port map(
         scancode => w_I,
         decoded_value => w_O
     );
