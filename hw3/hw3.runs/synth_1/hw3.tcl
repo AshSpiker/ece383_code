@@ -58,7 +58,7 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7a12ticsg325-1L
+create_project -in_memory -part xc7a200tsbg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -66,7 +66,9 @@ set_param synth.vivado.isSynthRun true
 set_property webtalk.parent_dir C:/Users/C28Asher.Speicher/Documents/ece383_code/hw3/hw3.cache/wt [current_project]
 set_property parent.project_path C:/Users/C28Asher.Speicher/Documents/ece383_code/hw3/hw3.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
+set_property target_language VHDL [current_project]
+set_property board_part_repo_paths {C:/Users/C28Asher.Speicher/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part digilentinc.com:nexys_video:part0:1.2 [current_project]
 set_property ip_output_repo c:/Users/C28Asher.Speicher/Documents/ece383_code/hw3/hw3.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
@@ -81,8 +83,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/C28Asher.Speicher/OneDrive - afacademy.af.edu/Desktop/Nexys-Video-Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/C28Asher.Speicher/OneDrive - afacademy.af.edu/Desktop/Nexys-Video-Master.xdc}}]
+read_xdc C:/Users/C28Asher.Speicher/Documents/ece383_code/hw3/hw3.srcs/constrs_1/imports/Desktop/Nexys-Video-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/C28Asher.Speicher/Documents/ece383_code/hw3/hw3.srcs/constrs_1/imports/Desktop/Nexys-Video-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
@@ -90,7 +92,7 @@ read_checkpoint -auto_incremental -incremental C:/Users/C28Asher.Speicher/Docume
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top hw3 -part xc7a12ticsg325-1L
+synth_design -top hw3 -part xc7a200tsbg484-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

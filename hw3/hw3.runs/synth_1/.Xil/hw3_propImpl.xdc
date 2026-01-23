@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/C28Asher.Speicher/OneDrive - afacademy.af.edu/Desktop/Nexys-Video-Master.xdc} rfile:{../../../../../../OneDrive - afacademy.af.edu/Desktop/Nexys-Video-Master.xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/C28Asher.Speicher/Documents/ece383_code/hw3/hw3.srcs/constrs_1/imports/Desktop/Nexys-Video-Master.xdc rfile:../../../hw3.srcs/constrs_1/imports/Desktop/Nexys-Video-Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T14   IOSTANDARD LVCMOS25 } [get_ports { h }]; #IO_L15P_T2_DQS_13 Sch=led[0]
 set_property src_info {type:XDC file:1 line:42 export:INPUT save:INPUT read:READ} [current_design]

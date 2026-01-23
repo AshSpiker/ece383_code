@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Error: Assertion violation
+Time: 180 ns  Iteration: 0  Process: /hw4_tb/test_process  File: C:/Users/C28Asher.Speicher/Documents/ece383_code/hw4/HW4.srcs/sim_1/new/hw4_tb.vhd
+Error: Assertion violation
+Time: 200 ns  Iteration: 0  Process: /hw4_tb/test_process  File: C:/Users/C28Asher.Speicher/Documents/ece383_code/hw4/HW4.srcs/sim_1/new/hw4_tb.vhd
+Error: Assertion violation
+Time: 220 ns  Iteration: 0  Process: /hw4_tb/test_process  File: C:/Users/C28Asher.Speicher/Documents/ece383_code/hw4/HW4.srcs/sim_1/new/hw4_tb.vhd
+Error: Assertion violation
+Time: 240 ns  Iteration: 0  Process: /hw4_tb/test_process  File: C:/Users/C28Asher.Speicher/Documents/ece383_code/hw4/HW4.srcs/sim_1/new/hw4_tb.vhd
+Error: Assertion violation
+Time: 260 ns  Iteration: 0  Process: /hw4_tb/test_process  File: C:/Users/C28Asher.Speicher/Documents/ece383_code/hw4/HW4.srcs/sim_1/new/hw4_tb.vhd
+Error: Assertion violation
+Time: 260 ns  Iteration: 0  Process: /hw4_tb/test_process  File: C:/Users/C28Asher.Speicher/Documents/ece383_code/hw4/HW4.srcs/sim_1/new/hw4_tb.vhd

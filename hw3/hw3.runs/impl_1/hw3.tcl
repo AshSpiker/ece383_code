@@ -107,7 +107,9 @@ set rc [catch {
   set_param chipscope.maxJobs 4
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7a12ticsg325-1L
+  create_project -in_memory -part xc7a200tsbg484-1
+  set_property board_part_repo_paths {C:/Users/C28Asher.Speicher/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
+  set_property board_part digilentinc.com:nexys_video:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
@@ -120,13 +122,13 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/C28Asher.Speicher/Documents/ece383_code/hw3/hw3.runs/synth_1/hw3.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/C28Asher.Speicher/OneDrive - afacademy.af.edu/Desktop/Nexys-Video-Master.xdc}}
+  read_xdc C:/Users/C28Asher.Speicher/Documents/ece383_code/hw3/hw3.srcs/constrs_1/imports/Desktop/Nexys-Video-Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top hw3 -part xc7a12ticsg325-1L 
+  link_design -top hw3 -part xc7a200tsbg484-1 
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }
