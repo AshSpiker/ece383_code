@@ -56,8 +56,8 @@ package ece383_pkg is
   -- This is the general purpose counter from HW4.  ctrl=1 for count up mode, 0 for hold.
   component counter is
     generic (
-      num_bits  : integer := 10; -- changed from 4 to 10
-      max_value : integer := 599 -- changed from 9 to 599
+      num_bits  : integer := 4; -- changed from 4 to 10
+      max_value : integer := 9 -- changed from 9 to 599
     );
     port ( clk : in std_logic;
            reset_n : in std_logic;
