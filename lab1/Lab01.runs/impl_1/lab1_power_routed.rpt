@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Thu Jan 29 19:04:02 2026
+| Date             : Thu Jan 29 19:50:11 2026
 | Host             : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command          : report_power -file lab1_power_routed.rpt -pb lab1_power_summary_routed.pb -rpx lab1_power_routed.rpx
 | Design           : lab1
@@ -54,11 +54,11 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        6 |       --- |             --- |
 | Slice Logic    |     0.001 |      910 |       --- |             --- |
-|   LUT as Logic |     0.001 |      519 |    133800 |            0.39 |
+|   LUT as Logic |     0.001 |      520 |    133800 |            0.39 |
 |   CARRY4       |    <0.001 |       76 |     33450 |            0.23 |
 |   Register     |    <0.001 |      154 |    267600 |            0.06 |
 |   Others       |     0.000 |       30 |       --- |             --- |
-| Signals        |     0.001 |      559 |       --- |             --- |
+| Signals        |     0.001 |      560 |       --- |             --- |
 | MMCM           |     0.106 |        1 |        10 |           10.00 |
 | I/O            |     0.133 |       21 |       285 |            7.37 |
 | Static Power   |     0.140 |          |           |                 |
@@ -145,7 +145,6 @@ Table of Contents
 | Name                             | Power (W) |
 +----------------------------------+-----------+
 | lab1                             |     0.244 |
-|   numeric_stepper_t              |     0.001 |
 |   video_inst                     |     0.242 |
 |     Inst_vga                     |     0.001 |
 |       vga_signal_generator_inst  |     0.001 |

@@ -1,7 +1,0 @@
-Time resolution is 1 ps
-Error: Holding UP high caused multiple increments
-Time: 45 ns  Iteration: 0  Process: /NumStepper_tb/stim  File: C:/Users/C28Asher.Speicher/Documents/ece383_code/lab1/Lab01.srcs/sim_1/imports/Lab1_Cadet_Code_2026/numeric_stepper_tb.vhd
-Error: Holding DOWN high caused multiple decrements
-Time: 365 ns  Iteration: 0  Process: /NumStepper_tb/stim  File: C:/Users/C28Asher.Speicher/Documents/ece383_code/lab1/Lab01.srcs/sim_1/imports/Lab1_Cadet_Code_2026/numeric_stepper_tb.vhd
-Note: Numeric_Stepper testbench PASSED
-Time: 915 ns  Iteration: 0  Process: /NumStepper_tb/stim  File: C:/Users/C28Asher.Speicher/Documents/ece383_code/lab1/Lab01.srcs/sim_1/imports/Lab1_Cadet_Code_2026/numeric_stepper_tb.vhd

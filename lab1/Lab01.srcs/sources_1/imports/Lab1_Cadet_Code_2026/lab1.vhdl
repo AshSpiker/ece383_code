@@ -22,10 +22,10 @@ end lab1;
 architecture structure of lab1 is
 
     constant CENTER : integer := 4;
-    constant DOWN   : integer := 2;
-    constant LEFT   : integer := 1;
-    constant RIGHT  : integer := 3;
-    constant UP     : integer := 0;
+    constant DOWN   : integer := 1;
+    constant LEFT   : integer := 0;
+    constant RIGHT  : integer := 2;
+    constant UP     : integer := 3;
 
     signal trigger                                : trigger_t;
 	signal pixel                                  : pixel_t;

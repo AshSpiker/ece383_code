@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Jan 29 19:02:51 2026
+| Date         : Thu Jan 29 19:48:54 2026
 | Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab1_control_sets_placed.rpt
 | Design       : lab1
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              90 |           30 |
+| No           | No                    | No                     |              90 |           29 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              34 |           11 |
+| No           | Yes                   | No                     |              34 |           13 |
 | Yes          | No                    | No                     |               5 |            2 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              25 |           12 |
+| Yes          | Yes                   | No                     |              25 |           11 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,22 +73,22 @@ Table of Contents
 +----------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------+------------------+----------------+--------------+
 |                             Clock Signal                             |                                Enable Signal                               |                              Set/Reset Signal                             | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------+------------------+----------------+--------------+
-|  video_inst/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/G0 |                                                                            |                                                                           |                1 |              1 |         1.00 |
 |  video_inst/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/G0  |                                                                            |                                                                           |                1 |              1 |         1.00 |
-|  video_inst/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/G0  |                                                                            |                                                                           |                1 |              1 |         1.00 |
+|  video_inst/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/G0 |                                                                            |                                                                           |                1 |              1 |         1.00 |
 |  video_inst/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/G0 |                                                                            |                                                                           |                1 |              1 |         1.00 |
-|  clk_IBUF                                                            | numeric_stepper_t/process_q[10]_i_2__0_n_0                                 | numeric_stepper_t/process_q[9]_i_1_n_0                                    |                3 |              4 |         1.33 |
-|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2               |                                                                            | video_inst/inst_dvid/shift_red[7]_i_1_n_0                                 |                1 |              5 |         5.00 |
+|  video_inst/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/G0  |                                                                            |                                                                           |                1 |              1 |         1.00 |
+|  clk_IBUF                                                            | numeric_stepper_t/process_q[10]_i_2__0_n_0                                 | numeric_stepper_t/process_q[9]_i_1_n_0                                    |                2 |              4 |         2.00 |
 |  clk_IBUF                                                            | numeric_stepper_v/process_q[8]_i_1_n_0                                     |                                                                           |                2 |              5 |         2.50 |
 |  clk_IBUF                                                            | numeric_stepper_t/process_q[10]_i_2__0_n_0                                 | numeric_stepper_t/process_q[10]_i_1_n_0                                   |                3 |              5 |         1.67 |
-|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2               |                                                                            | video_inst/inst_dvid/shift_red[9]_i_1_n_0                                 |                1 |              6 |         6.00 |
-|  clk_IBUF                                                            |                                                                            |                                                                           |                5 |              6 |         1.20 |
+|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2               |                                                                            | video_inst/inst_dvid/shift_red[7]_i_1_n_0                                 |                1 |              5 |         5.00 |
+|  clk_IBUF                                                            |                                                                            |                                                                           |                3 |              6 |         2.00 |
 |  clk_IBUF                                                            | numeric_stepper_v/process_q[8]_i_1_n_0                                     | numeric_stepper_v/process_q[10]_i_1_n_0                                   |                3 |              6 |         2.00 |
+|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2               |                                                                            | video_inst/inst_dvid/shift_red[9]_i_1_n_0                                 |                3 |              6 |         2.00 |
 |  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1               |                                                                            | video_inst/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/SR[0] |                3 |             10 |         3.33 |
 |  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1               | video_inst/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/E[0] | video_inst/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/SR[0] |                3 |             10 |         3.33 |
 |  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1               |                                                                            | video_inst/Inst_vga/vga_signal_generator_inst/vga_reg[blank]_0            |                6 |             13 |         2.17 |
 |  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2               |                                                                            |                                                                           |                6 |             29 |         4.83 |
-|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1               |                                                                            |                                                                           |               15 |             51 |         3.40 |
+|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1               |                                                                            |                                                                           |               16 |             51 |         3.19 |
 +----------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------+------------------+----------------+--------------+
 
 
