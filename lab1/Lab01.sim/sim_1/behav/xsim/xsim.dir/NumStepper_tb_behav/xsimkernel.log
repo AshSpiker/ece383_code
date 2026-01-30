@@ -1,0 +1,7 @@
+Running: xsim.dir/NumStepper_tb_behav/xsimk.exe -simmode gui -wdb NumStepper_tb_behav.wdb -simrunnum 0 -socket 65257
+Design successfully loaded
+Design Loading Memory Usage: 27384 KB (Peak: 27384 KB)
+Design Loading CPU Usage: 921 ms
+Simulation completed
+Simulation Memory Usage: 28484 KB (Peak: 28484 KB)
+Simulation CPU Usage: 983 ms

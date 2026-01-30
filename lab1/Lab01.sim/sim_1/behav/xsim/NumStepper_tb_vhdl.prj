@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../Lab01.srcs/sources_1/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../Lab01.srcs/sim_1/imports/Lab1_Cadet_Code_2026/numeric_stepper_tb.vhd" \
+
+# Do not sort compile order
+nosort

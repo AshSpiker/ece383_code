@@ -6,10 +6,10 @@ use IEEE.NUMERIC_STD.ALL;
 use work.ece383_pkg.ALL;
 
 entity vga_signal_generator is
-    Port ( clk : in STD_LOGIC;
-           reset_n : in STD_LOGIC;
-           position: out coordinate_t;
-           vga : out vga_t);
+    Port ( clk      : in STD_LOGIC;
+           reset_n  : in STD_LOGIC;
+           position : out coordinate_t;
+           vga      : out vga_t);
 end vga_signal_generator;
 
 architecture vga_signal_generator_arch of vga_signal_generator is

@@ -1,2 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C28Asher.Speicher/Documents/ece383_code/lab1/Lab01.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'color_mapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C28Asher.Speicher/Documents/ece383_code/lab1/Lab01.srcs/sources_1/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'numeric_stepper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C28Asher.Speicher/Documents/ece383_code/lab1/Lab01.srcs/sim_1/imports/Lab1_Cadet_Code_2026/numeric_stepper_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'NumStepper_tb'

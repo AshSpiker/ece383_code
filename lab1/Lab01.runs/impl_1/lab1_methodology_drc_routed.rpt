@@ -1,0 +1,254 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Jan 29 19:04:01 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file lab1_methodology_drc_routed.rpt -pb lab1_methodology_drc_routed.pb -rpx lab1_methodology_drc_routed.rpx
+| Design       : lab1
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 42
++-----------+------------------+------------------------------------------------------------------+--------+
+| Rule      | Severity         | Description                                                      | Checks |
++-----------+------------------+------------------------------------------------------------------+--------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 26     |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                        | 1      |
+| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1      |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                     | 8      |
+| TIMING-20 | Warning          | Non-clocked latch                                                | 4      |
+| XDCC-2    | Warning          | Scoped Non-Timing constraint/property overwritten                | 1      |
+| LATCH-1   | Advisory         | Existing latches in the design                                   | 1      |
++-----------+------------------+------------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/prev_down_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/prev_up_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_t/process_q_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/prev_down_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/prev_up_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin numeric_stepper_v/process_q_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1 is created on an inappropriate internal pin video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, numeric_stepper_t/clk, numeric_stepper_v/clk
+video_inst/clk
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell video_inst/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/h_blank_is_low_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) video_inst/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell video_inst/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/h_blank_is_low_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) video_inst/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell video_inst/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/h_sync_is_low_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) video_inst/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell video_inst/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/h_sync_is_low_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) video_inst/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell video_inst/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/v_blank_is_low_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) video_inst/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell video_inst/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/v_blank_is_low_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) video_inst/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell video_inst/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/v_sync_is_low_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) video_inst/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell video_inst/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/v_sync_is_low_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) video_inst/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch video_inst/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/L7 (in video_inst/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg macro) cannot be properly analyzed as its control pin video_inst/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch video_inst/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/L7 (in video_inst/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg macro) cannot be properly analyzed as its control pin video_inst/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch video_inst/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/L7 (in video_inst/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg macro) cannot be properly analyzed as its control pin video_inst/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch video_inst/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/L7 (in video_inst/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg macro) cannot be properly analyzed as its control pin video_inst/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/L7/G is not reached by a timing clock
+Related violations: <none>
+
+XDCC-2#1 Warning
+Scoped Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on reset_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
+New Source: C:/Users/C28Asher.Speicher/Documents/ece383_code/lab1/Lab01.srcs/constrs_1/imports/Downloads/Lab1.xdc (Line: 38)
+Previous Source: c:/Users/C28Asher.Speicher/Documents/ece383_code/lab1/Lab01.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc (Line: 4)
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 4 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

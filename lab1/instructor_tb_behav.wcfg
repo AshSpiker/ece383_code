@@ -3,81 +3,61 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="instructor_tb_behav.wdb" id="1">
+      <db_ref path="NumStepper_tb_behav.wdb" id="1">
          <top_modules>
-            <top_module name="ece383_pkg" />
-            <top_module name="instructor_tb" />
+            <top_module name="NumStepper_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="16,857,833.700 ns"></ZoomStartTime>
-      <ZoomEndTime time="16,858,393.260 ns"></ZoomEndTime>
-      <Cursor1Time time="16,858,300.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="717.480 ns"></ZoomEndTime>
+      <Cursor1Time time="485.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="131"></NameColumnWidth>
-      <ValueColumnWidth column_width="101"></ValueColumnWidth>
+      <NameColumnWidth column_width="100"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="10" />
-   <wvobject fp_name="/instructor_tb/clk" type="logic">
+   <wvobject fp_name="/NumStepper_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/instructor_tb/reset_n" type="logic">
+   <wvobject fp_name="/NumStepper_tb/reset_n" type="logic">
       <obj_property name="ElementShortName">reset_n</obj_property>
       <obj_property name="ObjectShortName">reset_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/instructor_tb/position" type="array">
-      <obj_property name="ElementShortName">position</obj_property>
-      <obj_property name="ObjectShortName">position</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/instructor_tb/position.row" type="array">
-         <obj_property name="ElementShortName">.row[9:0]</obj_property>
-         <obj_property name="ObjectShortName">.row[9:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/instructor_tb/position.col" type="array">
-         <obj_property name="ElementShortName">.col[9:0]</obj_property>
-         <obj_property name="ObjectShortName">.col[9:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/instructor_tb/position.row" type="array">
-         <obj_property name="ElementShortName">.row[9:0]</obj_property>
-         <obj_property name="ObjectShortName">.row[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/instructor_tb/position.col" type="array">
-         <obj_property name="ElementShortName">.col[9:0]</obj_property>
-         <obj_property name="ObjectShortName">.col[9:0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/NumStepper_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
    </wvobject>
-   <wvobject fp_name="/instructor_tb/vga" type="array">
-      <obj_property name="ElementShortName">vga</obj_property>
-      <obj_property name="ObjectShortName">vga</obj_property>
+   <wvobject fp_name="/NumStepper_tb/up" type="logic">
+      <obj_property name="ElementShortName">up</obj_property>
+      <obj_property name="ObjectShortName">up</obj_property>
    </wvobject>
-   <wvobject fp_name="/instructor_tb/h_sync" type="logic">
-      <obj_property name="ElementShortName">h_sync</obj_property>
-      <obj_property name="ObjectShortName">h_sync</obj_property>
+   <wvobject fp_name="/NumStepper_tb/down" type="logic">
+      <obj_property name="ElementShortName">down</obj_property>
+      <obj_property name="ObjectShortName">down</obj_property>
    </wvobject>
-   <wvobject fp_name="/instructor_tb/v_sync" type="logic">
-      <obj_property name="ElementShortName">v_sync</obj_property>
-      <obj_property name="ObjectShortName">v_sync</obj_property>
+   <wvobject fp_name="/NumStepper_tb/q" type="array">
+      <obj_property name="ElementShortName">q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">q[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/instructor_tb/blank" type="logic">
-      <obj_property name="ElementShortName">blank</obj_property>
-      <obj_property name="ObjectShortName">blank</obj_property>
+   <wvobject fp_name="/NumStepper_tb/dut/prev_up" type="logic">
+      <obj_property name="ElementShortName">prev_up</obj_property>
+      <obj_property name="ObjectShortName">prev_up</obj_property>
    </wvobject>
-   <wvobject fp_name="/instructor_tb/clk_period" type="other">
-      <obj_property name="ElementShortName">clk_period</obj_property>
-      <obj_property name="ObjectShortName">clk_period</obj_property>
+   <wvobject fp_name="/NumStepper_tb/dut/prev_down" type="logic">
+      <obj_property name="ElementShortName">prev_down</obj_property>
+      <obj_property name="ObjectShortName">prev_down</obj_property>
    </wvobject>
-   <wvobject fp_name="/instructor_tb/uut/h_blank_is_low" type="other">
-      <obj_property name="ElementShortName">h_blank_is_low</obj_property>
-      <obj_property name="ObjectShortName">h_blank_is_low</obj_property>
+   <wvobject fp_name="/NumStepper_tb/dut/if_val_too_small" type="other">
+      <obj_property name="ElementShortName">if_val_too_small</obj_property>
+      <obj_property name="ObjectShortName">if_val_too_small</obj_property>
    </wvobject>
-   <wvobject fp_name="/instructor_tb/uut/v_blank_is_low" type="other">
-      <obj_property name="ElementShortName">v_blank_is_low</obj_property>
-      <obj_property name="ObjectShortName">v_blank_is_low</obj_property>
+   <wvobject fp_name="/NumStepper_tb/dut/if_val_too_big" type="other">
+      <obj_property name="ElementShortName">if_val_too_big</obj_property>
+      <obj_property name="ObjectShortName">if_val_too_big</obj_property>
    </wvobject>
 </wave_config>
