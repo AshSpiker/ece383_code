@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../hw8.srcs/sources_1/imports/Desktop/keyboard.vhd" \
+"../../../../hw8.srcs/sources_1/imports/Desktop/lec11.vhdl" \
+"../../../../hw8.srcs/sources_1/imports/Desktop/lec11_dp.vhdl" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../hw8.srcs/sources_1/imports/Downloads/lec11_cu.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../hw8.srcs/sources_1/imports/Desktop/lec11_tb.vhdl" \
+
+# Do not sort compile order
+nosort
