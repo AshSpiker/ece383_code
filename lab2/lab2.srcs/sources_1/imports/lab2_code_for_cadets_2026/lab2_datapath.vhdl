@@ -90,8 +90,8 @@ begin
 
     -- Determine if the current row matches the stored data from BRAM which means the channel should be active (drawn)
 	-- Add code here
-    ch1.active <= '1' when (unsigned(ch1.from_bram(9 downto 0)) = position.row) else '0';
-    ch2.active <= '1' when (unsigned(ch2.from_bram(9 downto 0)) = position.row) else '0';
+    ch1.active <= '1' when (apply_offset(ch1.from_bram(15 downto 6)) = position.row) else '0';
+    ch2.active <= '1' when (apply_offset(ch2.from_bram(15 downto 6)) = position.row) else '0';
 	-------------------------------------------------------------------------------
 	--  Buffer a copy of the sample memory to look for positive trigger crossing
 	--  "Loop back" digitized audio input to the output to confirm interface is working
@@ -108,7 +108,8 @@ begin
 			elsif(sw_ready = '1') then
 				-- ready means that the data from the audo code wrapper is good data
 				-- so we want to hold the value (means set Q to be D)
-				ch1.current_sample <= ch1.from_ac(15 downto 0);
+				
+				ch1.current_sample <= ch1.from_ac(17 downto 2);
 			end if;
 		end if;
 	end process;
@@ -244,7 +245,7 @@ Audio_Codec : Audio_Codec_Wrapper
 
     -- BRAM stuff goes here
 
-	reset <= not reset_n;
+	reset <= not reset_n; -- making the active high bram reset from the active low input reset
 	
 	leftChannelMemory : BRAM_SDP_MACRO
 		generic map (
@@ -333,7 +334,7 @@ Audio_Codec : Audio_Codec_Wrapper
             WE      => "11",                     -- Input write enable, width defined by write port depth
             WRADDR  => std_logic_vector(write_address),                -- Input write address, width defined by write port depth
             WRCLK   => clk,                   -- 1-bit input write clock
-            WREN    => cw_write_en );              -- 1-bit input write port enable
+            WREN    => '0' );              -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
 
@@ -415,17 +416,17 @@ Audio_Codec : Audio_Codec_Wrapper
 			INIT_3E => X"7247717F70B76FF06F296E616D9A6CD46C0D6B476A8069BA68F5682F676A66A5",
 			INIT_3F => X"7ECF7E067D3D7C747BAC7AE37A1A7951788977C076F7762F7567749F73D6730E")	
 		port map (
-            DO => ch2.from_bram,    -- Output read data port, width defined by READ_WIDTH parameter
-            RDADDR => std_logic_vector(position.col),-- Input address, width defined by port depth
-            RDCLK => clk,                     -- 1-bit input clock
-            RST => reset,
-            RDEN => '1',
-            REGCE => '1',                   -- 1-bit input read output register enable
-            DI => ch2.to_bram,                    -- Input data port, width defined by WRITE_WIDTH parameter
-            WE => "11",  -- Input write enable, width defined by write port depth
-            WRADDR => std_logic_vector(write_address),  -- Input write address, width defined by write port depth
-            WRCLK => clk,                    -- 1-bit input write clock
-            WREN => cw_write_en );                -- 1-bit input write port enable
+            DO          => ch2.from_bram,    -- Output read data port, width defined by READ_WIDTH parameter
+            RDADDR      => std_logic_vector(position.col),-- Input address, width defined by port depth
+            RDCLK       => clk,                     -- 1-bit input clock
+            RST         => reset,
+            RDEN        => '1',
+            REGCE       => '1',                   -- 1-bit input read output register enable
+            DI          => ch2.to_bram,                    -- Input data port, width defined by WRITE_WIDTH parameter
+            WE          => "11",  -- Input write enable, width defined by write port depth
+            WRADDR      => std_logic_vector(write_address),  -- Input write address, width defined by write port depth
+            WRCLK       => clk,                    -- 1-bit input write clock
+            WREN        => '0' );                -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
     sw(0) <= sw_ready;
