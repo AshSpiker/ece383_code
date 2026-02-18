@@ -43,19 +43,19 @@ set_property -dict { PACKAGE_PIN E22  IOSTANDARD LVCMOS12 } [get_ports { switch[
 set_property -dict { PACKAGE_PIN F21  IOSTANDARD LVCMOS12 } [get_ports { switch[1] }]; #IO_25_16 Sch=sw[1]
 set_property -dict { PACKAGE_PIN G21  IOSTANDARD LVCMOS12 } [get_ports { switch[2] }]; #IO_L24P_T3_16 Sch=sw[2]
 set_property -dict { PACKAGE_PIN G22  IOSTANDARD LVCMOS12 } [get_ports { switch[3] }]; #IO_L24N_T3_16 Sch=sw[3]
-#set_property -dict { PACKAGE_PIN H17  IOSTANDARD LVCMOS12 } [get_ports { sw[4] }]; #IO_L6P_T0_15 Sch=sw[4]
-#set_property -dict { PACKAGE_PIN J16  IOSTANDARD LVCMOS12 } [get_ports { sw[5] }]; #IO_0_15 Sch=sw[5]
-#set_property -dict { PACKAGE_PIN K13  IOSTANDARD LVCMOS12 } [get_ports { sw[6] }]; #IO_L19P_T3_A22_15 Sch=sw[6]
-#set_property -dict { PACKAGE_PIN M17  IOSTANDARD LVCMOS12 } [get_ports { sw[7] }]; #IO_25_15 Sch=sw[7]
+set_property -dict { PACKAGE_PIN H17  IOSTANDARD LVCMOS12 } [get_ports { switch[4] }]; #IO_L6P_T0_15 Sch=sw[4]
+set_property -dict { PACKAGE_PIN J16  IOSTANDARD LVCMOS12 } [get_ports { switch[5] }]; #IO_0_15 Sch=sw[5]
+set_property -dict { PACKAGE_PIN K13  IOSTANDARD LVCMOS12 } [get_ports { switch[6] }]; #IO_L19P_T3_A22_15 Sch=sw[6]
+set_property -dict { PACKAGE_PIN M17  IOSTANDARD LVCMOS12 } [get_ports { switch[7] }]; #IO_25_15 Sch=sw[7]
 
 
 ## OLED Display
-#set_property -dict { PACKAGE_PIN W22   IOSTANDARD LVCMOS33 } [get_ports { oled_dc }]; #IO_L7N_T1_D10_14 Sch=oled_dc
-#set_property -dict { PACKAGE_PIN U21   IOSTANDARD LVCMOS33 } [get_ports { oled_res }]; #IO_L4N_T0_D05_14 Sch=oled_res
-#set_property -dict { PACKAGE_PIN W21   IOSTANDARD LVCMOS33 } [get_ports { oled_sclk }]; #IO_L7P_T1_D09_14 Sch=oled_sclk
-#set_property -dict { PACKAGE_PIN Y22   IOSTANDARD LVCMOS33 } [get_ports { oled_sdin }]; #IO_L9N_T1_DQS_D13_14 Sch=oled_sdin
-#set_property -dict { PACKAGE_PIN P20   IOSTANDARD LVCMOS33 } [get_ports { oled_vbat }]; #IO_0_14 Sch=oled_vbat
-#set_property -dict { PACKAGE_PIN V22   IOSTANDARD LVCMOS33 } [get_ports { oled_vdd }]; #IO_L3N_T0_DQS_EMCCLK_14 Sch=oled_vdd
+set_property -dict { PACKAGE_PIN W22   IOSTANDARD LVCMOS33 } [get_ports { oled_dc }]; #IO_L7N_T1_D10_14 Sch=oled_dc
+set_property -dict { PACKAGE_PIN U21   IOSTANDARD LVCMOS33 } [get_ports { oled_res }]; #IO_L4N_T0_D05_14 Sch=oled_res
+set_property -dict { PACKAGE_PIN W21   IOSTANDARD LVCMOS33 } [get_ports { oled_sclk }]; #IO_L7P_T1_D09_14 Sch=oled_sclk
+set_property -dict { PACKAGE_PIN Y22   IOSTANDARD LVCMOS33 } [get_ports { oled_sdin }]; #IO_L9N_T1_DQS_D13_14 Sch=oled_sdin
+set_property -dict { PACKAGE_PIN P20   IOSTANDARD LVCMOS33 } [get_ports { oled_vbat }]; #IO_0_14 Sch=oled_vbat
+set_property -dict { PACKAGE_PIN V22   IOSTANDARD LVCMOS33 } [get_ports { oled_vdd }]; #IO_L3N_T0_DQS_EMCCLK_14 Sch=oled_vdd
 
 
 ## HDMI in

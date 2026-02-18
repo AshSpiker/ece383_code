@@ -3,6 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 library UNIMACRO;
 use UNIMACRO.vcomponents.all;	
+use work.ece383_pkg.all;
 
  entity lab2 is
      Port ( clk : in  STD_LOGIC;
@@ -16,14 +17,40 @@ use UNIMACRO.vcomponents.all;
             sda : inout STD_LOGIC;
 		    tmds : out  STD_LOGIC_VECTOR (3 downto 0);
             tmdsb : out  STD_LOGIC_VECTOR (3 downto 0);
-		    switch: in	STD_LOGIC_VECTOR(3 downto 0);
-		    btn: in	STD_LOGIC_VECTOR(4 downto 0));
+		    switch: in	STD_LOGIC_VECTOR(7 downto 0);
+		    btn: in	STD_LOGIC_VECTOR(4 downto 0);
+		    
+		    oled_sdin   : out std_logic;
+
+            oled_sclk   : out std_logic;
+
+            oled_dc     : out std_logic;
+
+            oled_res    : out std_logic;
+
+            oled_vbat   : out std_logic;
+
+            oled_vdd    : out std_logic
+            );
+ 
  end lab2;
  
 architecture behavior of lab2 is
 
 	signal sw: std_logic_vector(2 downto 0);
 	signal cw: std_logic_vector (2 downto 0);
+	
+	    component Lab2_OLED
+    port (  clk         : in std_logic;
+            reset_n     : in std_logic;
+            oled_sdin   : out std_logic;
+            oled_sclk   : out std_logic;
+            oled_dc     : out std_logic;
+            oled_res    : out std_logic;
+            oled_vbat   : out std_logic;
+            oled_vdd    : out std_logic;            
+            switch      : in STD_LOGIC_VECTOR(7 downto 0));
+    end component;
 
  component lab2_datapath
     Port ( clk : in  STD_LOGIC;
@@ -40,7 +67,7 @@ architecture behavior of lab2 is
     sw: out std_logic_vector(2 downto 0);
     cw: in std_logic_vector (2 downto 0);
     btn: in    STD_LOGIC_VECTOR(4 downto 0);
-    switch: in    STD_LOGIC_VECTOR(3 downto 0);
+    switch: in    STD_LOGIC_VECTOR(7 downto 0);
     exWrAddr: in std_logic_vector(9 downto 0);
     exWen, exSel: in std_logic;
     Lbus_out, Rbus_out: out std_logic_vector(15 downto 0);
@@ -76,7 +103,7 @@ begin
 		switch => switch,
 		exWrAddr => "0000000000",
 		exWen => '0',
-		exSel => switch(2),
+		exSel => switch(EXT_SWITCH),
 		Lbus_out => OPEN,
 		Rbus_out => OPEN,
 		exLbus => "0000000000000000",
@@ -90,5 +117,18 @@ begin
 		reset_n => reset_n,
 		sw => sw,
 		cw => cw);
+		
+
+    oled: Lab2_OLED
+    port map (  clk => clk,
+            reset_n => reset_n,
+            oled_sdin => oled_sdin,
+            oled_sclk => oled_sclk,
+            oled_dc => oled_dc,
+            oled_res => oled_res,
+            oled_vbat => oled_vbat,
+            oled_vdd => oled_vdd,            
+            switch => switch);
+	
 
 end behavior;

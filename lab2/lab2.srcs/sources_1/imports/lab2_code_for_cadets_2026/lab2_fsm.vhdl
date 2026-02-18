@@ -28,10 +28,20 @@ end lab2_fsm;
 
 architecture Behavioral of lab2_fsm is
 
---	type state_type is NEED_SOMETHING_HERE;
---	signal state: state_type;
+	type state_type is (write, hold);
+	signal state: state_type;
 
 begin
+
+--    delay_counter: lec10 
+--    Generic map(25)
+--	PORT MAP (
+--          clk => clk,
+--          reset => reset,
+--		  crtl => cw,
+--          D => D,
+--          Q => Q
+--        );	
 
 	-------------------------------------------------------------------------------
 	--		SW		meaning
@@ -40,20 +50,29 @@ begin
 	state_proces: process(clk)  
 	begin
 		if (rising_edge(clk)) then
---			if (reset_n = '0') then 
---				state <= NEED_SOMETHING_HERE;
---			else 
---				case state is
---					when NEED_SOMETHING_HERE
---				end case;
---			end if;
+			if (reset_n = '0') then 
+				state <= hold;
+			else 
+				case state is 
+					
+					when hold =>
+					   state <= write when (sw(0) = '1') else 
+					            hold;
+					
+					when write =>
+					   state <= hold;
+					   
+					   
+				end case;
+			end if;
 		end if;
 	end process;
 
 	-------------------------------------------------------------------------------
 	--  CW output table
 	--		CW		meaning
-	--		
+	cw <= "111" when (state = write) else 
+	      "110";		
 	-------------------------------------------------------------------------------
 	
 	-- NEED_SOMETHING_HERE

@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Feb 11 22:05:37 2026
-# Process ID         : 15392
+# Start of session at: Tue Feb 17 18:44:52 2026
+# Process ID         : 22464
 # Current directory  : C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1
 # Command line       : vivado.exe -log lab2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab2.tcl
 # Log file           : C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/lab2.vds
@@ -19,7 +19,7 @@
 # Host memory        : 33585 MB
 # Swap memory        : 6710 MB
 # Total Virtual      : 40296 MB
-# Available Virtual  : 12760 MB
+# Available Virtual  : 11988 MB
 #-----------------------------------------------------------
 source lab2.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/utils_1/imports/synth_1/lab2.dcp
@@ -34,17 +34,24 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23628
+INFO: [Synth 8-7075] Helper process launched with PID 3532
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.051 ; gain = 469.270
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1016.363 ; gain = 469.160
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'lab2' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:23]
-INFO: [Synth 8-3491] module 'lab2_datapath' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:16' bound to instance 'datapath' of component 'lab2_datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'lab2' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:38]
+INFO: [Synth 8-3491] module 'lab2_datapath' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:16' bound to instance 'datapath' of component 'lab2_datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:88]
 INFO: [Synth 8-638] synthesizing module 'lab2_datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:41]
-INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:11' bound to instance 'video_inst' of component 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:209]
+	Parameter num_bits bound to: 10 - type: integer 
+	Parameter max_value bound to: 1023 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'address_counter' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:184]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
+	Parameter num_bits bound to: 10 - type: integer 
+	Parameter max_value bound to: 1023 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
+INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:11' bound to instance 'video_inst' of component 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:217]
 INFO: [Synth 8-638] synthesizing module 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:22]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/.Xil/Vivado-15392-C28-2TK4150H12/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:51]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/.Xil/Vivado-15392-C28-2TK4150H12/realtime/clk_wiz_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/.Xil/Vivado-22464-C28-2TK4150H12/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:51]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/.Xil/Vivado-22464-C28-2TK4150H12/realtime/clk_wiz_0_stub.vhdl:19]
 INFO: [Synth 8-3491] module 'vga' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:62]
 INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:21]
 INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:8' bound to instance 'vga_signal_generator_inst' of component 'vga_signal_generator' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:47]
@@ -52,17 +59,17 @@ INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [C:/Users/C28Ashe
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
 INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'horizontal_counter_inst' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:24]
-INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 524 - type: integer 
 INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'vertical_counter_inst' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized3' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 524 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized3' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/new/counter.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:15]
 INFO: [Synth 8-3491] module 'color_mapper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:11' bound to instance 'color_mapper_inst' of component 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:55]
 INFO: [Synth 8-638] synthesizing module 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:19]
@@ -96,7 +103,7 @@ INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [C:
 INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:100]
 INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:102]
 INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:22]
-INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:228]
+INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:235]
 INFO: [Synth 8-638] synthesizing module 'Audio_Codec_Wrapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:53]
 INFO: [Synth 8-3491] module 'audio_init' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:24' bound to instance 'initialize_audio' of component 'audio_init' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:143]
 INFO: [Synth 8-6157] synthesizing module 'audio_init' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:24]
@@ -111,8 +118,8 @@ INFO: [Synth 8-256] done synthesizing module 'TWICtl' (0#1) [C:/Users/C28Asher.S
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:151]
 INFO: [Synth 8-6155] done synthesizing module 'audio_init' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:24]
 WARNING: [Synth 8-5640] Port 'clk_out3' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:92]
-INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/.Xil/Vivado-15392-C28-2TK4150H12/realtime/clk_wiz_1_stub.vhdl:6' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/.Xil/Vivado-15392-C28-2TK4150H12/realtime/clk_wiz_1_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/.Xil/Vivado-22464-C28-2TK4150H12/realtime/clk_wiz_1_stub.vhdl:6' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/.Xil/Vivado-22464-C28-2TK4150H12/realtime/clk_wiz_1_stub.vhdl:19]
 	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-3491] module 'i2s_ctl' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:36' bound to instance 'audio_inout' of component 'i2s_ctl' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:157]
 INFO: [Synth 8-638] synthesizing module 'i2s_ctl' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:63]
@@ -828,7 +835,7 @@ INFO: [Synth 8-256] done synthesizing module 'Audio_Codec_Wrapper' (0#1) [C:/Use
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:250]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:260]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
@@ -1146,7 +1153,7 @@ INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameter
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:342]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:352]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
@@ -1392,37 +1399,47 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2
 INFO: [Synth 8-113] binding component instance 'ram18_bl' to cell 'RAMB18E1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:2374]
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 INFO: [Synth 8-256] done synthesizing module 'lab2_datapath' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:41]
-INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:22' bound to instance 'control' of component 'lab2_fsm' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:88]
+INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:22' bound to instance 'control' of component 'lab2_fsm' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:115]
 INFO: [Synth 8-638] synthesizing module 'lab2_fsm' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:29]
 INFO: [Synth 8-256] done synthesizing module 'lab2_fsm' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:29]
-INFO: [Synth 8-256] done synthesizing module 'lab2' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:23]
+INFO: [Synth 8-3491] module 'Lab2_OLED' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/Lab2_OLED.vhd:21' bound to instance 'oled' of component 'Lab2_OLED' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'Lab2_OLED' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/Lab2_OLED.vhd:33]
+INFO: [Synth 8-3491] module 'oled_init' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_init.vhd:13' bound to instance 'Initialize' of component 'oled_init' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/Lab2_OLED.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'oled_init' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_init.vhd:26]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/spi_ctrl.vhd:14' bound to instance 'spi_comp' of component 'spi_ctrl' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_init.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'spi_ctrl' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/spi_ctrl.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'spi_ctrl' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/spi_ctrl.vhd:24]
+INFO: [Synth 8-3491] module 'delay' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/delay.vhd:13' bound to instance 'delay_comp' of component 'delay' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_init.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'delay' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/delay.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'delay' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/delay.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'oled_init' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_init.vhd:26]
+INFO: [Synth 8-3491] module 'oled_ex' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd:14' bound to instance 'Example' of component 'oled_ex' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/Lab2_OLED.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'oled_ex' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd:25]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/spi_ctrl.vhd:14' bound to instance 'spi_comp' of component 'spi_ctrl' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd:141]
+INFO: [Synth 8-3491] module 'delay' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/delay.vhd:13' bound to instance 'delay_comp' of component 'delay' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd:150]
+INFO: [Synth 8-3491] module 'ascii_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/ascii_rom.vhd:12' bound to instance 'char_lib_comp' of component 'ascii_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'ascii_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/ascii_rom.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ascii_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/ascii_rom.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'oled_ex' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/Lab2_OLED.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'Lab2_OLED' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/Lab2_OLED.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'lab2' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:38]
 WARNING: [Synth 8-6014] Unused sequential element timeOutCnt_reg was removed.  [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/TWICtl.vhd:236]
 WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/TWICtl.vhd:313]
 WARNING: [Synth 8-6014] Unused sequential element regData1_reg was removed.  [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:135]
 WARNING: [Synth 8-6014] Unused sequential element initFbWe_reg was removed.  [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:150]
-WARNING: [Synth 8-3848] Net sw_last_address in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:72]
 WARNING: [Synth 8-3848] Net sw_trigger in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:73]
 WARNING: [Synth 8-3848] Net Lbus_out in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:35]
 WARNING: [Synth 8-3848] Net Rbus_out in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:35]
 WARNING: [Synth 8-3848] Net flagQ in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:37]
-WARNING: [Synth 8-3848] Net ch1[to_ac] in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:80]
-WARNING: [Synth 8-3848] Net ch2[to_ac] in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:80]
 WARNING: [Synth 8-3848] Net trigger[t] in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:82]
 WARNING: [Synth 8-3848] Net trigger[v] in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:82]
-WARNING: [Synth 8-3848] Net ch2[incoming_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:80]
-WARNING: [Synth 8-3848] Net ch2[current_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:80]
-WARNING: [Synth 8-3848] Net ch2[prev_sample] in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:80]
-WARNING: [Synth 8-3848] Net ch2[to_bram] in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:80]
-WARNING: [Synth 8-3848] Net write_address in module/entity lab2_datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:87]
-WARNING: [Synth 8-3848] Net cw in module/entity lab2_fsm does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:26]
-WARNING: [Synth 8-7129] Port cw[2] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port cw[1] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port cw[0] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clk in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port reset_n in module lab2_fsm is either unconnected or has no load
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,6] was removed.  [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd:177]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,7] was removed.  [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd:177]
+WARNING: [Synth 8-3848] Net temp_delay_ms in module/entity oled_ex does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd:118]
+WARNING: [Synth 8-7129] Port addr[10] in module ascii_rom is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[2] in module lab2_fsm is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[1] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[0] in module lab2_fsm is either unconnected or has no load
 WARNING: [Synth 8-7129] Port MM_I in module i2s_ctl is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][17] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][16] in module color_mapper is either unconnected or has no load
@@ -1515,20 +1532,25 @@ WARNING: [Synth 8-7129] Port ch1[to_bram][12] in module color_mapper is either u
 WARNING: [Synth 8-7129] Port ch1[to_bram][11] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_bram][10] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_bram][9] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][8] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][7] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][6] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][5] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][4] in module color_mapper is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1139.598 ; gain = 593.816
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1161.094 ; gain = 613.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1139.598 ; gain = 593.816
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1161.094 ; gain = 613.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1139.598 ; gain = 593.816
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1161.094 ; gain = 613.891
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1139.598 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1161.094 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
@@ -1552,24 +1574,24 @@ Parsing XDC File [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.run
 Finished Parsing XDC File [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1231.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1248.289 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1231.793 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1248.289 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1231.793 ; gain = 686.012
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1248.289 ; gain = 701.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1231.793 ; gain = 686.012
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1248.289 ; gain = 701.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1579,9 +1601,12 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/User
 Applied set_property KEEP_HIERARCHY = SOFT for datapath/video_inst/mmcm_adv_inst_display_clocks. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for datapath/Audio_Codec/audiocodec_master_clock. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1231.793 ; gain = 686.012
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1248.289 ; gain = 701.086
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'spi_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'delay'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Lab2_OLED'
 WARNING: [Synth 8-327] inferring latch for variable 'h_sync_is_low_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:57]
 WARNING: [Synth 8-327] inferring latch for variable 'v_sync_is_low_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:68]
 WARNING: [Synth 8-327] inferring latch for variable 'h_blank_is_low_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:62]
@@ -1600,8 +1625,33 @@ WARNING: [Synth 8-327] inferring latch for variable 'v_blank_is_low_reg' [C:/Use
                   ststop |                             1100 |                             0101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWICtl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                    send |                              010 |                               01
+                    done |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'spi_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                    hold |                              010 |                               01
+                    done |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'delay'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+          oledinitialize |                             0010 |                               01
+             oledexample |                             0100 |                               10
+                    done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'Lab2_OLED'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1231.793 ; gain = 686.012
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1248.289 ; gain = 701.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1611,16 +1661,17 @@ Detailed RTL Component Info :
 	   2 Input   32 Bit       Adders := 1     
 	   2 Input   31 Bit       Adders := 1     
 	   2 Input   18 Bit       Adders := 2     
-	   2 Input   10 Bit       Adders := 25    
+	   2 Input   10 Bit       Adders := 26    
 	   2 Input    7 Bit       Adders := 3     
-	   2 Input    5 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 4     
 	   8 Input    4 Bit       Adders := 3     
 	   9 Input    4 Bit       Adders := 3     
 	  11 Input    4 Bit       Adders := 3     
 	   4 Input    4 Bit       Adders := 3     
 	  10 Input    4 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 3     
 	   2 Input    3 Bit       Adders := 2     
-	   2 Input    2 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 42    
 +---Registers : 
@@ -1628,38 +1679,51 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 3     
 	               31 Bit    Registers := 1     
 	               24 Bit    Registers := 2     
-	               16 Bit    Registers := 2     
-	               10 Bit    Registers := 15    
-	                8 Bit    Registers := 3     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 16    
+	                8 Bit    Registers := 23    
 	                7 Bit    Registers := 3     
-	                5 Bit    Registers := 2     
-	                4 Bit    Registers := 4     
+	                5 Bit    Registers := 11    
+	                4 Bit    Registers := 7     
 	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 26    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 42    
++---ROMs : 
+	                    ROMs := 1     
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 3     
 	   2 Input   24 Bit        Muxes := 3     
 	   2 Input   18 Bit        Muxes := 2     
-	   2 Input   16 Bit        Muxes := 1     
-	   2 Input   10 Bit        Muxes := 12    
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 15    
 	   3 Input   10 Bit        Muxes := 1     
 	   5 Input   10 Bit        Muxes := 6     
 	   4 Input   10 Bit        Muxes := 3     
 	   2 Input    9 Bit        Muxes := 6     
-	   2 Input    8 Bit        Muxes := 2     
-	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 8     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 3     
 	   8 Input    5 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 15    
+	  26 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 18    
 	   9 Input    4 Bit        Muxes := 1     
 	  21 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
 	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 42    
-	   4 Input    1 Bit        Muxes := 21    
-	   3 Input    1 Bit        Muxes := 5     
+	  26 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 67    
+	   4 Input    1 Bit        Muxes := 22    
+	   3 Input    1 Bit        Muxes := 11    
 	   9 Input    1 Bit        Muxes := 1     
 	  10 Input    1 Bit        Muxes := 6     
 	  36 Input    1 Bit        Muxes := 1     
+	  28 Input    1 Bit        Muxes := 9     
+	  26 Input    1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1676,27 +1740,307 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6040] Register oled/Example/temp_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1340.277 ; gain = 794.496
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1351.570 ; gain = 804.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-------------------------------------+---------------+----------------+
+|Module Name | RTL Object                          | Depth x Width | Implemented As | 
++------------+-------------------------------------+---------------+----------------+
+|oled_init   | after_state                         | 32x1          | LUT            | 
+|oled_init   | after_state                         | 32x5          | LUT            | 
+|oled_init   | temp_sdata                          | 32x1          | LUT            | 
+|oled_init   | temp_sdata                          | 32x8          | LUT            | 
+|oled_ex     | after_state                         | 32x1          | LUT            | 
+|oled_ex     | temp_addr                           | 32x1          | LUT            | 
+|lab2        | oled/Initialize/after_state         | 32x5          | LUT            | 
+|lab2        | oled/Initialize/temp_sdata          | 32x8          | LUT            | 
+|lab2        | oled/Initialize/after_state         | 32x1          | LUT            | 
+|lab2        | oled/Initialize/temp_sdata          | 32x1          | LUT            | 
+|lab2        | oled/Example/char_lib_comp/dout_reg | 1024x8        | Block RAM      | 
+|lab2        | oled/Example/after_state            | 32x1          | LUT            | 
+|lab2        | oled/Example/temp_addr              | 32x1          | LUT            | 
++------------+-------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 1340.277 ; gain = 794.496
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 1351.570 ; gain = 804.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1452.137 ; gain = 906.355
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:11 . Memory (MB): peak = 1470.266 ; gain = 923.062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+Found timing loop:
+     0: L_bus_out_inferredi_598/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_598/I2 (LUT3)
+     2: L_bus_out_inferredi_598/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_598"
+Found timing loop:
+     0: L_bus_out_inferredi_599/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_599/I2 (LUT3)
+     2: L_bus_out_inferredi_599/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_599"
+Found timing loop:
+     0: L_bus_out_inferredi_600/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_600/I2 (LUT3)
+     2: L_bus_out_inferredi_600/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_600"
+Found timing loop:
+     0: L_bus_out_inferredi_601/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_601/I2 (LUT3)
+     2: L_bus_out_inferredi_601/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_601"
+Found timing loop:
+     0: L_bus_out_inferredi_602/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_602/I2 (LUT3)
+     2: L_bus_out_inferredi_602/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_602"
+Found timing loop:
+     0: L_bus_out_inferredi_603/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_603/I2 (LUT3)
+     2: L_bus_out_inferredi_603/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_603"
+Found timing loop:
+     0: L_bus_out_inferredi_604/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_604/I2 (LUT3)
+     2: L_bus_out_inferredi_604/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_604"
+Found timing loop:
+     0: L_bus_out_inferredi_605/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_605/I2 (LUT3)
+     2: L_bus_out_inferredi_605/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_605"
+Found timing loop:
+     0: L_bus_out_inferredi_606/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_606/I2 (LUT3)
+     2: L_bus_out_inferredi_606/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_606"
+Found timing loop:
+     0: L_bus_out_inferredi_607/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_607/I2 (LUT3)
+     2: L_bus_out_inferredi_607/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_607"
+Found timing loop:
+     0: L_bus_out_inferredi_608/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_608/I2 (LUT3)
+     2: L_bus_out_inferredi_608/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_608"
+Found timing loop:
+     0: L_bus_out_inferredi_609/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_609/I2 (LUT3)
+     2: L_bus_out_inferredi_609/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_609"
+Found timing loop:
+     0: L_bus_out_inferredi_610/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_610/I2 (LUT3)
+     2: L_bus_out_inferredi_610/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_610"
+Found timing loop:
+     0: L_bus_out_inferredi_611/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_611/I2 (LUT3)
+     2: L_bus_out_inferredi_611/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_611"
+Found timing loop:
+     0: L_bus_out_inferredi_612/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_612/I2 (LUT3)
+     2: L_bus_out_inferredi_612/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_612"
+Found timing loop:
+     0: L_bus_out_inferredi_613/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_613/I2 (LUT3)
+     2: L_bus_out_inferredi_613/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O L_bus_out_inferredi_613"
+Found timing loop:
+     0: L_bus_out_inferredi_614/O (LUT2)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_614/I1 (LUT2)
+     2: L_bus_out_inferredi_614/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I1 -to O L_bus_out_inferredi_614"
+Found timing loop:
+     0: L_bus_out_inferredi_615/O (LUT2)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: L_bus_out_inferredi_615/I1 (LUT2)
+     2: L_bus_out_inferredi_615/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I1 -to O L_bus_out_inferredi_615"
+Found timing loop:
+     0: R_bus_out_inferredi_616/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_616/I2 (LUT3)
+     2: R_bus_out_inferredi_616/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_616"
+Found timing loop:
+     0: R_bus_out_inferredi_617/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_617/I2 (LUT3)
+     2: R_bus_out_inferredi_617/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_617"
+Found timing loop:
+     0: R_bus_out_inferredi_618/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_618/I2 (LUT3)
+     2: R_bus_out_inferredi_618/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_618"
+Found timing loop:
+     0: R_bus_out_inferredi_619/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_619/I2 (LUT3)
+     2: R_bus_out_inferredi_619/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_619"
+Found timing loop:
+     0: R_bus_out_inferredi_620/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_620/I2 (LUT3)
+     2: R_bus_out_inferredi_620/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_620"
+Found timing loop:
+     0: R_bus_out_inferredi_621/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_621/I2 (LUT3)
+     2: R_bus_out_inferredi_621/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_621"
+Found timing loop:
+     0: R_bus_out_inferredi_622/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_622/I2 (LUT3)
+     2: R_bus_out_inferredi_622/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_622"
+Found timing loop:
+     0: R_bus_out_inferredi_623/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_623/I2 (LUT3)
+     2: R_bus_out_inferredi_623/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_623"
+Found timing loop:
+     0: R_bus_out_inferredi_624/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_624/I2 (LUT3)
+     2: R_bus_out_inferredi_624/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_624"
+Found timing loop:
+     0: R_bus_out_inferredi_625/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_625/I2 (LUT3)
+     2: R_bus_out_inferredi_625/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_625"
+Found timing loop:
+     0: R_bus_out_inferredi_626/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_626/I2 (LUT3)
+     2: R_bus_out_inferredi_626/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_626"
+Found timing loop:
+     0: R_bus_out_inferredi_627/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_627/I2 (LUT3)
+     2: R_bus_out_inferredi_627/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_627"
+Found timing loop:
+     0: R_bus_out_inferredi_628/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_628/I2 (LUT3)
+     2: R_bus_out_inferredi_628/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_628"
+Found timing loop:
+     0: R_bus_out_inferredi_629/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_629/I2 (LUT3)
+     2: R_bus_out_inferredi_629/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_629"
+Found timing loop:
+     0: R_bus_out_inferredi_630/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_630/I2 (LUT3)
+     2: R_bus_out_inferredi_630/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_630"
+Found timing loop:
+     0: R_bus_out_inferredi_631/O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_631/I2 (LUT3)
+     2: R_bus_out_inferredi_631/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O R_bus_out_inferredi_631"
+Found timing loop:
+     0: R_bus_out_inferredi_632/O (LUT2)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_632/I1 (LUT2)
+     2: R_bus_out_inferredi_632/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I1 -to O R_bus_out_inferredi_632"
+Found timing loop:
+     0: R_bus_out_inferredi_633/O (LUT2)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: R_bus_out_inferredi_633/I1 (LUT2)
+     2: R_bus_out_inferredi_633/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I1 -to O R_bus_out_inferredi_633"
+INFO: [Synth 8-7052] The timing for the instance oled/Example/char_lib_comp/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1468.871 ; gain = 923.090
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 1483.828 ; gain = 936.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1714,37 +2058,130 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 1622.016 ; gain = 1076.234
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 1635.246 ; gain = 1088.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 1622.016 ; gain = 1076.234
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 1635.246 ; gain = 1088.043
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][17] with 1st driver pin 'ch1[to_ac][17]_i_2/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][17] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[23]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][16] with 1st driver pin 'ch1[to_ac][16]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][16] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[22]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][15] with 1st driver pin 'ch1[to_ac][15]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][15] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[21]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][14] with 1st driver pin 'ch1[to_ac][14]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][14] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[20]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][13] with 1st driver pin 'ch1[to_ac][13]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][13] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[19]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][12] with 1st driver pin 'ch1[to_ac][12]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][12] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[18]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][11] with 1st driver pin 'ch1[to_ac][11]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][11] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[17]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][10] with 1st driver pin 'ch1[to_ac][10]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][10] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[16]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][9] with 1st driver pin 'ch1[to_ac][9]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][9] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[15]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][8] with 1st driver pin 'ch1[to_ac][8]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][8] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[14]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][7] with 1st driver pin 'ch1[to_ac][7]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][7] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[13]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][6] with 1st driver pin 'ch1[to_ac][6]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][6] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[12]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][5] with 1st driver pin 'ch1[to_ac][5]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][5] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[11]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][4] with 1st driver pin 'ch1[to_ac][4]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][4] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[10]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][3] with 1st driver pin 'ch1[to_ac][3]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][3] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[9]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][2] with 1st driver pin 'ch1[to_ac][2]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][2] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[8]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][1] with 1st driver pin 'ch1[to_ac][1]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][1] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[7]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][0] with 1st driver pin 'ch1[to_ac][0]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch1[from_ac][0] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_L_O_int_reg[6]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:232]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][17] with 1st driver pin 'ch2[to_ac][17]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][17] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[23]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][16] with 1st driver pin 'ch2[to_ac][16]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][16] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[22]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][15] with 1st driver pin 'ch2[to_ac][15]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][15] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[21]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][14] with 1st driver pin 'ch2[to_ac][14]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][14] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[20]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][13] with 1st driver pin 'ch2[to_ac][13]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][13] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[19]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][12] with 1st driver pin 'ch2[to_ac][12]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][12] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[18]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][11] with 1st driver pin 'ch2[to_ac][11]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][11] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[17]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][10] with 1st driver pin 'ch2[to_ac][10]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][10] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[16]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][9] with 1st driver pin 'ch2[to_ac][9]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][9] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[15]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][8] with 1st driver pin 'ch2[to_ac][8]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][8] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[14]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][7] with 1st driver pin 'ch2[to_ac][7]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][7] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[13]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][6] with 1st driver pin 'ch2[to_ac][6]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][6] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[12]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][5] with 1st driver pin 'ch2[to_ac][5]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][5] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[11]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][4] with 1st driver pin 'ch2[to_ac][4]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][4] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[10]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][3] with 1st driver pin 'ch2[to_ac][3]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][3] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[9]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][2] with 1st driver pin 'ch2[to_ac][2]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][2] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[8]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][1] with 1st driver pin 'ch2[to_ac][1]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][1] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[7]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][0] with 1st driver pin 'ch2[to_ac][0]_i_1/O' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin datapath/ch2[from_ac][0] with 2nd driver pin 'datapath/Audio_Codec/audio_inout/D_R_O_int_reg[6]/Q' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:233]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       36|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Found timing loop:
+     0: \ch1[to_ac][17]_i_2 /O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:179]
+     1: \ch1[to_ac][17]_i_2 /I2 (LUT3)
+     2: \ch1[to_ac][17]_i_2 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O \ch1[to_ac][17]_i_2 "
+Found timing loop:
+     0: \ch2[to_ac][17]_i_1 /O (LUT3)
+      [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:180]
+     1: \ch2[to_ac][17]_i_1 /I2 (LUT3)
+     2: \ch2[to_ac][17]_i_1 /O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:8]
+Inferred a: "set_disable_timing -from I2 -to O \ch2[to_ac][17]_i_1 "
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 1622.016 ; gain = 1076.234
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 1635.246 ; gain = 1088.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 1622.016 ; gain = 1076.234
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 1635.246 ; gain = 1088.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 1622.016 ; gain = 1076.234
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 1635.246 ; gain = 1088.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1622.016 ; gain = 1076.234
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 1635.246 ; gain = 1088.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1764,32 +2201,33 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |clk_wiz_0_bbox |     1|
 |2     |clk_wiz_1_bbox |     1|
-|3     |CARRY4         |    61|
-|4     |LUT1           |    49|
-|5     |LUT2           |   141|
-|6     |LUT3           |    77|
-|7     |LUT4           |    92|
-|8     |LUT5           |    88|
-|9     |LUT6           |   216|
-|10    |ODDR2          |     4|
-|11    |RAMB18E1       |     2|
-|13    |FDRE           |   295|
-|14    |FDSE           |    25|
-|15    |LDCP           |     4|
-|16    |IBUF           |     5|
-|17    |IOBUF          |     2|
-|18    |OBUF           |     4|
-|19    |OBUFDS         |     4|
+|3     |CARRY4         |    79|
+|4     |LUT1           |    64|
+|5     |LUT2           |   195|
+|6     |LUT3           |   155|
+|7     |LUT4           |   132|
+|8     |LUT5           |   136|
+|9     |LUT6           |   299|
+|10    |MUXF7          |     1|
+|11    |ODDR2          |     4|
+|12    |RAMB18E1       |     5|
+|17    |FDRE           |   583|
+|18    |FDSE           |    34|
+|19    |LDCP           |     4|
+|20    |IBUF           |    10|
+|21    |IOBUF          |     2|
+|22    |OBUF           |    10|
+|23    |OBUFDS         |     4|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1622.016 ; gain = 1076.234
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:16 . Memory (MB): peak = 1635.246 ; gain = 1088.043
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 311 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:49 . Memory (MB): peak = 1622.016 ; gain = 984.039
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1622.016 ; gain = 1076.234
+Synthesis finished with 0 errors, 110 critical warnings and 287 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 1635.246 ; gain = 1000.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:17 . Memory (MB): peak = 1635.246 ; gain = 1088.043
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1627.215 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1640.418 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 99 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
@@ -1798,7 +2236,7 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1637.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1650.645 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 14 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
@@ -1806,12 +2244,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Synth Design complete | Checksum: 1709000f
+Synth Design complete | Checksum: 17faf0c3
 INFO: [Common 17-83] Releasing license: Synthesis
-106 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
+137 Infos, 130 Warnings, 110 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:00 . Memory (MB): peak = 1637.465 ; gain = 1331.727
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1637.465 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:50 . Memory (MB): peak = 1650.645 ; gain = 1345.258
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1650.645 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/lab2.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file lab2_utilization_synth.rpt -pb lab2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 11 22:06:41 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 17 18:47:04 2026...

@@ -97,7 +97,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -125,7 +124,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/synth_1/lab2.dcp
   read_ip -quiet C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_ip -quiet c:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+  read_ip -quiet C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.srcs/constrs_1/imports/lab2_code_for_cadets_2026/Lab2.xdc
 OPTRACE "read constraints: implementation" END { }

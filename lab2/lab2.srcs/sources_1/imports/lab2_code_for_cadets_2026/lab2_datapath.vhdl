@@ -29,7 +29,7 @@ use work.ece383_pkg.all;
     sw                  : out std_logic_vector(2 downto 0);
     cw                  : in std_logic_vector (2 downto 0);
     btn                 : in    STD_LOGIC_VECTOR(4 downto 0);
-    switch              : in    STD_LOGIC_VECTOR(3 downto 0);
+    switch              : in    STD_LOGIC_VECTOR(7 downto 0);
     exWrAddr            : in std_logic_vector(9 downto 0);
     exWen, exSel        : in std_logic;
     Lbus_out, Rbus_out  : out std_logic_vector(15 downto 0);
@@ -105,11 +105,15 @@ begin
 				-- This means the value is being reset because it is an active low reset
 				-- active low reset is indicated by the underscore in 'reset_n'
 				ch1.current_sample <= (others => '0'); -- reset Q to be 0
+				ch2.current_sample <= (others => '0');
 			elsif(sw_ready = '1') then
 				-- ready means that the data from the audo code wrapper is good data
 				-- so we want to hold the value (means set Q to be D)
 				
 				ch1.current_sample <= ch1.from_ac(17 downto 2);
+				ch2.current_sample <= ch2.from_ac(17 downto 2);
+				ch1.to_ac          <= ch1.from_ac;
+				ch2.to_ac          <= ch2.from_ac;
 			end if;
 		end if;
 	end process;
@@ -119,13 +123,15 @@ begin
     -- so here I will set incoming_sample (which is the value after it goes thru the function) to 
     -- the return value of the unsinged function with Q as the input 
     ch1.incoming_sample <= make_unsigned(ch1.current_sample);
-    
+    ch2.incoming_sample <= make_unsigned(ch2.current_sample);
     
     -- Send the unsigned current sample to the BRAM
     -- Add code here 
-    ch1.to_bram <= exLbus              when (exSel = '0') else 
-                   ch1.incoming_sample when (exSel = '1');
+    ch1.to_bram <= exLbus              when (exSel = '1') else 
+                   ch1.incoming_sample when (exSel = '0');
 	
+	ch2.to_bram <= exRbus              when (exSel = '1') else 
+	               ch2.incoming_sample when (exSel = '0');
     -- Need logic for the FLAG register
 	-- Add code here
 	process (clk)
@@ -135,12 +141,14 @@ begin
 				-- This means the value is being reset because it is an active low reset
 				-- active low reset is indicated by the underscore in 'reset_n'
 				ch1.prev_sample <= (others => '0'); -- reset Q to be 0
+				ch2.prev_sample <= (others => '0'); -- reset Q to be 0
 			elsif(sw_ready = '1') then
 				-- ready means that the data from the audo code wrapper is good data
 				-- so we want to hold the value (means set Q to be D)
 				ch1.prev_sample <= ch1.incoming_sample; -- ch1.prev_sample is my Q from my register in the bottom left
+				ch2.prev_sample <= ch2.incoming_sample; -- ch1.prev_sample is my Q from my register in the bottom left
 			end if;
-		end if;
+		end if; 
 	end process;
 	
     ------------------------------------------------------------------------------
@@ -173,17 +181,17 @@ begin
 	-- Add code here.  Use a previously built counter.
 	-- should need to span the number of cols which should be 640, however cols start at 20
 	-- and end at 620, so we would want to start at 20, and end at 620
---	address_counter : counter
---	generic map (
---	   num_bits    => 10,
---	   max_value   => 620 );
---    port map (
---        clk         => clk,
---        reset_n     => reset_n,
---        ctrl        =>
---        roll        =>
---        Q           =>
---    );
+	address_counter : counter
+	generic map (
+	   num_bits    => 10,
+	   max_value   => 1023 ) -- change to scale 
+    port map (
+        clk         => clk,
+        reset_n     => reset_n,
+        ctrl        => cw_counter_control(0),
+        roll        => sw_last_address,
+        Q           => writeCntr
+    );
 	   
 	
 	
@@ -216,13 +224,12 @@ begin
 		ch1 => ch1, 
 		ch2 => ch2); 
 
-    ch1.en <= switch(0);
-    ch2.en <= switch(1);
+    ch1.en <= switch(CH1_SWITCH);
+    ch2.en <= switch(CH2_SWITCH);
 
 -- Audio Codec stuff goes here
 
-is_live <=   '1';--  '0' simulate audio; '1' live audio
-                  -- should a switch go here?
+is_live <=   switch(IS_LIVE_SWITCH);--  '0' simulate audio; '1' live audio
                   
 
 Audio_Codec : Audio_Codec_Wrapper
@@ -244,6 +251,9 @@ Audio_Codec : Audio_Codec_Wrapper
 
 
     -- BRAM stuff goes here
+
+    write_address <= unsigned(exWrAddr) when (exSel = '1') else 
+                     writeCntr          when (exSel = '0');
 
 	reset <= not reset_n; -- making the active high bram reset from the active low input reset
 	
@@ -334,7 +344,7 @@ Audio_Codec : Audio_Codec_Wrapper
             WE      => "11",                     -- Input write enable, width defined by write port depth
             WRADDR  => std_logic_vector(write_address),                -- Input write address, width defined by write port depth
             WRCLK   => clk,                   -- 1-bit input write clock
-            WREN    => '0' );              -- 1-bit input write port enable
+            WREN    => '1' );              -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
 
@@ -426,7 +436,7 @@ Audio_Codec : Audio_Codec_Wrapper
             WE          => "11",  -- Input write enable, width defined by write port depth
             WRADDR      => std_logic_vector(write_address),  -- Input write address, width defined by write port depth
             WRCLK       => clk,                    -- 1-bit input write clock
-            WREN        => '0' );                -- 1-bit input write port enable
+            WREN        => '1' );                -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
     sw(0) <= sw_ready;

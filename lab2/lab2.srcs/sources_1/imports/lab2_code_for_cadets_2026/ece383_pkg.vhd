@@ -75,8 +75,8 @@ package ece383_pkg is
   
   constant CH1_SWITCH : integer := 0;
   constant CH2_SWITCH : integer := 1;
-  constant IS_LIVE_SWITCH : integer := 2;
-  constant EXT_SWITCH : integer := 3;
+  constant IS_LIVE_SWITCH : integer := 3;
+  constant EXT_SWITCH : integer := 2;
   
   constant UP : integer := 0;
   constant DOWN : integer := 2;
