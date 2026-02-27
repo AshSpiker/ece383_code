@@ -52,9 +52,8 @@
 --  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 --   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 ------------------------------------------------------------------------------
--- clk_out1__25.00000______0.000______50.0______175.402_____98.575
--- clk_out2__125.00000______0.000______50.0______125.247_____98.575
--- clk_out3__125.00000____180.000______50.0______125.247_____98.575
+-- clk_out1__12.28879______0.000______50.0______201.426_____98.575
+-- clk_out2__50.00000______0.000______50.0______151.636_____98.575
 --
 ------------------------------------------------------------------------------
 -- Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -70,7 +69,6 @@ port
   -- Clock out ports
   clk_out1          : out    std_logic;
   clk_out2          : out    std_logic;
-  clk_out3          : out    std_logic;
   -- Status and control signals
   resetn             : in     std_logic;
   clk_in1           : in     std_logic
@@ -86,7 +84,6 @@ your_instance_name : clk_wiz_1
   -- Clock out ports  
    clk_out1 => clk_out1,
    clk_out2 => clk_out2,
-   clk_out3 => clk_out3,
   -- Status and control signals                
    resetn => resetn,
    -- Clock in ports

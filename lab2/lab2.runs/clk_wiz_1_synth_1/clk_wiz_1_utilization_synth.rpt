@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Feb 11 18:17:47 2026
+| Date         : Thu Feb 19 07:23:30 2026
 | Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file clk_wiz_1_utilization_synth.rpt -pb clk_wiz_1_utilization_synth.pb
 | Design       : clk_wiz_1
@@ -118,7 +118,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    4 |     0 |          0 |        32 | 12.50 |
+| BUFGCTRL   |    3 |     0 |          0 |        32 |  9.38 |
 | BUFIO      |    0 |     0 |          0 |        40 |  0.00 |
 | MMCME2_ADV |    1 |     0 |          0 |        10 | 10.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |        10 |  0.00 |
@@ -152,7 +152,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| BUFG       |    4 |               Clock |
+| BUFG       |    3 |               Clock |
 | MMCME2_ADV |    1 |               Clock |
 | LUT1       |    1 |                 LUT |
 | IBUF       |    1 |                  IO |

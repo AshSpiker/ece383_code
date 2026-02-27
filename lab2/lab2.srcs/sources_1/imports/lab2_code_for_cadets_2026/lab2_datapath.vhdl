@@ -85,13 +85,14 @@ architecture lab2_datapath_arch of lab2_datapath is
     signal position                     : coordinate_t;
     signal reset                        : std_logic;   
     signal write_address                : unsigned(9 downto 0);
+    signal mux_to_wrenb                 : std_logic;
     
 begin
 
     -- Determine if the current row matches the stored data from BRAM which means the channel should be active (drawn)
 	-- Add code here
-    ch1.active <= '1' when (apply_offset(ch1.from_bram(15 downto 6)) = position.row) else '0';
-    ch2.active <= '1' when (apply_offset(ch2.from_bram(15 downto 6)) = position.row) else '0';
+    ch1.active <= '1' when (apply_offset(ch1.from_bram(15 downto 7)) = position.row) else '0';
+    ch2.active <= '1' when (apply_offset(ch2.from_bram(15 downto 7)) = position.row) else '0';
 	-------------------------------------------------------------------------------
 	--  Buffer a copy of the sample memory to look for positive trigger crossing
 	--  "Loop back" digitized audio input to the output to confirm interface is working
@@ -104,14 +105,14 @@ begin
 			if reset_n = '0' then
 				-- This means the value is being reset because it is an active low reset
 				-- active low reset is indicated by the underscore in 'reset_n'
-				ch1.current_sample <= (others => '0'); -- reset Q to be 0
-				ch2.current_sample <= (others => '0');
+				ch1.incoming_sample <= (others => '0'); -- reset Q to be 0
+				ch2.incoming_sample <= (others => '0');
 			elsif(sw_ready = '1') then
 				-- ready means that the data from the audo code wrapper is good data
 				-- so we want to hold the value (means set Q to be D)
 				
-				ch1.current_sample <= ch1.from_ac(17 downto 2);
-				ch2.current_sample <= ch2.from_ac(17 downto 2);
+				ch1.incoming_sample <= ch1.from_ac(17 downto 2);
+				ch2.incoming_sample <= ch2.from_ac(17 downto 2);
 				ch1.to_ac          <= ch1.from_ac;
 				ch2.to_ac          <= ch2.from_ac;
 			end if;
@@ -122,17 +123,32 @@ begin
     -- Add code here (Look at make_unsigned function)
     -- so here I will set incoming_sample (which is the value after it goes thru the function) to 
     -- the return value of the unsinged function with Q as the input 
-    ch1.incoming_sample <= make_unsigned(ch1.current_sample);
-    ch2.incoming_sample <= make_unsigned(ch2.current_sample);
+    ch1.current_sample <= make_unsigned(ch1.incoming_sample);
+    ch2.current_sample <= make_unsigned(ch2.incoming_sample);
     
     -- Send the unsigned current sample to the BRAM
     -- Add code here 
     ch1.to_bram <= exLbus              when (exSel = '1') else 
-                   ch1.incoming_sample when (exSel = '0');
+                   ch1.current_sample when (exSel = '0');
 	
 	ch2.to_bram <= exRbus              when (exSel = '1') else 
-	               ch2.incoming_sample when (exSel = '0');
+	               ch2.current_sample when (exSel = '0');
     -- Need logic for the FLAG register
+    process (clk)
+	begin
+	   if (rising_edge(clk)) then
+            if(flagClear = '1') then 
+                flagQ <= '0';
+
+            elsif(sw_ready = '1') then 
+                flagQ <= '1';
+    
+            end if;
+       end if; 
+	end process;
+    
+    
+    
 	-- Add code here
 	process (clk)
 	begin
@@ -156,23 +172,43 @@ begin
 	--    should this be debounced?
 	--  Use a debounced numeric stepper
 	------------------------------------------------------------------------------
---    trvolt_component : debouncer
---    port map (
---        clk    => clk,
---        reset  => reset_n,
---        button => ,
---        action => 
---        );
-        
---    trtime_component : debouncer
---    port map (
---        clk    => clk,
---        reset  => reset_n,
---        button => ,
---        action =>
---    );
+
     -- Add 2 numeric steppers
-	
+    numeric_stepper_v : numeric_stepper
+        generic map(
+            num_bits  => 11,
+            max_value => 420,
+            min_value => 20,
+            delta     => 10
+        )
+        port map(
+            clk     => clk,
+            reset_n => reset_n,
+            en      => reset_n,
+            up      => btn(DOWN),
+            down    => btn(UP),
+            q       => num_stepper_v
+        );
+        
+    numeric_stepper_t : numeric_stepper
+        generic map(
+            num_bits  => 11,
+            max_value => 620,
+            min_value => 20,
+            delta     => 10
+        )
+        port map(
+            clk     => clk,
+            reset_n => reset_n,
+            en      => reset_n,
+            up      => btn(RIGHT),
+            down    => btn(LEFT),
+            q       => num_stepper_t
+        );
+        
+        trigger.t <= unsigned(num_stepper_t);
+        trigger.v <= unsigned(num_stepper_v);
+
 	-------------------------------------------------------------------------------
 	-- Address counter for RAM
 	-- What range of addresses does it need to span?  Should it start at zero or something else?
@@ -187,7 +223,7 @@ begin
 	   max_value   => 1023 ) -- change to scale 
     port map (
         clk         => clk,
-        reset_n     => reset_n,
+        reset_n     => cw_counter_control(1), -- active low reset 
         ctrl        => cw_counter_control(0),
         roll        => sw_last_address,
         Q           => writeCntr
@@ -201,15 +237,15 @@ begin
 	-- the trigger.  Set the status word to alert the FSM that it should start 
 	-- recording the samples.
 	-------------------------------------------------------------------------------		
---	trig_detect : trigger_detector
---    port map (
---        clk  => clk,
---        reset_n => reset_n,
---        threshold => ,
---        ready => sw_ready,
---        monitored_signal => ,
---        crossed_trigger => sw_trigger
---    );
+	trig_detect : trigger_detector
+    port map (
+        clk  => clk,
+        reset_n => reset_n,
+        threshold => trigger.v,
+        ready => sw_ready,
+        monitored_signal => unsigned(ch1.current_sample(15 downto 7)),
+        crossed_trigger => sw_trigger
+    );
 	
 	-------------------------------------------------------------------------------
 	-- Instantiate the video driver from Lab1 - should integrate smoothly
@@ -252,8 +288,15 @@ Audio_Codec : Audio_Codec_Wrapper
 
     -- BRAM stuff goes here
 
-    write_address <= unsigned(exWrAddr) when (exSel = '1') else 
-                     writeCntr          when (exSel = '0');
+    -- offset for columns 
+
+    --MUX for the write enable on the BRAM
+    mux_to_wrenb <= exWen        when (exSel = '1') else
+                    cw_write_en  when (exSel = '0');
+
+    -- MUX for the write address on the BRAM
+    write_address <= unsigned(exWrAddr)  when (exSel = '1') else 
+                     (writeCntr + 20)    when (exSel = '0'); 
 
 	reset <= not reset_n; -- making the active high bram reset from the active low input reset
 	
@@ -344,7 +387,7 @@ Audio_Codec : Audio_Codec_Wrapper
             WE      => "11",                     -- Input write enable, width defined by write port depth
             WRADDR  => std_logic_vector(write_address),                -- Input write address, width defined by write port depth
             WRCLK   => clk,                   -- 1-bit input write clock
-            WREN    => '1' );              -- 1-bit input write port enable
+            WREN    => mux_to_wrenb );              -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
 
@@ -436,7 +479,7 @@ Audio_Codec : Audio_Codec_Wrapper
             WE          => "11",  -- Input write enable, width defined by write port depth
             WRADDR      => std_logic_vector(write_address),  -- Input write address, width defined by write port depth
             WRCLK       => clk,                    -- 1-bit input write clock
-            WREN        => '1' );                -- 1-bit input write port enable
+            WREN        => mux_to_wrenb );                -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
     sw(0) <= sw_ready;

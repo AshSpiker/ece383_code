@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Feb 11 18:16:50 2026
-# Process ID         : 3752
+# Start of session at: Thu Feb 19 07:22:35 2026
+# Process ID         : 13564
 # Current directory  : C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/clk_wiz_1_synth_1
 # Command line       : vivado.exe -log clk_wiz_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_1.tcl
 # Log file           : C:/Users/C28Asher.Speicher/Documents/ece383_code/lab2/lab2.runs/clk_wiz_1_synth_1/clk_wiz_1.vds
@@ -19,6 +19,6 @@
 # Host memory        : 33585 MB
 # Swap memory        : 6710 MB
 # Total Virtual      : 40296 MB
-# Available Virtual  : 13255 MB
+# Available Virtual  : 22449 MB
 #-----------------------------------------------------------
 source clk_wiz_1.tcl -notrace

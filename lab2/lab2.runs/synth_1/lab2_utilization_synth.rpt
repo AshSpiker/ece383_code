@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Feb 17 18:47:04 2026
+| Date         : Mon Feb 23 09:10:19 2026
 | Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file lab2_utilization_synth.rpt -pb lab2_utilization_synth.pb
 | Design       : lab2
@@ -31,13 +31,13 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |  816 |     0 |          0 |    134600 |  0.61 |
-|   LUT as Logic          |  816 |     0 |          0 |    134600 |  0.61 |
+| Slice LUTs*             | 1067 |     0 |          0 |    134600 |  0.79 |
+|   LUT as Logic          | 1067 |     0 |          0 |    134600 |  0.79 |
 |   LUT as Memory         |    0 |     0 |          0 |     46200 |  0.00 |
-| Slice Registers         |  621 |     0 |          0 |    269200 |  0.23 |
-|   Register as Flip Flop |  617 |     0 |          0 |    269200 |  0.23 |
-|   Register as Latch     |    4 |     0 |          0 |    269200 | <0.01 |
-| F7 Muxes                |    1 |     0 |          0 |     67300 | <0.01 |
+| Slice Registers         |  778 |     0 |          0 |    269200 |  0.29 |
+|   Register as Flip Flop |  766 |     0 |          0 |    269200 |  0.28 |
+|   Register as Latch     |   12 |     0 |          0 |    269200 | <0.01 |
+| F7 Muxes                |    0 |     0 |          0 |     67300 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     33650 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -57,10 +57,10 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 0     |          Yes |           - |          Set |
+| 8     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 34    |          Yes |         Set |            - |
-| 583   |          Yes |       Reset |            - |
+| 38    |          Yes |         Set |            - |
+| 728   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -94,7 +94,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   31 |     0 |          0 |       285 | 10.88 |
+| Bonded IOB                  |   35 |     0 |          0 |       285 | 12.28 |
 | Bonded IPADs                |    0 |     0 |          0 |        14 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         8 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |        10 |  0.00 |
@@ -154,24 +154,24 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  583 |        Flop & Latch |
-| LUT6     |  299 |                 LUT |
-| LUT2     |  195 |                 LUT |
-| LUT3     |  163 |                 LUT |
-| LUT5     |  136 |                 LUT |
-| LUT4     |  132 |                 LUT |
-| CARRY4   |   79 |          CarryLogic |
-| LUT1     |   64 |                 LUT |
-| FDSE     |   34 |        Flop & Latch |
-| IBUF     |   13 |                  IO |
+| FDRE     |  728 |        Flop & Latch |
+| LUT6     |  400 |                 LUT |
+| LUT3     |  301 |                 LUT |
+| LUT5     |  214 |                 LUT |
+| LUT4     |  188 |                 LUT |
+| LUT2     |  178 |                 LUT |
+| CARRY4   |  131 |          CarryLogic |
+| LUT1     |   92 |                 LUT |
+| FDSE     |   38 |        Flop & Latch |
+| IBUF     |   17 |                  IO |
 | OBUF     |   10 |                  IO |
 | OBUFDS   |    8 |                  IO |
+| LDPE     |    8 |        Flop & Latch |
 | RAMB18E1 |    5 |        Block Memory |
 | ODDR     |    4 |                  IO |
 | LDCE     |    4 |        Flop & Latch |
 | INV      |    4 |                 LUT |
 | OBUFT    |    2 |                  IO |
-| MUXF7    |    1 |               MuxFx |
 +----------+------+---------------------+
 
 

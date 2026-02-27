@@ -69,13 +69,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="1"/>
+    <Option Name="WTModelSimExportSim" Val="1"/>
+    <Option Name="WTQuestaExportSim" Val="1"/>
     <Option Name="WTIesExportSim" Val="0"/>
     <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTRivieraExportSim" Val="1"/>
+    <Option Name="WTActivehdlExportSim" Val="1"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -143,6 +143,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Homework_7/button_debounce.vhdl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../hw7/HW7.srcs/sources_1/imports/Homework_7/button_debounce.vhdl"/>
+          <Attr Name="ImportTime" Val="1770215977"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - afacademy.af.edu/Desktop/lab2_code_for_cadets_2026/ece383_pkg.vhd"/>
@@ -195,6 +203,14 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - afacademy.af.edu/Desktop/lab2_code_for_cadets_2026/lab2_datapath.vhdl"/>
           <Attr Name="ImportTime" Val="1770734173"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Homework_7/lec10.vhdl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../hw7/HW7.srcs/sources_1/imports/Homework_7/lec10.vhdl"/>
+          <Attr Name="ImportTime" Val="1770089001"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -255,6 +271,22 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd">
+        <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab1/Lab01.srcs/sources_1/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd"/>
+          <Attr Name="ImportTime" Val="1769728518"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd">
+        <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - afacademy.af.edu/Desktop/lab2_code_for_cadets_2026/trigger_detector.vhd"/>
+          <Attr Name="ImportTime" Val="1770734173"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="ImportPath" Val="$PPRDIR/../lab1/Lab01.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd"/>
@@ -266,33 +298,6 @@
       <File Path="$PSRCDIR/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - afacademy.af.edu/Desktop/lab2_code_for_cadets_2026/lab2.vhd"/>
-          <Attr Name="ImportTime" Val="1770734173"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Homework_7/button_debounce.vhdl">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../hw7/HW7.srcs/sources_1/imports/Homework_7/button_debounce.vhdl"/>
-          <Attr Name="ImportTime" Val="1770215977"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Homework_7/lec10.vhdl">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../hw7/HW7.srcs/sources_1/imports/Homework_7/lec10.vhdl"/>
-          <Attr Name="ImportTime" Val="1770089001"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd">
-        <FileInfo SFType="VHDL2008">
-          <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - afacademy.af.edu/Desktop/lab2_code_for_cadets_2026/trigger_detector.vhd"/>
           <Attr Name="ImportTime" Val="1770734173"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

@@ -28,7 +28,7 @@ end lab2_fsm;
 
 architecture Behavioral of lab2_fsm is
 
-	type state_type is (write, hold);
+	type state_type is (write, hold, init);
 	signal state: state_type;
 
 begin
@@ -51,16 +51,20 @@ begin
 	begin
 		if (rising_edge(clk)) then
 			if (reset_n = '0') then 
-				state <= hold;
+				state <= init; -- change back to init
 			else 
 				case state is 
+					when init => --wait for trigger state
+					   state <=  hold when (sw(2) = '1') else
+					             init;
 					
-					when hold =>
-					   state <= write when (sw(0) = '1') else 
-					            hold;
+					when hold => --wait for ready state 
+					   state <=  write when (sw(0) = '1') else 
+					             hold;
 					
-					when write =>
-					   state <= hold;
+					when write => --actually write, go back to init when sw(1) = 1, which means we went over the last address
+					   state <=  init when (sw(1) = '1') else
+					             hold;
 					   
 					   
 				end case;
@@ -71,8 +75,12 @@ begin
 	-------------------------------------------------------------------------------
 	--  CW output table
 	--		CW		meaning
+	-- cw (2)  controls write enable to the BRAM (through a mux of ext or int)
+	-- cw(1) is active low reset to my address counter 
+	-- cw (0) controlling whehter my address counter counts or not 
 	cw <= "111" when (state = write) else 
-	      "110";		
+	      "100" when (state = init)  else 
+	      "110";	-- hold state	
 	-------------------------------------------------------------------------------
 	
 	-- NEED_SOMETHING_HERE

@@ -176,8 +176,8 @@ begin
     ready <= ready_sig;
     L_bus_out_sig <= L_bus_in(17 downto 0) & "000000";  -- Add six bits of zero
     R_bus_out_sig <= R_bus_in(17 downto 0) & "000000";  -- Add six bits of zero
-    L_bus_out <= L_bus_in_sig(23 downto 6);  -- remove lower six bits 
-    R_bus_out <= R_bus_in_sig(23 downto 6);  -- remove lower six bits 
+--    L_bus_out <= L_bus_in_sig(23 downto 6);  -- remove lower six bits 
+--    R_bus_out <= R_bus_in_sig(23 downto 6);  -- remove lower six bits 
    
     -- add MUX, select simulated audio or live audio
     L_bus_out <= s_readL when sim_live = '0' else L_bus_in_sig(23 downto 6);

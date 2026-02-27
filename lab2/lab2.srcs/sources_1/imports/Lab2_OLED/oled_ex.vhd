@@ -200,7 +200,7 @@ begin
                                 temp_char <= x"20";
                             end if;
                         elsif temp_index = 5 then
-                            if switch(3) = '1' then
+                            if switch(3) = '0' then
                                 temp_char <= x"2A";
                             else
                                 temp_char <= x"20";
@@ -222,7 +222,7 @@ begin
                                 temp_char <= x"20";
                             end if;
                         elsif temp_index = 5 then
-                            if switch(3) = '0' then
+                            if switch(3) = '1' then
                                 temp_char <= x"2A";
                             else
                                 temp_char <= x"20";

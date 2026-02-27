@@ -1,0 +1,144 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Feb 23 09:11:40 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab2_control_sets_placed.rpt
+| Design       : lab2
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    66 |
+|    Minimum number of control sets                        |    66 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   274 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    66 |
+| >= 0 to < 4        |    10 |
+| >= 4 to < 6        |    18 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     6 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    19 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             130 |           56 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             159 |           54 |
+| Yes          | No                    | No                     |             164 |           52 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             329 |          104 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+--------------+
+|                                  Clock Signal                                 |                                    Enable Signal                                    |                             Set/Reset Signal                            | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+--------------+
+|  datapath/video_inst/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/G0  |                                                                                     |                                                                         |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                                                | oled/Initialize/temp_vbat2_out                                                      |                                                                         |                1 |              1 |         1.00 |
+|  datapath/video_inst/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/G0 |                                                                                     |                                                                         |                1 |              1 |         1.00 |
+|  datapath/video_inst/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/G0 |                                                                                     |                                                                         |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                                                | oled/Initialize/temp_vdd1_out                                                       |                                                                         |                1 |              1 |         1.00 |
+|  datapath/video_inst/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/G0  |                                                                                     |                                                                         |                1 |              1 |         1.00 |
+|  datapath/numeric_stepper_v/debouncer_down/cw_reg[1]_i_2_n_0                  |                                                                                     | datapath/numeric_stepper_v/debouncer_down/cw__0                         |                1 |              2 |         2.00 |
+|  datapath/numeric_stepper_v/debouncer_up/cw_reg[1]_i_2__0_n_0                 |                                                                                     | datapath/numeric_stepper_v/debouncer_up/cw__0                           |                1 |              2 |         2.00 |
+|  datapath/numeric_stepper_t/debouncer_down/cw_reg[1]_i_2__1_n_0               |                                                                                     | datapath/numeric_stepper_t/debouncer_down/cw__0                         |                1 |              2 |         2.00 |
+|  datapath/numeric_stepper_t/debouncer_up/cw_reg[1]_i_2__2_n_0                 |                                                                                     | datapath/numeric_stepper_t/debouncer_up/cw__0                           |                1 |              2 |         2.00 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   | datapath/Audio_Codec/initialize_audio/twi_controller/FSM_gray_state[3]_i_1_n_0      |                                                                         |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                                                                | oled/Example/temp_page[1]_i_1_n_0                                                   |                                                                         |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                                                | datapath/Audio_Codec/ch1[to_ac]                                                     | datapath/Audio_Codec/ready_sig_reg_0                                    |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                                                                | oled/Example/temp_sdata[5]_i_1_n_0                                                  |                                                                         |                3 |              4 |         1.33 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   | datapath/Audio_Codec/initialize_audio/twi_controller/state_reg[0][0]                | datapath/Audio_Codec/audio_inout/SR[0]                                  |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG                                                                | oled/Example/temp_sdata[5]_i_1_n_0                                                  | oled/Example/temp_sdata[7]_i_1_n_0                                      |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                                                | oled/Example/E[0]                                                                   | datapath/Audio_Codec/audio_inout/SR[0]                                  |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                                                | oled/Example/spi_comp/E[0]                                                          | datapath/Audio_Codec/audio_inout/SR[0]                                  |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                                                | oled/Example/spi_comp/temp_sdata                                                    | oled/Example/spi_comp/FSM_onehot_current_state_reg_n_0_[0]              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                                                | oled/Example/g0_b0__3_n_0                                                           |                                                                         |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                                                                | oled/Initialize/delay_comp/E[0]                                                     | datapath/Audio_Codec/audio_inout/SR[0]                                  |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                                                | oled/Initialize/spi_comp/temp_sdata                                                 | oled/Initialize/spi_comp/FSM_onehot_current_state_reg_n_0_[0]           |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                                                                | oled/Initialize/after_state_0                                                       |                                                                         |                2 |              5 |         2.50 |
+|  datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2               |                                                                                     | datapath/video_inst/inst_dvid/shift_red[7]_i_1_n_0                      |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                                                                | datapath/Audio_Codec/audio_inout/BCLK_Fall_int                                      | datapath/Audio_Codec/audio_inout/SR[0]                                  |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                                                                |                                                                                     | oled/Example/spi_comp/counter                                           |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                                                                |                                                                                     | oled/Initialize/spi_comp/counter                                        |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                                                                |                                                                                     | datapath/Audio_Codec/audio_inout/Cnt_Bclk[4]_i_1_n_0                    |                1 |              5 |         5.00 |
+|  datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2               |                                                                                     | datapath/video_inst/inst_dvid/shift_red[9]_i_1_n_0                      |                4 |              6 |         1.50 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   |                                                                                     | datapath/Audio_Codec/initialize_audio/twi_controller/busFreeCnt0_1      |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG                                                                | oled/Example/spi_comp/shift_register                                                |                                                                         |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG                                                                | oled/Initialize/spi_comp/shift_register                                             |                                                                         |                1 |              7 |         7.00 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   | datapath/Audio_Codec/initialize_audio/twi_controller/E[0]                           | datapath/Audio_Codec/audio_inout/SR[0]                                  |                3 |              7 |         2.33 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   | datapath/Audio_Codec/initialize_audio/twi_controller/sclCnt[6]_i_2_n_0              | datapath/Audio_Codec/initialize_audio/twi_controller/sclCnt0_0          |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG                                                                | datapath/numeric_stepper_v/debouncer_down/FSM_sequential_state_reg[1]_0             |                                                                         |                2 |              8 |         4.00 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   | datapath/Audio_Codec/initialize_audio/twi_controller/dataByte[7]_i_1_n_0            |                                                                         |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                                                                | oled/Initialize/temp_sdata                                                          |                                                                         |                1 |              8 |         8.00 |
+|  datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1               |                                                                                     | datapath/Audio_Codec/audio_inout/SR[0]                                  |                3 |             10 |         3.33 |
+|  datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1               | datapath/video_inst/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/E[0] | datapath/Audio_Codec/audio_inout/SR[0]                                  |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                                                | control/E[0]                                                                        | control/SR[0]                                                           |                2 |             10 |         5.00 |
+|  clk_IBUF_BUFG                                                                | oled/Example/g0_b0__4_n_0                                                           |                                                                         |                2 |             10 |         5.00 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   | reset_n_IBUF                                                                        |                                                                         |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG                                                                | datapath/numeric_stepper_t/debouncer_down/FSM_sequential_state_reg[1]_0             | datapath/Audio_Codec/audio_inout/SR[0]                                  |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG                                                                | oled/Initialize/delay_comp/ms_counter[0]_i_2_n_0                                    | oled/Initialize/delay_comp/ms_counter                                   |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG                                                                | oled/Example/delay_comp/ms_counter[0]_i_2__0_n_0                                    | oled/Example/delay_comp/ms_counter                                      |                3 |             12 |         4.00 |
+|  datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1               |                                                                                     | datapath/video_inst/Inst_vga/vga_signal_generator_inst/vga_reg[blank]_0 |                6 |             13 |         2.17 |
+|  clk_IBUF_BUFG                                                                | oled/Example/temp_char                                                              |                                                                         |                6 |             13 |         2.17 |
+|  clk_IBUF_BUFG                                                                |                                                                                     | oled/Initialize/delay_comp/clk_counter[0]_i_1_n_0                       |                5 |             17 |         3.40 |
+|  clk_IBUF_BUFG                                                                |                                                                                     | oled/Example/delay_comp/clk_counter[0]_i_1__0_n_0                       |                5 |             17 |         3.40 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   |                                                                                     |                                                                         |               10 |             18 |         1.80 |
+|  clk_IBUF_BUFG                                                                | datapath/Audio_Codec/audio_inout/D_L_O_int_0                                        | datapath/Audio_Codec/audio_inout/SR[0]                                  |                6 |             18 |         3.00 |
+|  clk_IBUF_BUFG                                                                | datapath/Audio_Codec/audio_inout/D_R_O_int[23]_i_1_n_0                              | datapath/Audio_Codec/audio_inout/SR[0]                                  |                9 |             18 |         2.00 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   | datapath/Audio_Codec/initialize_audio/initWord[30]_i_1_n_0                          |                                                                         |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG                                                                | datapath/Audio_Codec/audio_inout/Data_Out_int[31]_i_1_n_0                           |                                                                         |                7 |             19 |         2.71 |
+|  clk_IBUF_BUFG                                                                | datapath/numeric_stepper_v/debouncer_up/delay_counter/processQ[24]_i_1_n_0          | datapath/Audio_Codec/audio_inout/SR[0]                                  |                6 |             25 |         4.17 |
+|  clk_IBUF_BUFG                                                                | datapath/numeric_stepper_t/debouncer_down/delay_counter/processQ[24]_i_1__2_n_0     | datapath/Audio_Codec/audio_inout/SR[0]                                  |                5 |             25 |         5.00 |
+|  clk_IBUF_BUFG                                                                | datapath/numeric_stepper_v/debouncer_down/delay_counter/processQ[24]_i_1__0_n_0     | datapath/Audio_Codec/audio_inout/SR[0]                                  |                6 |             25 |         4.17 |
+|  clk_IBUF_BUFG                                                                | datapath/numeric_stepper_t/debouncer_up/delay_counter/processQ[24]_i_1__1_n_0       | datapath/Audio_Codec/audio_inout/SR[0]                                  |                5 |             25 |         5.00 |
+|  clk_IBUF_BUFG                                                                |                                                                                     |                                                                         |               16 |             28 |         1.75 |
+|  datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2               |                                                                                     |                                                                         |                6 |             29 |         4.83 |
+|  clk_IBUF_BUFG                                                                |                                                                                     | datapath/Audio_Codec/audio_inout/SR[0]                                  |               12 |             29 |         2.42 |
+|  clk_IBUF_BUFG                                                                | datapath/Audio_Codec/ch1[to_ac]                                                     |                                                                         |                9 |             32 |         3.56 |
+|  datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2                   |                                                                                     | datapath/Audio_Codec/initialize_audio/delaycnt0                         |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG                                                                | datapath/Audio_Codec/audio_inout/p_17_in                                            | datapath/Audio_Codec/audio_inout/Data_In_int[31]_i_1_n_0                |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG                                                                | datapath/Audio_Codec/E[0]                                                           | datapath/Audio_Codec/audio_inout/SR[0]                                  |               23 |             51 |         2.22 |
+|  datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1               |                                                                                     |                                                                         |               20 |             51 |         2.55 |
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+--------------+
+
+
