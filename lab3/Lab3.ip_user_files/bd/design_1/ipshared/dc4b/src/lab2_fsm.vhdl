@@ -1,0 +1,89 @@
+----------------------------------------------------------------------------------
+-- Name:	Template by George York (modified from Jeff Falkinburg)
+-- Date:	Spring 2023
+-- File:    lab2_fsm.vhd
+-- HW:	    Lab 2 
+-- Pupr:	Lab 2 Finite State Machine for the write circuitry.  
+--
+-- Doc:	Adapted from Dr Coulston's Lab exercise
+-- 	
+-- Academic Integrity Statement: I certify that, while others may have 
+-- assisted me in brain storming, debugging and validating this program, 
+-- the program itself is my own work. I understand that submitting code 
+-- which is the work of other individuals is a violation of the honor   
+-- code.  I also understand that if I knowingly give my original work to 
+-- another individual is also a violation of the honor code. 
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+
+entity lab2_fsm is
+    Port ( clk : in  STD_LOGIC;
+           reset_n : in  STD_LOGIC;
+           sw : in  STD_LOGIC_VECTOR (2 downto 0);
+           cw : out  STD_LOGIC_VECTOR (2 downto 0));
+end lab2_fsm;
+
+architecture Behavioral of lab2_fsm is
+
+	type state_type is (write, hold, init);
+	signal state: state_type;
+
+begin
+
+--    delay_counter: lec10 
+--    Generic map(25)
+--	PORT MAP (
+--          clk => clk,
+--          reset => reset,
+--		  crtl => cw,
+--          D => D,
+--          Q => Q
+--        );	
+
+	-------------------------------------------------------------------------------
+	--		SW		meaning
+	--		
+	-------------------------------------------------------------------------------
+	state_proces: process(clk)  
+	begin
+		if (rising_edge(clk)) then
+			if (reset_n = '0') then 
+				state <= init; -- change back to init
+			else 
+				case state is 
+					when init => --wait for trigger state
+					   state <=  hold when (sw(2) = '1') else
+					             init;
+					
+					when hold => --wait for ready state 
+					   state <=  write when (sw(0) = '1') else 
+					             hold;
+					
+					when write => --actually write, go back to init when sw(1) = 1, which means we went over the last address
+					   state <=  init when (sw(1) = '1') else
+					             hold;
+					   
+					   
+				end case;
+			end if;
+		end if;
+	end process;
+
+	-------------------------------------------------------------------------------
+	--  CW output table
+	--		CW		meaning
+	-- cw (2)  controls write enable to the BRAM (through a mux of ext or int)
+	-- cw(1) is active low reset to my address counter 
+	-- cw (0) controlling whehter my address counter counts or not 
+	cw <= "111" when (state = write) else 
+	      "100" when (state = init)  else 
+	      "110";	-- hold state	
+	-------------------------------------------------------------------------------
+	
+	-- NEED_SOMETHING_HERE
+
+end Behavioral;
+

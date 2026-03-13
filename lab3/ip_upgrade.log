@@ -1,0 +1,379 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 10:06:27 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_3 (xilinx.com:user:My_Lab3:1.0) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 09:58:41 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_3 (xilinx.com:user:My_Lab3:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 09:48:05 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_3 (xilinx.com:user:My_Lab3:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 09:35:28 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_3'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Lab3_0_3 (xilinx.com:user:My_Lab3:1.0) from (Rev. 19) to (Rev. 20)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Lab3_0_3'. These changes may impact your design.
+
+
+-Upgraded port 'btn' width 5 differs from original width 4
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 09:29:27 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_3 (xilinx.com:user:My_Lab3:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 09:22:38 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_3 (xilinx.com:user:My_Lab3:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 09:18:52 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_3 (xilinx.com:user:My_Lab3:1.0) from (Rev. 16) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 09:01:36 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_3'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Lab3_0_3 (xilinx.com:user:My_Lab3:1.0) from (Rev. 15) to (Rev. 16)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Lab3_0_3'. These changes may impact your design.
+
+
+-Upgrade has removed port 'LED'
+
+-Upgrade has removed port 'oled_dc'
+
+-Upgrade has removed port 'oled_res'
+
+-Upgrade has removed port 'oled_sclk'
+
+-Upgrade has removed port 'oled_sdin'
+
+-Upgrade has removed port 'oled_vbat'
+
+-Upgrade has removed port 'oled_vdd'
+
+-Upgrade has added port 'flagQ'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 08:49:14 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_2 (xilinx.com:user:My_Lab3:1.0) from (Rev. 13) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 08:07:21 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_0 (xilinx.com:user:My_Lab3:1.0) from (Rev. 11) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Fri Mar 13 07:58:24 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_0 (xilinx.com:user:My_Lab3:1.0) from (Rev. 9) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Mar 11 07:34:16 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab3_0_0 (xilinx.com:user:My_Lab3:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Mar 11 07:28:49 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Lab3_0_0 (xilinx.com:user:My_Lab3:1.0) from (Rev. 4) to (Rev. 8)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Lab3_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'ac_adc_sdata'
+
+-Upgrade has added port 'ac_bclk'
+
+-Upgrade has added port 'ac_dac_sdata'
+
+-Upgrade has added port 'ac_lrclk'
+
+-Upgrade has added port 'ac_mclk'
+
+-Upgrade has added port 'btn'
+
+-Upgrade has added port 'oled_dc'
+
+-Upgrade has added port 'oled_res'
+
+-Upgrade has added port 'oled_sclk'
+
+-Upgrade has added port 'oled_sdin'
+
+-Upgrade has added port 'oled_vbat'
+
+-Upgrade has added port 'oled_vdd'
+
+-Upgrade has added port 'scl'
+
+-Upgrade has added port 'sda'
+
+-Upgrade has added port 'switch'
+
+-Upgrade has added port 'tmds'
+
+-Upgrade has added port 'tmdsb'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Mar 11 07:14:57 2026
+| Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab3_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Lab3_0_0 (xilinx.com:user:My_Lab3:1.0) from (Rev. 1) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Lab3_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'LED'
+
+
