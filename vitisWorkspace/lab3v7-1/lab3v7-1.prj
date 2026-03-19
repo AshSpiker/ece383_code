@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="lab3v7-1" location="C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7-1" platform="C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/lab3v7.xpfm" platformUID="xilinx:nexys_video::0.0(custom)" systemProject="lab3v7-1_system" sysConfig="lab3v7" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="fa6f53867aff4bc4a3daf6c1b7168dbc">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.453643989" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1876378884" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

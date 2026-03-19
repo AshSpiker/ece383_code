@@ -186,7 +186,7 @@ verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.2/data/xilinx_vip/includ
 "../../../bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_0/clk_wiz_0.v" \
 "../../../bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_1/clk_wiz_1_clk_wiz.v" \
 "../../../bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_1/clk_wiz_1.v" \
-"../../../bd/design_1/ipshared/dc4b/src/audio_init.v" \
+"../../../bd/design_1/ipshared/4959/src/audio_init.v" \
 
 verilog xil_defaultlib "glbl.v"
 

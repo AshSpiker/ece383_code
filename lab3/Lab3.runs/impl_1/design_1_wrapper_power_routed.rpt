@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Fri Mar 13 10:22:11 2026
+| Date             : Thu Mar 19 10:34:23 2026
 | Host             : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -52,18 +52,18 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.037 |       16 |       --- |             --- |
-| Slice Logic              |     0.040 |    30369 |       --- |             --- |
-|   LUT as Logic           |     0.035 |    10517 |    133800 |            7.86 |
+| Clocks                   |     0.036 |       16 |       --- |             --- |
+| Slice Logic              |     0.041 |    30409 |       --- |             --- |
+|   LUT as Logic           |     0.035 |    10536 |    133800 |            7.87 |
 |   LUT as Distributed RAM |     0.003 |      924 |     46200 |            2.00 |
-|   Register               |     0.002 |    12449 |    267600 |            4.65 |
+|   Register               |     0.002 |    12462 |    267600 |            4.66 |
 |   CARRY4                 |    <0.001 |      335 |     33450 |            1.00 |
 |   LUT as Shift Register  |    <0.001 |      458 |     46200 |            0.99 |
 |   F7/F8 Muxes            |    <0.001 |      300 |    133800 |            0.22 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |    <0.001 |     1431 |       --- |             --- |
+|   Others                 |    <0.001 |     1437 |       --- |             --- |
 |   BUFR                   |     0.000 |        1 |       160 |            0.63 |
-| Signals                  |     0.048 |    21952 |       --- |             --- |
+| Signals                  |     0.049 |    21986 |       --- |             --- |
 | Block RAM                |     0.035 |       20 |       365 |            5.48 |
 | MMCM                     |     0.392 |        4 |        10 |           40.00 |
 | PLL                      |     0.086 |        1 |        10 |           10.00 |
@@ -81,7 +81,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.206 |       0.170 |      0.035 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.206 |       0.171 |      0.035 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.341 |       0.310 |      0.031 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.046 |       0.041 |      0.005 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -163,7 +163,7 @@ Table of Contents
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
 | design_1_wrapper                     |     1.051 |
-|   design_1_i                         |     1.048 |
+|   design_1_i                         |     1.049 |
 |     My_Lab3_0                        |     0.377 |
 |       U0                             |     0.377 |
 |     axi_smc                          |     0.003 |
@@ -172,12 +172,12 @@ Table of Contents
 |       inst                           |     0.033 |
 |     clk_wiz_1                        |     0.108 |
 |       inst                           |     0.108 |
-|     microblaze_0                     |     0.047 |
-|       U0                             |     0.047 |
-|     microblaze_0_local_memory        |     0.002 |
+|     microblaze_0                     |     0.048 |
+|       U0                             |     0.048 |
+|     microblaze_0_local_memory        |     0.003 |
 |       lmb_bram                       |     0.002 |
-|     mig_7series_0                    |     0.477 |
-|       u_design_1_mig_7series_0_0_mig |     0.477 |
+|     mig_7series_0                    |     0.476 |
+|       u_design_1_mig_7series_0_0_mig |     0.476 |
 +--------------------------------------+-----------+
 
 

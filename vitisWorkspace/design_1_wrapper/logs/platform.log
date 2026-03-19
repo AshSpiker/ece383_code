@@ -1,0 +1,770 @@
+TRACE::2026-03-19.08:32:57::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:57::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:57::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:57::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:32:57::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:57::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:32:57::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-03-19.08:32:58::SCWPlatform::Opened new HwDB with name design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/C28Asher.Speicher/Documents/ece383_code/ice2/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2026-03-19.08:32:58::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/C28Asher.Speicher/Documents/ece383_code/ice2/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper"
+		}]
+}
+TRACE::2026-03-19.08:32:58::SCWPlatform::Boot application domains not present, creating them
+TRACE::2026-03-19.08:32:58::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2026-03-19.08:32:58::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/C28Asher.Speicher/Documents/ece383_code/ice2/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper"
+		}]
+}
+TRACE::2026-03-19.08:32:58::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/C28Asher.Speicher/Documents/ece383_code/ice2/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper"
+		}]
+}
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:32:58::SCWDomain::checking for install qemu data   : 
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:32:58::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:32:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:32:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:32:58::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:32:58::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-03-19.08:32:58::SCWMssOS::No sw design opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:32:58::SCWMssOS::mss does not exists at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:32:58::SCWMssOS::Creating sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:32:58::SCWMssOS::Adding the swdes entry, created swdb C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:32:58::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:32:58::SCWMssOS::Writing mss at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:32:58::SCWMssOS::Completed writing the mss file at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-19.08:32:58::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2026-03-19.08:32:58::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2026-03-19.08:32:58::SCWMssOS::Completed writing the mss file at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-19.08:32:58::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2026-03-19.08:33:03::SCWMssOS::Saving the mss changes C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2026-03-19.08:33:03::SCWMssOS::Writing the mss file completed C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Commit changes completed.
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/C28Asher.Speicher/Documents/ece383_code/ice2/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-03-19.08:33:03::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2026-03-19.08:33:03::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-19.08:33:03::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2026-03-19.08:33:03::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2026-03-19.08:33:03::SCWSystem::Not a boot domain 
+LOG::2026-03-19.08:33:03::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-19.08:33:03::SCWDomain::Generating domain artifcats
+TRACE::2026-03-19.08:33:03::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-19.08:33:03::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Completed writing the mss file at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-19.08:33:03::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-19.08:33:03::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-19.08:33:03::SCWDomain::Skipping the build for domain :  standalone_microblaze_0
+TRACE::2026-03-19.08:33:03::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-03-19.08:33:03::SCWMssOS::Copying to export directory.
+TRACE::2026-03-19.08:33:03::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-03-19.08:33:03::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-03-19.08:33:03::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-03-19.08:33:03::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2026-03-19.08:33:03::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2026-03-19.08:33:03::SCWPlatform::Started preparing the platform 
+TRACE::2026-03-19.08:33:03::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2026-03-19.08:33:03::SCWSystem::dir created 
+TRACE::2026-03-19.08:33:03::SCWSystem::Writing the bif 
+TRACE::2026-03-19.08:33:03::SCWPlatform::Started writing the spfm file 
+TRACE::2026-03-19.08:33:03::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-03-19.08:33:03::SCWPlatform::Completed generating the platform
+TRACE::2026-03-19.08:33:03::SCWMssOS::Saving the mss changes C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-19.08:33:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-19.08:33:03::SCWMssOS::Commit changes completed.
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/C28Asher.Speicher/Documents/ece383_code/ice2/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-03-19.08:33:03::SCWPlatform::updated the xpfm file.
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Saving the mss changes C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-19.08:33:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-19.08:33:03::SCWMssOS::Commit changes completed.
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/C28Asher.Speicher/Documents/ece383_code/ice2/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Saving the mss changes C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-19.08:33:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-19.08:33:03::SCWMssOS::Commit changes completed.
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/C28Asher.Speicher/Documents/ece383_code/ice2/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-03-19.08:33:03::SCWPlatform::Started generating the artifacts platform design_1_wrapper
+TRACE::2026-03-19.08:33:03::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-19.08:33:03::SCWPlatform::Started generating the artifacts for system configuration design_1_wrapper
+LOG::2026-03-19.08:33:03::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-19.08:33:03::SCWDomain::Generating domain artifcats
+TRACE::2026-03-19.08:33:03::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-19.08:33:03::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Completed writing the mss file at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-19.08:33:03::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-19.08:33:03::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-19.08:33:03::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2026-03-19.08:33:03::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-03-19.08:33:03::SCWMssOS::Copying to export directory.
+TRACE::2026-03-19.08:33:03::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-03-19.08:33:03::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-03-19.08:33:03::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-03-19.08:33:03::SCWSystem::Completed Processing the sysconfig design_1_wrapper
+LOG::2026-03-19.08:33:03::SCWPlatform::Completed generating the artifacts for system configuration design_1_wrapper
+TRACE::2026-03-19.08:33:03::SCWPlatform::Started preparing the platform 
+TRACE::2026-03-19.08:33:03::SCWSystem::Writing the bif file for system config design_1_wrapper
+TRACE::2026-03-19.08:33:03::SCWSystem::dir created 
+TRACE::2026-03-19.08:33:03::SCWSystem::Writing the bif 
+TRACE::2026-03-19.08:33:03::SCWPlatform::Started writing the spfm file 
+TRACE::2026-03-19.08:33:03::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-03-19.08:33:03::SCWPlatform::Completed generating the platform
+TRACE::2026-03-19.08:33:03::SCWMssOS::Saving the mss changes C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-19.08:33:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-19.08:33:03::SCWMssOS::Commit changes completed.
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to open the hw design at C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA given C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA absoulate path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform::DSA directory C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Platform Path C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/hw/design_1_wrapper.xsa
+TRACE::2026-03-19.08:33:03::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-19.08:33:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2026-03-19.08:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-19.08:33:03::SCWMssOS::Checking the sw design at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-19.08:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-19.08:33:03::SCWWriter::formatted JSON is {
+	"platformName":	"design_1_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design_1_wrapper",
+	"platHandOff":	"C:/Users/C28Asher.Speicher/Documents/ece383_code/ice2/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design_1_wrapper",
+	"systems":	[{
+			"systemName":	"design_1_wrapper",
+			"systemDesc":	"design_1_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design_1_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"78d0412b485d8ad9f86b2c0627bf3467",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-03-19.08:33:03::SCWPlatform::updated the xpfm file.

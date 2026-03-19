@@ -1,0 +1,24 @@
+Nothing to build in platform 'lab3wrapper'
+
+09:25:56 **** Incremental Build of configuration Debug for project lab3test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3wrapper/export/lab3wrapper/sw/lab3wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:18: warning: variable 'array_R' set but not used [-Wunused-but-set-variable]
+   59 |         uint16_t array_R[1024];
+      |                  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: lab3test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3wrapper/export/lab3wrapper/sw/lab3wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3test.elf  |tee "lab3test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7292	     24	   3428	  10744	   29f8	lab3test.elf
+'Finished building: lab3test.elf.size'
+' '

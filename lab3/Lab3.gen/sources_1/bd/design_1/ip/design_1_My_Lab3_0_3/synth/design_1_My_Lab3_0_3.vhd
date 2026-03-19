@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:My_Lab3:1.0
--- IP Revision: 23
+-- IP Revision: 29
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -140,7 +140,7 @@ ARCHITECTURE design_1_My_Lab3_0_3_arch OF design_1_My_Lab3_0_3 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_My_Lab3_0_3_arch : ARCHITECTURE IS "design_1_My_Lab3_0_3,My_Lab3,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_My_Lab3_0_3_arch: ARCHITECTURE IS "design_1_My_Lab3_0_3,My_Lab3,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=My_Lab3,x_ipVersion=1.0,x_ipCoreRevision=23,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_My_Lab3_0_3_arch: ARCHITECTURE IS "design_1_My_Lab3_0_3,My_Lab3,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=My_Lab3,x_ipVersion=1.0,x_ipCoreRevision=29,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_MODE : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;

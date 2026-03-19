@@ -4,7 +4,7 @@
     "xci_name": "design_1_My_Lab3_0_3",
     "cell_name": "My_Lab3_0",
     "component_reference": "xilinx.com:user:My_Lab3:1.0",
-    "ip_revision": "23",
+    "ip_revision": "29",
     "gen_directory": "../../../../../../Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3",
     "parameters": {
       "component_parameters": {
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "23" } ],
+        "IPREVISION": [ { "value": "29" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
