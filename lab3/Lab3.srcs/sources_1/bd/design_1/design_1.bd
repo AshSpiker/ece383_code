@@ -848,7 +848,7 @@
       },
       "My_Lab3_0": {
         "vlnv": "xilinx.com:user:My_Lab3:1.0",
-        "ip_revision": "29",
+        "ip_revision": "31",
         "xci_name": "design_1_My_Lab3_0_3",
         "xci_path": "ip\\design_1_My_Lab3_0_3\\design_1_My_Lab3_0_3.xci",
         "inst_hier_path": "My_Lab3_0"

@@ -11,3 +11,35 @@ timestamp=[2026-03-19 09:08:35], mode=APP_CREATION, duration=0:00:06.746, durati
 timestamp=[2026-03-19 09:25:58], mode=BUILD, duration=0:00:01.445, duration_ms=1445, data={name=lab3test, configuration=Debug, clean_build=false}
 timestamp=[2026-03-19 09:58:40], mode=APP_CREATION, duration=0:00:09.233, duration_ms=9233, data={name=lab3v6, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v6\export\lab3v6\lab3v6.xpfm, application_type=application}
 timestamp=[2026-03-19 10:37:34], mode=APP_CREATION, duration=0:00:12.772, duration_ms=12772, data={name=lab3v7-1, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=lab3v7, application_type=application}
+timestamp=[2026-03-19 10:42:51], mode=PLATFORM_GENERATION, duration=0:00:09.429, duration_ms=9429, data={name=lab3v7}
+timestamp=[2026-03-19 10:43:11], mode=BUILD, duration=0:00:01.018, duration_ms=1018, data={name=lab3v7-1, configuration=Debug, clean_build=false}
+timestamp=[2026-03-19 10:43:26], mode=PLATFORM_GENERATION, duration=0:00:04.488, duration_ms=4488, data={name=lab3v7}
+timestamp=[2026-03-19 10:43:27], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=lab3v7-1, configuration=Debug, clean_build=false}
+timestamp=[2026-03-19 10:43:59], mode=PLATFORM_GENERATION, duration=0:00:04.475, duration_ms=4475, data={name=lab3v7}
+timestamp=[2026-03-19 10:44:11], mode=PLATFORM_GENERATION, duration=0:00:04.508, duration_ms=4508, data={name=lab3v7}
+timestamp=[2026-03-19 10:44:12], mode=BUILD, duration=0:00:00.648, duration_ms=648, data={name=lab3v7-1, configuration=Debug, clean_build=true}
+timestamp=[2026-03-19 10:44:12], mode=BUILD, duration=0:00:00.284, duration_ms=284, data={name=lab3v7-1_system, configuration=Debug, clean_build=true}
+timestamp=[2026-03-19 10:44:36], mode=PLATFORM_GENERATION, duration=0:00:04.154, duration_ms=4154, data={name=lab3v7}
+timestamp=[2026-03-19 10:44:37], mode=BUILD, duration=0:00:00.570, duration_ms=570, data={name=lab3v7-1, configuration=Debug, clean_build=false}
+timestamp=[2026-03-19 10:47:33], mode=PLATFORM_GENERATION, duration=0:00:04.488, duration_ms=4488, data={name=lab3v7}
+timestamp=[2026-03-19 10:47:34], mode=BUILD, duration=0:00:00.557, duration_ms=557, data={name=lab3v7-1, configuration=Debug, clean_build=false}
+timestamp=[2026-03-19 10:47:54], mode=PLATFORM_GENERATION, duration=0:00:04.412, duration_ms=4412, data={name=lab3v7}
+timestamp=[2026-03-19 10:47:55], mode=BUILD, duration=0:00:00.591, duration_ms=591, data={name=lab3v7-1, configuration=Debug, clean_build=false}
+timestamp=[2026-03-19 10:52:19], mode=PLATFORM_GENERATION, duration=0:00:04.412, duration_ms=4412, data={name=lab3v7}
+timestamp=[2026-03-19 10:52:19], mode=BUILD, duration=0:00:00.519, duration_ms=519, data={name=lab3v7-1, configuration=Debug, clean_build=false}
+timestamp=[2026-03-19 10:53:38], mode=PLATFORM_GENERATION, duration=0:00:04.020, duration_ms=4020, data={name=lab3v7}
+timestamp=[2026-03-19 10:53:47], mode=PLATFORM_GENERATION, duration=0:00:04.111, duration_ms=4111, data={name=lab3v7}
+timestamp=[2026-03-19 10:53:55], mode=PLATFORM_GENERATION, duration=0:00:04.035, duration_ms=4035, data={name=lab3v7}
+timestamp=[2026-03-19 10:53:56], mode=BUILD, duration=0:00:00.370, duration_ms=370, data={name=lab3v7-1, configuration=Debug, clean_build=true}
+timestamp=[2026-03-19 10:53:56], mode=BUILD, duration=0:00:00.306, duration_ms=306, data={name=lab3v7-1_system, configuration=Debug, clean_build=true}
+timestamp=[2026-03-19 10:54:18], mode=PLATFORM_GENERATION, duration=0:00:04.196, duration_ms=4196, data={name=lab3v7}
+timestamp=[2026-03-19 10:54:18], mode=BUILD, duration=0:00:00.481, duration_ms=481, data={name=lab3v7-1, configuration=Debug, clean_build=false}
+timestamp=[2026-03-19 10:56:24], mode=PLATFORM_GENERATION, duration=0:00:04.075, duration_ms=4075, data={name=lab3v7}
+timestamp=[2026-03-19 10:56:25], mode=BUILD, duration=0:00:00.360, duration_ms=360, data={name=lab3v7-1, configuration=Debug, clean_build=true}
+timestamp=[2026-03-19 10:56:32], mode=PLATFORM_GENERATION, duration=0:00:04.101, duration_ms=4101, data={name=lab3v7}
+timestamp=[2026-03-19 10:56:32], mode=BUILD, duration=0:00:00.473, duration_ms=473, data={name=lab3v7-1, configuration=Debug, clean_build=false}
+timestamp=[2026-03-19 10:58:03], mode=PLATFORM_GENERATION, duration=0:00:04.539, duration_ms=4539, data={name=lab3v7}
+timestamp=[2026-03-19 10:58:03], mode=BUILD, duration=0:00:00.396, duration_ms=396, data={name=lab3v7-1, configuration=Debug, clean_build=true}
+timestamp=[2026-03-19 10:58:10], mode=PLATFORM_GENERATION, duration=0:00:04.067, duration_ms=4067, data={name=lab3v7}
+timestamp=[2026-03-19 10:58:10], mode=BUILD, duration=0:00:00.336, duration_ms=336, data={name=lab3v7-1, configuration=Debug, clean_build=true}
+timestamp=[2026-03-19 10:58:11], mode=BUILD, duration=0:00:00.527, duration_ms=527, data={name=lab3v7-1, configuration=Debug, clean_build=false}

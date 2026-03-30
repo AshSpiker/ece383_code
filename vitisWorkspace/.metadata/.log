@@ -6623,3 +6623,313 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 
 !ENTRY org.eclipse.cdt.core 1 0 2026-03-19 10:37:42.871
 !MESSAGE Indexed 'lab3v7-1_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:41:09.441
+!MESSAGE XSCT Command: [catch {platform remove lab3wrapper}], Thread: Worker-30: Deleting platform 'lab3wrapper'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:41:09.486
+!MESSAGE XSCT command with result: [catch {platform remove lab3wrapper}], Result: [null, 0]. Thread: Worker-30: Deleting platform 'lab3wrapper'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:41:29.591
+!MESSAGE XSCT Command: [catch {platform remove design_1_wrapper}], Thread: Worker-29: Deleting platform 'design_1_wrapper'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:41:36.868
+!MESSAGE XSCT command with result: [catch {platform remove design_1_wrapper}], Result: null. Thread: Worker-29: Deleting platform 'design_1_wrapper'
+
+!ENTRY org.eclipse.tcf 4 0 2026-03-19 10:41:36.868
+!MESSAGE TCF channel terminated
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:42:56.411
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:10.177
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:10.177
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:10.692
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:10.692
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:10.702
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:43:10.702
+!MESSAGE Generating MD5 hash for file: C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v7\export\lab3v7\sw\lab3v7\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:10.702
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:10.702
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-32: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-03-19 10:43:11.753
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:26.788
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:26.794
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:26.795
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:26.797
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:43:26.797
+!MESSAGE Generating MD5 hash for file: C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v7\export\lab3v7\sw\lab3v7\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:26.797
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:43:26.805
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-03-19 10:43:27.423
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:44:12.867
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:19.159
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa microblaze_0 C_DEBUG_ENABLED], Thread: Worker-31: Launching SystemDebugger_lab3v7-1_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:19.164
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-31: Launching SystemDebugger_lab3v7-1_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:19.164
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa microblaze_0 C_DEBUG_PROFILE_SIZE], Thread: Worker-31: Launching SystemDebugger_lab3v7-1_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:19.168
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa microblaze_0 C_DEBUG_PROFILE_SIZE], Result: [null, 0]. Thread: Worker-31: Launching SystemDebugger_lab3v7-1_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:19.172
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa microblaze_0 C_FREQ], Thread: Worker-31: Launching SystemDebugger_lab3v7-1_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:19.173
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: Worker-31: Launching SystemDebugger_lab3v7-1_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:44:29.413
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:36.989
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:36.999
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:36.999
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:37.008
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:44:37.008
+!MESSAGE Generating MD5 hash for file: C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v7\export\lab3v7\sw\lab3v7\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:37.008
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:44:37.008
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-03-19 10:44:37.599
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:33.442
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:33.451
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:33.451
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:33.463
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:47:33.463
+!MESSAGE Generating MD5 hash for file: C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v7\export\lab3v7\sw\lab3v7\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:33.463
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:33.474
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-29: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-03-19 10:47:34.039
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:54.647
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:54.651
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:54.658
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:54.658
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:47:54.668
+!MESSAGE Generating MD5 hash for file: C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v7\export\lab3v7\sw\lab3v7\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:54.668
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:47:54.668
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-03-19 10:47:55.278
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:52:19.144
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:52:19.155
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:52:19.155
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:52:19.166
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:52:19.166
+!MESSAGE Generating MD5 hash for file: C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v7\export\lab3v7\sw\lab3v7\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:52:19.166
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:52:19.169
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-26: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-03-19 10:52:19.702
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:53:56.602
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:54:18.135
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:54:18.142
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:54:18.142
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:54:18.142
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:54:18.150
+!MESSAGE Generating MD5 hash for file: C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v7\export\lab3v7\sw\lab3v7\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:54:18.150
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:54:18.150
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-03-19 10:54:18.651
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:56:32.313
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:56:32.323
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:56:32.333
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:56:32.333
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:56:32.343
+!MESSAGE Generating MD5 hash for file: C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v7\export\lab3v7\sw\lab3v7\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:56:32.343
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:56:32.343
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-36: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-03-19 10:56:32.857
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY ilg.gnuarmeclipse.packs.data 4 1 2026-03-19 10:57:29.542
+!MESSAGE File .repos.xml does not exist, using defaults.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:58:10.616
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:58:10.645
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:58:10.645
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:58:10.645
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/hw/lab3v7.xsa C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "9.2",
+}]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-19 10:58:10.655
+!MESSAGE Generating MD5 hash for file: C:\Users\C28Asher.Speicher\Documents\ece383_code\vitisWorkspace\lab3v7\export\lab3v7\sw\lab3v7\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:58:10.658
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:58:10.663
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2026-03-19 10:58:11.203
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:58:26.066
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-686
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-19 10:58:26.066
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [{Format=channel "tcfchan#6" closed, Time=1773939506066, Code=1}, ]. Thread: Thread-686

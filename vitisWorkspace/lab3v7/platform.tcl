@@ -17,3 +17,5 @@ domain create -name {standalone_microblaze_0} -display-name {standalone_microbla
 platform generate -domains 
 platform active {lab3v7}
 platform generate -quick
+catch {platform remove lab3wrapper}
+catch {platform remove design_1_wrapper}

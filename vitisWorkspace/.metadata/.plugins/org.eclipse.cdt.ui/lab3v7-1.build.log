@@ -1,0 +1,13 @@
+10:58:10 **** Build of configuration Debug for project lab3v7-1 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/C28Asher.Speicher/Documents/ece383_code/vitisWorkspace/lab3v7/export/lab3v7/sw/lab3v7/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:24:10: fatal error: xstatus.h: No such file or directory
+   24 | #include "xstatus.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+
+10:58:11 Build Finished (took 518ms)
+
