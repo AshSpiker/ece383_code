@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Mar 30 07:24:49 2026
-# Process ID         : 23068
+# Start of session at: Tue Mar 31 20:48:37 2026
+# Process ID         : 23340
 # Current directory  : C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.runs/synth_1
 # Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file           : C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.runs/synth_1/design_1_wrapper.vds
@@ -19,7 +19,7 @@
 # Host memory        : 33585 MB
 # Swap memory        : 5100 MB
 # Total Virtual      : 38685 MB
-# Available Virtual  : 11496 MB
+# Available Virtual  : 6366 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -28,7 +28,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C28Asher.Speicher/Do
 WARNING: [IP_Flow 19-2207] Repository 'c:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/My_Counter_IP_1_0' already exists; ignoring attempt to add it again.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/My_Counter_IP_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
-add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 367.496 ; gain = 73.625
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 368.160 ; gain = 73.273
 Command: read_checkpoint -auto_incremental -incremental C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -41,9 +41,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 31292
+INFO: [Synth 8-7075] Helper process launched with PID 37512
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1103.508 ; gain = 469.297
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1103.332 ; gain = 469.566
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/synth/bd_afc3_aroutsw_0.sv:94]
 WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/synth/bd_afc3_routsw_0.sv:83]
@@ -65,11 +65,11 @@ INFO: [Synth 8-11241] undeclared symbol 'dbg_sel_po_incdec', assumed default net
 INFO: [Synth 8-11241] undeclared symbol 'dbg_po_f_inc', assumed default net type 'wire' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig.v:1264]
 INFO: [Synth 8-11241] undeclared symbol 'dbg_po_f_stg23_sel', assumed default net type 'wire' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig.v:1265]
 INFO: [Synth 8-11241] undeclared symbol 'dbg_po_f_dec', assumed default net type 'wire' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig.v:1266]
-WARNING: [Synth 8-9112] actual for formal port 'monitored_signal' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:261]
-WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:396]
-WARNING: [Synth 8-9112] actual for formal port 'wraddr' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:403]
-WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:488]
-WARNING: [Synth 8-9112] actual for formal port 'wraddr' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:495]
+WARNING: [Synth 8-9112] actual for formal port 'monitored_signal' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:261]
+WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:396]
+WARNING: [Synth 8-9112] actual for formal port 'wraddr' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:403]
+WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:488]
+WARNING: [Synth 8-9112] actual for formal port 'wraddr' is neither a static name nor a globally static expression [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:495]
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
 INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:531' bound to instance 'design_1_i' of component 'design_1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:84]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:569]
@@ -77,54 +77,54 @@ INFO: [Synth 8-3491] module 'design_1_My_Lab3_0_3' declared at 'c:/Users/C28Ashe
 INFO: [Synth 8-638] synthesizing module 'design_1_My_Lab3_0_3' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/synth/design_1_My_Lab3_0_3.vhd:94]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'My_Lab3' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3.vhd:5' bound to instance 'U0' of component 'My_Lab3' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/synth/design_1_My_Lab3_0_3.vhd:176]
-INFO: [Synth 8-638] synthesizing module 'My_Lab3' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3.vhd:60]
+INFO: [Synth 8-3491] module 'My_Lab3' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3.vhd:5' bound to instance 'U0' of component 'My_Lab3' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/synth/design_1_My_Lab3_0_3.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'My_Lab3' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3.vhd:60]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'My_Lab3_slave_lite_v1_0_S00_AXI' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'My_Lab3_slave_lite_v1_0_S00_AXI_inst' of component 'My_Lab3_slave_lite_v1_0_S00_AXI' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3.vhd:113]
-INFO: [Synth 8-638] synthesizing module 'My_Lab3_slave_lite_v1_0_S00_AXI' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:101]
-INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:337]
-INFO: [Synth 8-3491] module 'lab2' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2.vhd:9' bound to instance 'lab2_uut' of component 'lab2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:715]
-INFO: [Synth 8-638] synthesizing module 'lab2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2.vhd:43]
-INFO: [Synth 8-3491] module 'lab2_datapath' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:16' bound to instance 'datapath' of component 'lab2_datapath' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'lab2_datapath' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:42]
-WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/ece383_pkg.vhd:102]
+INFO: [Synth 8-3491] module 'My_Lab3_slave_lite_v1_0_S00_AXI' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'My_Lab3_slave_lite_v1_0_S00_AXI_inst' of component 'My_Lab3_slave_lite_v1_0_S00_AXI' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'My_Lab3_slave_lite_v1_0_S00_AXI' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:101]
+INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:337]
+INFO: [Synth 8-3491] module 'lab2' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2.vhd:9' bound to instance 'lab2_uut' of component 'lab2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:715]
+INFO: [Synth 8-638] synthesizing module 'lab2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2.vhd:43]
+INFO: [Synth 8-3491] module 'lab2_datapath' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:16' bound to instance 'datapath' of component 'lab2_datapath' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'lab2_datapath' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:42]
+WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/ece383_pkg.vhd:102]
 	Parameter num_bits bound to: 11 - type: integer 
 	Parameter max_value bound to: 420 - type: integer 
 	Parameter min_value bound to: 20 - type: integer 
 	Parameter delta bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_v' of component 'numeric_stepper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:192]
-INFO: [Synth 8-638] synthesizing module 'numeric_stepper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:26]
-INFO: [Synth 8-3491] module 'button_debounce' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/button_debounce.vhdl:22' bound to instance 'debouncer_up' of component 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:44]
-INFO: [Synth 8-638] synthesizing module 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/button_debounce.vhdl:29]
+INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_v' of component 'numeric_stepper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:192]
+INFO: [Synth 8-638] synthesizing module 'numeric_stepper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:26]
+INFO: [Synth 8-3491] module 'button_debounce' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/button_debounce.vhdl:22' bound to instance 'debouncer_up' of component 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/button_debounce.vhdl:29]
 	Parameter N bound to: 25 - type: integer 
-INFO: [Synth 8-3491] module 'lec10' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lec10.vhdl:24' bound to instance 'delay_counter' of component 'lec10' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/button_debounce.vhdl:53]
-INFO: [Synth 8-638] synthesizing module 'lec10' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lec10.vhdl:33]
-INFO: [Synth 8-256] done synthesizing module 'lec10' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lec10.vhdl:33]
-INFO: [Synth 8-256] done synthesizing module 'button_debounce' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/button_debounce.vhdl:29]
-INFO: [Synth 8-3491] module 'button_debounce' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/button_debounce.vhdl:22' bound to instance 'debouncer_down' of component 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'numeric_stepper' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:26]
-WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/ece383_pkg.vhd:102]
+INFO: [Synth 8-3491] module 'lec10' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lec10.vhdl:24' bound to instance 'delay_counter' of component 'lec10' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/button_debounce.vhdl:53]
+INFO: [Synth 8-638] synthesizing module 'lec10' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lec10.vhdl:33]
+INFO: [Synth 8-256] done synthesizing module 'lec10' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lec10.vhdl:33]
+INFO: [Synth 8-256] done synthesizing module 'button_debounce' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/button_debounce.vhdl:29]
+INFO: [Synth 8-3491] module 'button_debounce' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/button_debounce.vhdl:22' bound to instance 'debouncer_down' of component 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'numeric_stepper' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:26]
+WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/ece383_pkg.vhd:102]
 	Parameter num_bits bound to: 11 - type: integer 
 	Parameter max_value bound to: 620 - type: integer 
 	Parameter min_value bound to: 20 - type: integer 
 	Parameter delta bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_t' of component 'numeric_stepper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:208]
-INFO: [Synth 8-638] synthesizing module 'numeric_stepper__parameterized1' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:26]
-INFO: [Synth 8-3491] module 'button_debounce' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/button_debounce.vhdl:22' bound to instance 'debouncer_up' of component 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:44]
-INFO: [Synth 8-3491] module 'button_debounce' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/button_debounce.vhdl:22' bound to instance 'debouncer_down' of component 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'numeric_stepper__parameterized1' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/numeric_stepper.vhd:26]
+INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_t' of component 'numeric_stepper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:208]
+INFO: [Synth 8-638] synthesizing module 'numeric_stepper__parameterized1' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:26]
+INFO: [Synth 8-3491] module 'button_debounce' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/button_debounce.vhdl:22' bound to instance 'debouncer_up' of component 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:44]
+INFO: [Synth 8-3491] module 'button_debounce' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/button_debounce.vhdl:22' bound to instance 'debouncer_down' of component 'button_debounce' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'numeric_stepper__parameterized1' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd:26]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 1023 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/counter.vhd:35' bound to instance 'address_counter' of component 'counter' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:235]
-INFO: [Synth 8-638] synthesizing module 'counter' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/counter.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/counter.vhd:47]
-INFO: [Synth 8-3491] module 'trigger_detector' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/trigger_detector.vhd:9' bound to instance 'trig_detect' of component 'trigger_detector' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:255]
-INFO: [Synth 8-638] synthesizing module 'trigger_detector' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/trigger_detector.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'trigger_detector' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/trigger_detector.vhd:20]
-INFO: [Synth 8-3491] module 'video' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/video.vhdl:11' bound to instance 'video_inst' of component 'video' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:268]
-INFO: [Synth 8-638] synthesizing module 'video' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/video.vhdl:22]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_0/clk_wiz_0.v:67' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/video.vhdl:51]
+INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/counter.vhd:35' bound to instance 'address_counter' of component 'counter' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:235]
+INFO: [Synth 8-638] synthesizing module 'counter' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/counter.vhd:47]
+INFO: [Synth 8-3491] module 'trigger_detector' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/trigger_detector.vhd:9' bound to instance 'trig_detect' of component 'trigger_detector' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:255]
+INFO: [Synth 8-638] synthesizing module 'trigger_detector' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/trigger_detector.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'trigger_detector' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/trigger_detector.vhd:20]
+INFO: [Synth 8-3491] module 'video' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/video.vhdl:11' bound to instance 'video_inst' of component 'video' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:268]
+INFO: [Synth 8-638] synthesizing module 'video' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/video.vhdl:22]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_0/clk_wiz_0.v:67' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/video.vhdl:51]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_0/clk_wiz_0.v:67]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:67]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
@@ -135,68 +135,68 @@ INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.2/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:67]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_0/clk_wiz_0.v:67]
-INFO: [Synth 8-3491] module 'vga' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/video.vhdl:62]
-INFO: [Synth 8-638] synthesizing module 'vga' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga.vhd:21]
-INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga_signal_generator.vhd:8' bound to instance 'vga_signal_generator_inst' of component 'vga_signal_generator' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga_signal_generator.vhd:15]
+INFO: [Synth 8-3491] module 'vga' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/video.vhdl:62]
+INFO: [Synth 8-638] synthesizing module 'vga' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga.vhd:21]
+INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd:8' bound to instance 'vga_signal_generator_inst' of component 'vga_signal_generator' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd:15]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/counter.vhd:35' bound to instance 'horizontal_counter_inst' of component 'counter' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga_signal_generator.vhd:24]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/counter.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/counter.vhd:47]
+INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/counter.vhd:35' bound to instance 'horizontal_counter_inst' of component 'counter' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 524 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/counter.vhd:35' bound to instance 'vertical_counter_inst' of component 'counter' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga_signal_generator.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized3' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/counter.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized3' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/counter.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga_signal_generator.vhd:15]
-INFO: [Synth 8-3491] module 'color_mapper' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/color_mapper.vhd:11' bound to instance 'color_mapper_inst' of component 'color_mapper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'color_mapper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/color_mapper.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/color_mapper.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'vga' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga.vhd:21]
-INFO: [Synth 8-638] synthesizing module 'dvid' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/dvid.vhdl:31]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/dvid.vhdl:56]
-INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/tdms.vhdl:22]
-INFO: [Synth 8-256] done synthesizing module 'TDMS_encoder' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/tdms.vhdl:22]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_green' of component 'TDMS_encoder' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/dvid.vhdl:57]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_blue' of component 'TDMS_encoder' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/dvid.vhdl:58]
+INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/counter.vhd:35' bound to instance 'vertical_counter_inst' of component 'counter' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized3' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized3' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd:15]
+INFO: [Synth 8-3491] module 'color_mapper' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/color_mapper.vhd:11' bound to instance 'color_mapper_inst' of component 'color_mapper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'color_mapper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/color_mapper.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/color_mapper.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'vga' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'dvid' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/dvid.vhdl:31]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/dvid.vhdl:56]
+INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/tdms.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'TDMS_encoder' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/tdms.vhdl:22]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_green' of component 'TDMS_encoder' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/dvid.vhdl:57]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_blue' of component 'TDMS_encoder' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/dvid.vhdl:58]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_red' to cell 'ODDR2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/dvid.vhdl:60]
+INFO: [Synth 8-113] binding component instance 'ODDR2_red' to cell 'ODDR2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/dvid.vhdl:60]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_green' to cell 'ODDR2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/dvid.vhdl:63]
+INFO: [Synth 8-113] binding component instance 'ODDR2_green' to cell 'ODDR2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/dvid.vhdl:63]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_blue' to cell 'ODDR2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/dvid.vhdl:66]
+INFO: [Synth 8-113] binding component instance 'ODDR2_blue' to cell 'ODDR2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/dvid.vhdl:66]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_clock' to cell 'ODDR2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/dvid.vhdl:69]
-INFO: [Synth 8-256] done synthesizing module 'dvid' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/dvid.vhdl:31]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_blue' to cell 'OBUFDS' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/video.vhdl:96]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/video.vhdl:98]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/video.vhdl:100]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/video.vhdl:102]
-INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/video.vhdl:22]
-INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:286]
-INFO: [Synth 8-638] synthesizing module 'Audio_Codec_Wrapper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/Audio_Codec_Wrapper.vhd:53]
-INFO: [Synth 8-3491] module 'audio_init' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/audio_init.v:24' bound to instance 'initialize_audio' of component 'audio_init' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/Audio_Codec_Wrapper.vhd:143]
-INFO: [Synth 8-6157] synthesizing module 'audio_init' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/audio_init.v:24]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/audio_init.v:51]
-INFO: [Synth 8-638] synthesizing module 'TWICtl' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/TWICtl.vhd:119]
-INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/TWICtl.vhd:330]
-INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/TWICtl.vhd:363]
-INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/TWICtl.vhd:381]
-INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/TWICtl.vhd:399]
-INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/TWICtl.vhd:417]
-INFO: [Synth 8-256] done synthesizing module 'TWICtl' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/TWICtl.vhd:119]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/audio_init.v:151]
-INFO: [Synth 8-6155] done synthesizing module 'audio_init' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/audio_init.v:24]
-INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_1/clk_wiz_1.v:66' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/Audio_Codec_Wrapper.vhd:150]
+INFO: [Synth 8-113] binding component instance 'ODDR2_clock' to cell 'ODDR2' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/dvid.vhdl:69]
+INFO: [Synth 8-256] done synthesizing module 'dvid' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/dvid.vhdl:31]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_blue' to cell 'OBUFDS' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/video.vhdl:96]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/video.vhdl:98]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/video.vhdl:100]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/video.vhdl:102]
+INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/video.vhdl:22]
+INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:286]
+INFO: [Synth 8-638] synthesizing module 'Audio_Codec_Wrapper' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/Audio_Codec_Wrapper.vhd:53]
+INFO: [Synth 8-3491] module 'audio_init' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/audio_init.v:24' bound to instance 'initialize_audio' of component 'audio_init' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/Audio_Codec_Wrapper.vhd:143]
+INFO: [Synth 8-6157] synthesizing module 'audio_init' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/audio_init.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/audio_init.v:51]
+INFO: [Synth 8-638] synthesizing module 'TWICtl' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/TWICtl.vhd:119]
+INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/TWICtl.vhd:330]
+INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/TWICtl.vhd:363]
+INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/TWICtl.vhd:381]
+INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/TWICtl.vhd:399]
+INFO: [Synth 8-226] default block is never used [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/TWICtl.vhd:417]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/TWICtl.vhd:119]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/audio_init.v:151]
+INFO: [Synth 8-6155] done synthesizing module 'audio_init' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/audio_init.v:24]
+INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_1/clk_wiz_1.v:66' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/Audio_Codec_Wrapper.vhd:150]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_1/clk_wiz_1.v:66]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1_clk_wiz' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_1/clk_wiz_1_clk_wiz.v:66]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV__parameterized0' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
@@ -204,9 +204,9 @@ INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV__parameterized0' (0#1)
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1_clk_wiz' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_1/clk_wiz_1_clk_wiz.v:66]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/clk_wiz_1/clk_wiz_1.v:66]
 	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
-INFO: [Synth 8-3491] module 'i2s_ctl' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/i2s_ctl.vhd:36' bound to instance 'audio_inout' of component 'i2s_ctl' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/Audio_Codec_Wrapper.vhd:157]
-INFO: [Synth 8-638] synthesizing module 'i2s_ctl' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/i2s_ctl.vhd:63]
-INFO: [Synth 8-256] done synthesizing module 'i2s_ctl' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/i2s_ctl.vhd:63]
+INFO: [Synth 8-3491] module 'i2s_ctl' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/i2s_ctl.vhd:36' bound to instance 'audio_inout' of component 'i2s_ctl' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/Audio_Codec_Wrapper.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'i2s_ctl' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/i2s_ctl.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'i2s_ctl' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/i2s_ctl.vhd:63]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
 	Parameter DO_REG bound to: 0 - type: integer 
@@ -280,7 +280,7 @@ INFO: [Synth 8-256] done synthesizing module 'i2s_ctl' (0#1) [c:/Users/C28Asher.
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/Audio_Codec_Wrapper.vhd:191]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/Audio_Codec_Wrapper.vhd:191]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -443,7 +443,7 @@ INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO' (0#1) [C:
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/Audio_Codec_Wrapper.vhd:281]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/Audio_Codec_Wrapper.vhd:281]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -533,7 +533,7 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
 INFO: [Synth 8-113] binding component instance 'ram18_bl' to cell 'RAMB18E1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:2374]
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
-INFO: [Synth 8-256] done synthesizing module 'Audio_Codec_Wrapper' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/Audio_Codec_Wrapper.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'Audio_Codec_Wrapper' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/Audio_Codec_Wrapper.vhd:53]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
 	Parameter DO_REG bound to: 0 - type: integer 
@@ -607,7 +607,7 @@ INFO: [Synth 8-256] done synthesizing module 'Audio_Codec_Wrapper' (0#1) [c:/Use
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:318]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:318]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -770,7 +770,7 @@ INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameter
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:410]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:410]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -860,13 +860,13 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
 INFO: [Synth 8-113] binding component instance 'ram18_bl' to cell 'RAMB18E1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:2374]
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
-INFO: [Synth 8-256] done synthesizing module 'lab2_datapath' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:42]
-INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_fsm.vhdl:22' bound to instance 'control' of component 'lab2_fsm' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2.vhd:125]
-INFO: [Synth 8-638] synthesizing module 'lab2_fsm' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_fsm.vhdl:29]
-INFO: [Synth 8-256] done synthesizing module 'lab2_fsm' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_fsm.vhdl:29]
-INFO: [Synth 8-256] done synthesizing module 'lab2' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'My_Lab3_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:101]
-INFO: [Synth 8-256] done synthesizing module 'My_Lab3' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'lab2_datapath' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl:42]
+INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_fsm.vhdl:22' bound to instance 'control' of component 'lab2_fsm' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'lab2_fsm' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_fsm.vhdl:29]
+INFO: [Synth 8-256] done synthesizing module 'lab2_fsm' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2_fsm.vhdl:29]
+INFO: [Synth 8-256] done synthesizing module 'lab2' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/lab2.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'My_Lab3_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'My_Lab3' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3.vhd:60]
 INFO: [Synth 8-256] done synthesizing module 'design_1_My_Lab3_0_3' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/synth/design_1_My_Lab3_0_3.vhd:94]
 INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at 'c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1311]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53]
@@ -2205,16 +2205,14 @@ INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (0#1) [c:/Users/C28As
 INFO: [Synth 8-256] done synthesizing module 'design_1_util_ds_buf_0_0' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:63]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:569]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
-WARNING: [Synth 8-6014] Unused sequential element timeOutCnt_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/TWICtl.vhd:236]
-WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/TWICtl.vhd:313]
-WARNING: [Synth 8-6014] Unused sequential element regData1_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/audio_init.v:135]
-WARNING: [Synth 8-6014] Unused sequential element initFbWe_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/audio_init.v:150]
-WARNING: [Synth 8-3848] Net L_bus_out in module/entity lab2_datapath does not have driver. [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:35]
-WARNING: [Synth 8-3848] Net R_bus_out in module/entity lab2_datapath does not have driver. [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/lab2_datapath.vhdl:35]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:306]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:308]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:310]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:311]
+WARNING: [Synth 8-6014] Unused sequential element timeOutCnt_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/TWICtl.vhd:236]
+WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/TWICtl.vhd:313]
+WARNING: [Synth 8-6014] Unused sequential element regData1_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/audio_init.v:135]
+WARNING: [Synth 8-6014] Unused sequential element initFbWe_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/audio_init.v:150]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:306]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:308]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:310]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd:311]
 WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_5Y9LOC does not have driver. [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1118]
 WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_G6MO4E does not have driver. [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/bd_a878.v:1074]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -2427,6 +2425,8 @@ WARNING: [Synth 8-3848] Net MBUFG_GT_O3 in module/entity util_ds_buf does not ha
 WARNING: [Synth 8-3848] Net MBUFG_GT_O4 in module/entity util_ds_buf does not have driver. [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:236]
 WARNING: [Synth 8-3848] Net MBUFG_PS_O1 in module/entity util_ds_buf does not have driver. [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:241]
 WARNING: [Synth 8-3848] Net MBUFG_PS_O2 in module/entity util_ds_buf does not have driver. [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:242]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O3 in module/entity util_ds_buf does not have driver. [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:243]
+WARNING: [Synth 8-3848] Net MBUFG_PS_O4 in module/entity util_ds_buf does not have driver. [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:244]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-7129] Port IBUF_OUT[0] in module util_ds_buf is either unconnected or has no load
 WARNING: [Synth 8-7129] Port IBUF_DS_ODIV2[0] in module util_ds_buf is either unconnected or has no load
@@ -2530,18 +2530,18 @@ WARNING: [Synth 8-7129] Port IBUFDS_GTME5_IB[0] in module util_ds_buf is either 
 WARNING: [Synth 8-7129] Port OBUFDS_GTME5_CEB[0] in module util_ds_buf is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2128.812 ; gain = 1494.602
+Finished RTL Elaboration : Time (s): cpu = 00:00:52 ; elapsed = 00:01:09 . Memory (MB): peak = 2125.594 ; gain = 1491.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 2128.812 ; gain = 1494.602
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:11 . Memory (MB): peak = 2125.594 ; gain = 1491.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 2128.812 ; gain = 1494.602
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:53 ; elapsed = 00:01:11 . Memory (MB): peak = 2125.594 ; gain = 1491.828
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2397.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2396.125 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1133 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab3_0/U0/My_Lab3_slave_lite_v1_0_S00_AXI_inst/lab2_uut/datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab3_0/U0/My_Lab3_slave_lite_v1_0_S00_AXI_inst/lab2_uut/datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
@@ -2639,7 +2639,7 @@ WARNING: [Project 1-498] One or more constraints failed evaluation while reading
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab3_0_3/src/Lab2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-write_xdc: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3061.387 ; gain = 131.930
+write_xdc: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3059.469 ; gain = 131.941
 Parsing XDC File [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.srcs/constrs_1/imports/Desktop/ice2.xdc]
 WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.srcs/constrs_1/imports/Desktop/ice2.xdc:8]
 WARNING: [Vivado 12-584] No ports matched 'reset_n'. [C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.srcs/constrs_1/imports/Desktop/ice2.xdc:38]
@@ -2668,7 +2668,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 INFO: [Project 1-1714] 113 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 3061.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 3059.469 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 653 instances were transformed.
   FDC_1 => FDCE (inverted pins: C): 1 instance 
@@ -2686,18 +2686,18 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
   SRL16 => SRL16E: 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.965 . Memory (MB): peak = 3061.387 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3059.469 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:56 ; elapsed = 00:02:17 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Constraint Validation : Time (s): cpu = 00:01:47 ; elapsed = 00:02:24 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:56 ; elapsed = 00:02:17 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:47 ; elapsed = 00:02:24 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2856,7 +2856,7 @@ Applied set_property KEEP = true for sys_clock. (constraint file  auto generated
 Applied set_property KEEP = true for usb_uart_rxd. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/TX. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:56 ; elapsed = 00:02:17 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:47 ; elapsed = 00:02:25 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'button_debounce'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
@@ -2914,11 +2914,11 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mig_7
                 action_0 |                              101 |                              000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'button_debounce'
-WARNING: [Synth 8-327] inferring latch for variable 'cw_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/button_debounce.vhdl:58]
-WARNING: [Synth 8-327] inferring latch for variable 'h_sync_is_low_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga_signal_generator.vhd:57]
-WARNING: [Synth 8-327] inferring latch for variable 'v_sync_is_low_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga_signal_generator.vhd:68]
-WARNING: [Synth 8-327] inferring latch for variable 'h_blank_is_low_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga_signal_generator.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'v_blank_is_low_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/c751/src/vga_signal_generator.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 'cw_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/button_debounce.vhdl:58]
+WARNING: [Synth 8-327] inferring latch for variable 'h_sync_is_low_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'v_sync_is_low_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 'h_blank_is_low_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'v_blank_is_low_reg' [c:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd:74]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -3258,7 +3258,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'tempmon_state_reg' in m
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mig_7series_v4_2_axi_mc_r_channel'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:50 ; elapsed = 00:03:16 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:49 ; elapsed = 00:03:44 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -3351,7 +3351,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized4.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized4.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:54 ; elapsed = 00:06:31 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:16 ; elapsed = 00:08:40 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -3363,13 +3363,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/My_Lab3_0/U0/M
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/My_Lab3_0/U0/My_Lab3_slave_lite_v1_0_S00_AXI_inst/lab2_uut/datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1' to pin 'clkout1_buf/O'
 INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:01 ; elapsed = 00:06:40 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:23 ; elapsed = 00:08:49 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:06:44 ; elapsed = 00:07:31 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Timing Optimization : Time (s): cpu = 00:06:59 ; elapsed = 00:09:36 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -3380,7 +3380,7 @@ INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_oneh
 INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[1]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized1.
 INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[0]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized1.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:06:57 ; elapsed = 00:07:48 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Technology Mapping : Time (s): cpu = 00:07:10 ; elapsed = 00:09:52 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -3398,37 +3398,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:07:02 ; elapsed = 00:07:53 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished IO Insertion : Time (s): cpu = 00:07:15 ; elapsed = 00:09:57 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:07:02 ; elapsed = 00:07:53 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:15 ; elapsed = 00:09:57 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:05 ; elapsed = 00:07:56 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:17 ; elapsed = 00:10:01 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:07:05 ; elapsed = 00:07:56 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:18 ; elapsed = 00:10:01 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:07:05 ; elapsed = 00:07:57 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:18 ; elapsed = 00:10:02 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:07:05 ; elapsed = 00:07:57 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:18 ; elapsed = 00:10:02 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -3457,10 +3457,10 @@ Report Cell Usage:
 |11    |ISERDESE2                      |    16|
 |12    |LUT1                           |   821|
 |13    |LUT2                           |  1186|
-|14    |LUT3                           |  2770|
-|15    |LUT4                           |  2117|
-|16    |LUT5                           |  2735|
-|17    |LUT6                           |  3917|
+|14    |LUT3                           |  2771|
+|15    |LUT4                           |  2116|
+|16    |LUT5                           |  2702|
+|17    |LUT6                           |  3948|
 |19    |MMCME2_ADV                     |     4|
 |20    |MULT_AND                       |     1|
 |21    |MUXCY                          |   131|
@@ -3505,13 +3505,13 @@ Report Cell Usage:
 |70    |OBUFT                          |     2|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:07:06 ; elapsed = 00:07:57 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:18 ; elapsed = 00:10:02 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11422 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:21 ; elapsed = 00:07:00 . Memory (MB): peak = 3061.387 ; gain = 1494.602
-Synthesis Optimization Complete : Time (s): cpu = 00:07:06 ; elapsed = 00:07:58 . Memory (MB): peak = 3061.387 ; gain = 2427.176
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:41 ; elapsed = 00:09:02 . Memory (MB): peak = 3059.469 ; gain = 1491.828
+Synthesis Optimization Complete : Time (s): cpu = 00:07:19 ; elapsed = 00:10:03 . Memory (MB): peak = 3059.469 ; gain = 2425.703
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3061.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3059.469 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1632 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab3_0/U0/My_Lab3_slave_lite_v1_0_S00_AXI_inst/lab2_uut/datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab3_0/U0/My_Lab3_slave_lite_v1_0_S00_AXI_inst/lab2_uut/datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
@@ -3526,7 +3526,7 @@ Resolution: The tool has removed redundant IBUF. To resolve this warning, check 
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/clk_wiz_1/inst/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 16 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 3061.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 3059.469 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 648 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 88 instances
@@ -3548,12 +3548,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 38 instances
   SRL16 => SRL16E: 6 instances
 
-Synth Design complete | Checksum: 3b89949f
+Synth Design complete | Checksum: ab51e8c1
 INFO: [Common 17-83] Releasing license: Synthesis
 692 Infos, 501 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:07:17 ; elapsed = 00:08:23 . Memory (MB): peak = 3061.387 ; gain = 2665.879
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 3061.387 ; gain = 0.000
+synth_design: Time (s): cpu = 00:07:28 ; elapsed = 00:10:40 . Memory (MB): peak = 3059.469 ; gain = 2663.414
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 3059.469 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/C28Asher.Speicher/Documents/ece383_code/lab3/Lab3.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 30 07:33:26 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 20:59:41 2026...

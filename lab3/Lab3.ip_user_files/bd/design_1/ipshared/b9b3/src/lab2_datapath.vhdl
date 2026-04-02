@@ -32,7 +32,7 @@ use work.ece383_pkg.all;
     switch              : in    STD_LOGIC_VECTOR(7 downto 0);
     exWrAddr            : in std_logic_vector(9 downto 0);
     exWen, exSel        : in std_logic;
-    L_bus_out, R_bus_out  : out std_logic_vector(15 downto 0);
+    L_bus_out, R_bus_out: out std_logic_vector(15 downto 0);
     exLbus, exRbus      : in std_logic_vector(15 downto 0);
     flagQ               : out std_logic;   
     flagClear           : in std_logic;
@@ -506,6 +506,9 @@ Audio_Codec : Audio_Codec_Wrapper
     
     tr_volt <= trigger.v;
     tr_time <= trigger.t;
+    
+    L_bus_out <= ch1.current_sample; 
+    R_bus_out <= ch2.current_sample; 
 
 end lab2_datapath_arch;
 

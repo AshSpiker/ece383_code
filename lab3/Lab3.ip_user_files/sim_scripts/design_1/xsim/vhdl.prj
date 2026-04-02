@@ -16,34 +16,34 @@ vhdl xil_defaultlib  \
 "../../../bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/sim/design_1_rst_mig_7series_0_100M_0.vhd" \
 
 vhdl2008 xil_defaultlib  \
-"../../../bd/design_1/ipshared/c751/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/c751/src/lec10.vhdl" \
-"../../../bd/design_1/ipshared/c751/src/Audio_Codec_Wrapper.vhd" \
-"../../../bd/design_1/ipshared/c751/src/TWICtl.vhd" \
-"../../../bd/design_1/ipshared/c751/src/button_debounce.vhdl" \
+"../../../bd/design_1/ipshared/b9b3/hdl/My_Lab3_slave_lite_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/lec10.vhdl" \
+"../../../bd/design_1/ipshared/b9b3/src/Audio_Codec_Wrapper.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/TWICtl.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/button_debounce.vhdl" \
 
 vhdl xil_defaultlib  \
-"../../../bd/design_1/ipshared/c751/src/ece383_pkg.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/ece383_pkg.vhd" \
 
 vhdl2008 xil_defaultlib  \
-"../../../bd/design_1/ipshared/c751/src/color_mapper.vhd" \
-"../../../bd/design_1/ipshared/c751/src/dvid.vhdl" \
-"../../../bd/design_1/ipshared/c751/src/i2s_ctl.vhd" \
-"../../../bd/design_1/ipshared/c751/src/lab2.vhd" \
-"../../../bd/design_1/ipshared/c751/src/lab2_datapath.vhdl" \
-"../../../bd/design_1/ipshared/c751/src/lab2_fsm.vhdl" \
-"../../../bd/design_1/ipshared/c751/src/numeric_stepper.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/color_mapper.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/dvid.vhdl" \
+"../../../bd/design_1/ipshared/b9b3/src/i2s_ctl.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/lab2.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/lab2_datapath.vhdl" \
+"../../../bd/design_1/ipshared/b9b3/src/lab2_fsm.vhdl" \
+"../../../bd/design_1/ipshared/b9b3/src/numeric_stepper.vhd" \
 
 vhdl xil_defaultlib  \
-"../../../bd/design_1/ipshared/c751/src/tdms.vhdl" \
+"../../../bd/design_1/ipshared/b9b3/src/tdms.vhdl" \
 
 vhdl2008 xil_defaultlib  \
-"../../../bd/design_1/ipshared/c751/src/trigger_detector.vhd" \
-"../../../bd/design_1/ipshared/c751/src/vga.vhd" \
-"../../../bd/design_1/ipshared/c751/src/vga_signal_generator.vhd" \
-"../../../bd/design_1/ipshared/c751/src/video.vhdl" \
-"../../../bd/design_1/ipshared/c751/src/counter.vhd" \
-"../../../bd/design_1/ipshared/c751/hdl/My_Lab3.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/trigger_detector.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/vga.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/vga_signal_generator.vhd" \
+"../../../bd/design_1/ipshared/b9b3/src/video.vhdl" \
+"../../../bd/design_1/ipshared/b9b3/src/counter.vhd" \
+"../../../bd/design_1/ipshared/b9b3/hdl/My_Lab3.vhd" \
 
 vhdl xil_defaultlib  \
 "../../../bd/design_1/ip/design_1_My_Lab3_0_3/sim/design_1_My_Lab3_0_3.vhd" \
