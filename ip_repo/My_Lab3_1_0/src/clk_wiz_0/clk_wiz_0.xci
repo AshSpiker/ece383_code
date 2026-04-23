@@ -5,7 +5,7 @@
     "cell_name": "My_Lab3_slave_lite_v1_0_S00_AXI_inst/lab2_uut/datapath/video_inst/mmcm_adv_inst_display_clocks",
     "component_reference": "xilinx.com:ip:clk_wiz:6.0",
     "ip_revision": "15",
-    "gen_directory": "../../../../../../../../users/c28asher.speicher/documents/ece383_code/lab3/lab3.tmp/my_lab3_v1_0_project/My_Lab3_v1_0_project.gen/sources_1/ip/clk_wiz_0",
+    "gen_directory": "../../../../../../../../users/c28asher.speicher/documents/ece383_code/final_project/final_project.tmp/my_lab3_v1_0_project/My_Lab3_v1_0_project.gen/sources_1/ip/clk_wiz_0",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "clk_wiz_0", "resolve_type": "user", "usage": "all" } ],
@@ -600,7 +600,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "15" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../../../users/c28asher.speicher/documents/ece383_code/lab3/lab3.tmp/my_lab3_v1_0_project/My_Lab3_v1_0_project.gen/sources_1/ip/clk_wiz_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../../../users/c28asher.speicher/documents/ece383_code/final_project/final_project.tmp/my_lab3_v1_0_project/My_Lab3_v1_0_project.gen/sources_1/ip/clk_wiz_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2024.2" } ],
