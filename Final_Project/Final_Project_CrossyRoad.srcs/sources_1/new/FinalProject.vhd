@@ -45,7 +45,8 @@ entity FinalProject is
 --        clk_pulse       : out STD_LOGIC;        -- clock pulse for NES controller
 --        data            : in STD_LOGIC;         -- data input line for NES controller
         
-        ja              : inout STD_LOGIC_VECTOR(2 downto 0) -- physical JA ports on the board
+        ja              : inout STD_LOGIC_VECTOR(2 downto 0); -- physical JA ports on the board
+        btn             : in STD_LOGIC_VECTOR(3 downto 0)
   );
 end FinalProject;
 
@@ -101,7 +102,8 @@ architecture Behavioral of FinalProject is
 --            data_out        : out STD_LOGIC_VECTOR(4 downto 0);     -- **************************
             
             sw              : out STD_LOGIC_VECTOR(4 downto 0);
-            cw              : in STD_LOGIC_VECTOR(27 downto 0)
+            cw              : in STD_LOGIC_VECTOR(27 downto 0);
+            btn             : in STD_LOGIC_VECTOR(3 downto 0)
         );
     end component datapath;
     
@@ -142,7 +144,9 @@ begin
             
             
             sw => sw,
-            cw => cw
+            cw => cw,
+            
+            btn => btn
         );
             
             
