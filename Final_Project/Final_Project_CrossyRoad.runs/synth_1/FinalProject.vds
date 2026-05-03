@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Apr 30 16:55:27 2026
-# Process ID         : 42584
+# Start of session at: Sun May  3 11:13:31 2026
+# Process ID         : 22124
 # Current directory  : C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1
 # Command line       : vivado.exe -log FinalProject.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FinalProject.tcl
 # Log file           : C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/FinalProject.vds
@@ -19,7 +19,7 @@
 # Host memory        : 33585 MB
 # Swap memory        : 5100 MB
 # Total Virtual      : 38685 MB
-# Available Virtual  : 13779 MB
+# Available Virtual  : 9608 MB
 #-----------------------------------------------------------
 source FinalProject.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/utils_1/imports/synth_1/FinalProject.dcp
@@ -34,53 +34,62 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18820
+INFO: [Synth 8-7075] Helper process launched with PID 15992
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.785 ; gain = 469.367
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.281 ; gain = 470.203
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'FinalProject' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:53]
-INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:32' bound to instance 'datapath_uut' of component 'datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:123]
-INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:61]
-INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:11' bound to instance 'video_uut' of component 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'FinalProject' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:54]
+INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:32' bound to instance 'datapath_uut' of component 'datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:62]
+INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:11' bound to instance 'video_uut' of component 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:163]
 INFO: [Synth 8-638] synthesizing module 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:25]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-42584-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:54]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-42584-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-42584-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-22124-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:54]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-22124-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-22124-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
 INFO: [Synth 8-3491] module 'vga' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:65]
-INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:24]
-INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:8' bound to instance 'vga_signal_generator_inst' of component 'vga_signal_generator' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:54]
-INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:25]
+INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:8' bound to instance 'vga_signal_generator_inst' of component 'vga_signal_generator' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:15]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'horizontal_counter_inst' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:24]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'horizontal_counter' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:24]
 INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 524 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'vertical_counter_inst' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:40]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'vertical_counter' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:41]
 INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 524 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:15]
-INFO: [Synth 8-3491] module 'color_mapper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:11' bound to instance 'color_mapper_inst' of component 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:25]
-INFO: [Synth 8-3491] module 'clipart2902856_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/clipart2902856_index_rom.vhd:19' bound to instance 'chicken_sprite' of component 'clipart2902856_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'clipart2902856_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/clipart2902856_index_rom.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'clipart2902856_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/clipart2902856_index_rom.vhd:29]
-INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'chicken_color' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:15]
+INFO: [Synth 8-3491] module 'color_mapper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:11' bound to instance 'color_mapper_inst' of component 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:26]
+INFO: [Synth 8-3491] module 'chicken_forward_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:19' bound to instance 'chicken_forward' of component 'chicken_forward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'chicken_forward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'chicken_forward_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'chicken_backward_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:19' bound to instance 'chicken_backward' of component 'chicken_backward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'chicken_backward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'chicken_backward_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'chicken_left_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:19' bound to instance 'chicken_left' of component 'chicken_left_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'chicken_left_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'chicken_left_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'chicken_right_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:19' bound to instance 'chicken_right' of component 'chicken_right_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'chicken_right_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'chicken_right_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'chicken_color' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:147]
 INFO: [Synth 8-638] synthesizing module 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:27]
 INFO: [Synth 8-256] done synthesizing module 'clipart2902856_palette' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:27]
-WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd:110]
-	Parameter num_bits bound to: 5 - type: integer 
+WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd:111]
+	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 449 - type: integer 
 	Parameter min_value bound to: 0 - type: integer 
 	Parameter delta bound to: 30 - type: integer 
-INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_row' of component 'numeric_stepper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:84]
+INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_row' of component 'numeric_stepper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:155]
 INFO: [Synth 8-638] synthesizing module 'numeric_stepper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:26]
-	Parameter num_bits bound to: 5 - type: integer 
+	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 449 - type: integer 
 	Parameter min_value bound to: 0 - type: integer 
 	Parameter delta bound to: 30 - type: integer 
@@ -94,22 +103,22 @@ INFO: [Synth 8-256] done synthesizing module 'lec10' (0#1) [C:/Users/C28Asher.Sp
 INFO: [Synth 8-256] done synthesizing module 'button_debounce' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:29]
 INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:22' bound to instance 'debouncer_down' of component 'button_debounce' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'numeric_stepper' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:26]
-WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd:110]
-	Parameter num_bits bound to: 5 - type: integer 
+WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd:111]
+	Parameter num_bits bound to: 11 - type: integer 
 	Parameter max_value bound to: 609 - type: integer 
-	Parameter min_value bound to: 30 - type: integer 
+	Parameter min_value bound to: 0 - type: integer 
 	Parameter delta bound to: 30 - type: integer 
-INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_col' of component 'numeric_stepper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:100]
+INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_col' of component 'numeric_stepper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:171]
 INFO: [Synth 8-638] synthesizing module 'numeric_stepper__parameterized1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:26]
-	Parameter num_bits bound to: 5 - type: integer 
+	Parameter num_bits bound to: 11 - type: integer 
 	Parameter max_value bound to: 609 - type: integer 
-	Parameter min_value bound to: 30 - type: integer 
+	Parameter min_value bound to: 0 - type: integer 
 	Parameter delta bound to: 30 - type: integer 
 INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:22' bound to instance 'debouncer_up' of component 'button_debounce' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:44]
 INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:22' bound to instance 'debouncer_down' of component 'button_debounce' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'numeric_stepper__parameterized1' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'vga' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'vga' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:25]
 INFO: [Synth 8-638] synthesizing module 'dvid' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/2Darray_memory/dvid.vhdl:31]
 INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/tdms.vhdl:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/2Darray_memory/dvid.vhdl:56]
 INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/tdms.vhdl:22]
@@ -138,11 +147,11 @@ INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [C:
 INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:106]
 INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:108]
 INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:25]
-INFO: [Synth 8-256] done synthesizing module 'datapath' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:61]
-INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd:34' bound to instance 'control_unit_uut' of component 'control_unit' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:62]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd:34' bound to instance 'control_unit_uut' of component 'control_unit' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:156]
 INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'FinalProject' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'FinalProject' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:54]
 WARNING: [Synth 8-3848] Net ac_mclk in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:37]
 WARNING: [Synth 8-3848] Net ac_dac_sdata in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:39]
 WARNING: [Synth 8-3848] Net ac_bclk in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:40]
@@ -150,24 +159,24 @@ WARNING: [Synth 8-3848] Net ac_lrclk in module/entity datapath does not have dri
 WARNING: [Synth 8-3848] Net clk_pulse in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:49]
 WARNING: [Synth 8-3848] Net latch in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:50]
 WARNING: [Synth 8-3848] Net sw in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:52]
-WARNING: [Synth 8-3848] Net ch1[to_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch1[from_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch1[incoming_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch1[current_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch1[prev_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch1[to_bram] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch1[from_bram] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch1[active] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch1[en] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch2[to_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch2[from_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch2[incoming_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch2[current_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch2[prev_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch2[to_bram] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch2[from_bram] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch2[active] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
-WARNING: [Synth 8-3848] Net ch2[en] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:72]
+WARNING: [Synth 8-3848] Net ch1[to_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch1[from_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch1[incoming_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch1[current_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch1[prev_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch1[to_bram] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch1[from_bram] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch1[active] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch1[en] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch2[to_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch2[from_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch2[incoming_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch2[current_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch2[prev_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch2[to_bram] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch2[from_bram] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch2[active] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
+WARNING: [Synth 8-3848] Net ch2[en] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
 WARNING: [Synth 8-7129] Port btn[4] in module numeric_stepper__parameterized1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[3] in module numeric_stepper__parameterized1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[2] in module numeric_stepper__parameterized1 is either unconnected or has no load
@@ -270,18 +279,18 @@ WARNING: [Synth 8-7129] Port ch1[to_bram][11] in module color_mapper is either u
 WARNING: [Synth 8-7129] Port ch1[to_bram][10] in module color_mapper is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1136.078 ; gain = 591.660
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1142.008 ; gain = 596.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1136.078 ; gain = 591.660
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1142.008 ; gain = 596.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1136.078 ; gain = 591.660
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1142.008 ; gain = 596.930
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1136.078 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1142.008 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
@@ -300,24 +309,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/FinalProject_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1227.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1235.906 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1227.336 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1235.906 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1227.336 ; gain = 682.918
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1235.906 ; gain = 690.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1227.336 ; gain = 682.918
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1235.906 ; gain = 690.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -326,13 +335,9 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/C
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
 Applied set_property KEEP_HIERARCHY = SOFT for datapath_uut/video_uut/mmcm_adv_inst_display_clocks. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1227.336 ; gain = 682.918
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1235.906 ; gain = 690.828
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'button_debounce'
-WARNING: [Synth 8-327] inferring latch for variable 'h_sync_is_low_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:57]
-WARNING: [Synth 8-327] inferring latch for variable 'v_sync_is_low_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:68]
-WARNING: [Synth 8-327] inferring latch for variable 'h_blank_is_low_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'v_blank_is_low_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:74]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -346,7 +351,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'v_blank_is_low_reg' [C:/Use
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'button_debounce'
 WARNING: [Synth 8-327] inferring latch for variable 'cw_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:58]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1227.336 ; gain = 682.918
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1235.906 ; gain = 690.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -357,11 +362,12 @@ Detailed RTL Component Info :
 	   2 Input   25 Bit       Adders := 4     
 	   3 Input   23 Bit       Adders := 1     
 	   2 Input   22 Bit       Adders := 21    
-	   3 Input   11 Bit       Adders := 1     
-	   2 Input   10 Bit       Adders := 2     
-	   2 Input    7 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 3     
-	   3 Input    5 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 5     
+	   2 Input    5 Bit       Adders := 2     
 	   8 Input    4 Bit       Adders := 3     
 	   9 Input    4 Bit       Adders := 3     
 	  11 Input    4 Bit       Adders := 3     
@@ -372,9 +378,9 @@ Detailed RTL Component Info :
 +---Registers : 
 	               25 Bit    Registers := 4     
 	               24 Bit    Registers := 1     
-	               10 Bit    Registers := 14    
-	                8 Bit    Registers := 1     
-	                5 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 13    
+	                8 Bit    Registers := 4     
 	                4 Bit    Registers := 3     
 	                1 Bit    Registers := 9     
 +---ROMs : 
@@ -383,18 +389,21 @@ Detailed RTL Component Info :
 	   2 Input   31 Bit        Muxes := 1     
 	   3 Input   25 Bit        Muxes := 4     
 	   2 Input   22 Bit        Muxes := 1     
-	   2 Input   10 Bit        Muxes := 12    
+	   2 Input   11 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 15    
 	   3 Input   10 Bit        Muxes := 1     
 	   5 Input   10 Bit        Muxes := 6     
 	   4 Input   10 Bit        Muxes := 3     
 	   2 Input    9 Bit        Muxes := 6     
-	  32 Input    8 Bit        Muxes := 13    
-	   2 Input    5 Bit        Muxes := 1     
+	  30 Input    8 Bit        Muxes := 39    
+	  30 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	  30 Input    5 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 9     
 	   6 Input    3 Bit        Muxes := 4     
 	   2 Input    3 Bit        Muxes := 4     
 	   5 Input    2 Bit        Muxes := 4     
-	   2 Input    1 Bit        Muxes := 27    
+	   2 Input    1 Bit        Muxes := 33    
 	   4 Input    1 Bit        Muxes := 4     
 	   5 Input    1 Bit        Muxes := 4     
 	   6 Input    1 Bit        Muxes := 4     
@@ -414,50 +423,59 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/FSM_sequential_state_reg[2]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/FSM_sequential_state_reg[1]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/FSM_sequential_state_reg[0]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/cw_reg[1]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/cw_reg[0]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/FSM_sequential_state_reg[2]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/FSM_sequential_state_reg[1]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/FSM_sequential_state_reg[0]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/cw_reg[1]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/cw_reg[0]) is unused and will be removed from module numeric_stepper.
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/FSM_sequential_state_reg[2]) is unused and will be removed from module numeric_stepper__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/FSM_sequential_state_reg[1]) is unused and will be removed from module numeric_stepper__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/FSM_sequential_state_reg[0]) is unused and will be removed from module numeric_stepper__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/cw_reg[1]) is unused and will be removed from module numeric_stepper__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (debouncer_up/cw_reg[0]) is unused and will be removed from module numeric_stepper__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/FSM_sequential_state_reg[2]) is unused and will be removed from module numeric_stepper__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/FSM_sequential_state_reg[1]) is unused and will be removed from module numeric_stepper__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/FSM_sequential_state_reg[0]) is unused and will be removed from module numeric_stepper__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/cw_reg[1]) is unused and will be removed from module numeric_stepper__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (debouncer_down/cw_reg[0]) is unused and will be removed from module numeric_stepper__parameterized1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1280.355 ; gain = 735.938
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 1276.152 ; gain = 731.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 ROM: Preliminary Mapping Report
-+-------------------------+-------------------+---------------+----------------+
-|Module Name              | RTL Object        | Depth x Width | Implemented As | 
-+-------------------------+-------------------+---------------+----------------+
-|clipart2902856_index_rom | sprite_rom[0][2]  | 32x7          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][3]  | 32x6          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][4]  | 32x7          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][5]  | 32x8          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][10] | 32x8          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][11] | 32x8          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][2]  | 32x7          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][3]  | 32x6          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][5]  | 32x8          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][10] | 32x8          | LUT            | 
-|clipart2902856_index_rom | sprite_rom[0][11] | 32x8          | LUT            | 
-|clipart2902856_palette   | rgb_reg           | 256x24        | Block RAM      | 
-+-------------------------+-------------------+---------------+----------------+
++---------------------------+-------------------+---------------+----------------+
+|Module Name                | RTL Object        | Depth x Width | Implemented As | 
++---------------------------+-------------------+---------------+----------------+
+|chicken_forward_index_rom  | sprite_rom[0][8]  | 32x8          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][9]  | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][10] | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][11] | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][9]  | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][10] | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][11] | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][12] | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][13] | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][14] | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][16] | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][16] | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][19] | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][20] | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][10] | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][11] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][14] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][17] | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][18] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][19] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][20] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][21] | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][22] | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][9]  | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][11] | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][10] | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][12] | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][13] | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][16] | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][16] | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][19] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][10] | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][11] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][14] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][17] | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][18] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][19] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][20] | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][21] | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][22] | 32x7          | LUT            | 
+|clipart2902856_palette     | rgb_reg           | 256x24        | Block RAM      | 
++---------------------------+-------------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -466,19 +484,21 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1334.000 ; gain = 789.582
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 1333.066 ; gain = 787.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 1354.938 ; gain = 810.520
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1354.801 ; gain = 809.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1383.863 ; gain = 839.445
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 1379.344 ; gain = 834.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -497,37 +517,37 @@ INFO: [Synth 8-4649] Removing BlackBox instance control_unit_uut of module contr
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 1560.504 ; gain = 1016.086
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1559.961 ; gain = 1014.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 1560.504 ; gain = 1016.086
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1559.961 ; gain = 1014.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1560.504 ; gain = 1016.086
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1559.961 ; gain = 1014.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1560.504 ; gain = 1016.086
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1559.961 ; gain = 1014.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1560.504 ; gain = 1016.086
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1561.941 ; gain = 1016.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1560.504 ; gain = 1016.086
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1561.941 ; gain = 1016.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -541,35 +561,38 @@ Report BlackBoxes:
 +------+--------------+----------+
 
 Report Cell Usage: 
-+------+--------+------+
-|      |Cell    |Count |
-+------+--------+------+
-|1     |clk_wiz |     1|
-|2     |CARRY4  |   255|
-|3     |LUT1    |    32|
-|4     |LUT2    |   727|
-|5     |LUT3    |   277|
-|6     |LUT4    |   346|
-|7     |LUT5    |    49|
-|8     |LUT6    |   176|
-|9     |MUXF7   |     8|
-|10    |ODDR2   |     4|
-|11    |FDRE    |   151|
-|12    |FDSE    |     5|
-|13    |LDCP    |     4|
-|14    |IBUF    |     1|
-|15    |OBUFDS  |     4|
-|16    |OBUFT   |     4|
-+------+--------+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_wiz  |     1|
+|2     |CARRY4   |   303|
+|3     |LUT1     |    40|
+|4     |LUT2     |   758|
+|5     |LUT3     |   340|
+|6     |LUT4     |   424|
+|7     |LUT5     |   125|
+|8     |LUT6     |   267|
+|9     |MUXF7    |    11|
+|10    |MUXF8    |     1|
+|11    |ODDR2    |     4|
+|12    |RAMB18E1 |     1|
+|13    |FDRE     |   276|
+|14    |FDSE     |     5|
+|15    |LDP      |     8|
+|16    |IBUF     |     5|
+|17    |OBUF     |     8|
+|18    |OBUFDS   |     4|
+|19    |OBUFT    |     4|
++------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1560.504 ; gain = 1016.086
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1561.941 ; gain = 1016.863
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 283 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 1560.504 ; gain = 924.828
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 1560.504 ; gain = 1016.086
+Synthesis finished with 0 errors, 0 critical warnings and 259 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1561.941 ; gain = 922.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1561.941 ; gain = 1016.863
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1565.676 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 275 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1567.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 332 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
@@ -577,19 +600,19 @@ WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1575.906 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1577.383 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 12 instances were transformed.
-  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 4 instances
+  A total of 16 instances were transformed.
+  LDP => LDPE: 8 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Synth Design complete | Checksum: dbd5fba4
+Synth Design complete | Checksum: aa8579fb
 INFO: [Common 17-83] Releasing license: Synthesis
-92 Infos, 161 Warnings, 0 Critical Warnings and 0 Errors encountered.
+103 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1575.906 ; gain = 1270.293
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1575.906 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:01:09 . Memory (MB): peak = 1577.383 ; gain = 1272.145
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1577.383 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/FinalProject.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file FinalProject_utilization_synth.rpt -pb FinalProject_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 30 16:56:19 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun May  3 11:14:54 2026...

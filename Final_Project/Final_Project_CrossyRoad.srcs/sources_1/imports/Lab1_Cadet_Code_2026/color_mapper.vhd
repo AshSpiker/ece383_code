@@ -18,13 +18,44 @@ entity color_mapper is
         ch2      : in channel_t;
         game_map : in map_array;
         btn      : in STD_LOGIC_VECTOR(3 downto 0);
-        reset_n  : in STD_LOGIC
+        reset_n  : in STD_LOGIC;
+        led      : out std_logic_vector(7 downto 0)
         );
 end color_mapper;
 
 architecture color_mapper_arch of color_mapper is
 
-    component clipart2902856_index_rom is 
+    component chicken_forward_index_rom is 
+        Port (
+            clk      : in  std_logic;
+            en       : in  std_logic;
+            row_addr : in  unsigned(4 downto 0);
+            col_addr : in  unsigned(4 downto 0);
+            color_index : out std_logic_vector(7 downto 0)
+        );
+    end component;
+    
+    component chicken_backward_index_rom is 
+        Port (
+            clk      : in  std_logic;
+            en       : in  std_logic;
+            row_addr : in  unsigned(4 downto 0);
+            col_addr : in  unsigned(4 downto 0);
+            color_index : out std_logic_vector(7 downto 0)
+        );
+    end component;
+    
+    component chicken_left_index_rom is 
+        Port (
+            clk      : in  std_logic;
+            en       : in  std_logic;
+            row_addr : in  unsigned(4 downto 0);
+            col_addr : in  unsigned(4 downto 0);
+            color_index : out std_logic_vector(7 downto 0)
+        );
+    end component;
+    
+    component chicken_right_index_rom is 
         Port (
             clk      : in  std_logic;
             en       : in  std_logic;
@@ -42,7 +73,8 @@ architecture color_mapper_arch of color_mapper is
             rgb         : out std_logic_vector(23 downto 0)
         );
     end component;
-            
+    
+
   
         
 -- colors
@@ -56,22 +88,61 @@ signal row_0, row_1, row_2, row_3, row_4, row_5, row_6, row_7, row_8, row_9, row
     
 signal is_chicken : boolean := false;
 signal chicken_index : std_logic_vector(7 downto 0);
+signal chicken_forward_out : std_logic_vector(7 downto 0);
+signal chicken_backward_out : std_logic_vector(7 downto 0);
+signal chicken_left_out : std_logic_vector(7 downto 0);
+signal chicken_right_out : std_logic_vector(7 downto 0);
 signal chicken_rgb : std_logic_vector(23 downto 0);
 
-signal chicken_row : signed(4 downto 0);
-signal chicken_col : signed(4 downto 0);
+signal chicken_row : signed(9 downto 0);
+signal chicken_col : signed(10 downto 0);
 
 
 begin
 
-chicken_sprite : clipart2902856_index_rom
+    
+chicken_forward : chicken_forward_index_rom
     port map (
         clk => clk,
         en => '1',
-        row_addr => position.row(4 downto 0) - unsigned(chicken_row), --to_unsigned(100,5),
-        col_addr => position.col(4 downto 0) - unsigned(chicken_col), --to_unsigned(200,5),--
-        color_index => chicken_index
+        row_addr => position.row(4 downto 0),--(position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        col_addr => position.row(4 downto 0),--(position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        color_index => chicken_forward_out
     );
+    
+chicken_backward : chicken_backward_index_rom
+    port map (
+        clk => clk,
+        en => '1',
+        row_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        col_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        color_index => chicken_backward_out
+    );
+    
+chicken_left : chicken_left_index_rom
+    port map (
+        clk => clk,
+        en => '1',
+        row_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        col_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        color_index => chicken_left_out
+    );
+    
+chicken_right : chicken_right_index_rom
+    port map (
+        clk => clk,
+        en => '1',
+        row_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        col_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        color_index => chicken_right_out
+    );
+    
+-- MUX FOR CHOOSING CHICKEN DIRECTION:
+chicken_index <= chicken_forward_out;
+--chicken_index <= chicken_forward_out  when () else
+--                 chicken_backward_out when () else
+--                 chicken_left_out when () else
+--                 chicken_right_out;
     
 chicken_color : clipart2902856_palette
     port map (
@@ -83,7 +154,7 @@ chicken_color : clipart2902856_palette
     
 numeric_stepper_row : numeric_stepper
     generic map(
-        num_bits  => 5,
+        num_bits  => 10,
         max_value => 449,
         min_value => 0,
         delta     => 30
@@ -99,9 +170,9 @@ numeric_stepper_row : numeric_stepper
     
 numeric_stepper_col : numeric_stepper
     generic map(
-        num_bits  => 5,
+        num_bits  => 11,
         max_value => 609,
-        min_value => 30,
+        min_value => 0,
         delta     => 30
     )
     port map(
@@ -115,7 +186,7 @@ numeric_stepper_col : numeric_stepper
 
 
 -- Assign values to booleans here
-is_chicken  <= true when ((position.row >= unsigned(chicken_row) and position.row < unsigned(chicken_row) + 32) and ((position.col >= unsigned(chicken_col) and position.col < unsigned(chicken_col) + 20))) else false;
+is_chicken  <= true when ((position.row >= unsigned(chicken_row) and position.row < unsigned(chicken_row) + 30) and ((position.col >= unsigned(chicken_col(9 downto 0)) and position.col < unsigned(chicken_col(9 downto 0)) + 30))) else false;
 --is_chicken  <= true when ((position.row >= 100 and position.row < 132) and ((position.col >= 200 and position.col < 220))) else false;
 
 
@@ -140,11 +211,11 @@ row_3       <= true when (signed("0" & position.row) > (3 * signed(("0" & positi
 row_2       <= true when (signed("0" & position.row) > (3 * signed(("0" & position.col)) / 16 + 389) and signed("0" & position.row) < (3 * signed(("0" & position.col)) / 16 + 419)) else false;
 row_1       <= true when (signed("0" & position.row) > (3 * signed(("0" & position.col)) / 16 + 419) and signed("0" & position.row) < (3 * signed(("0" & position.col)) / 16 + 449)) else false;
 row_0       <= true when (signed("0" & position.row) > (3 * signed(("0" & position.col)) / 16 + 449) and signed("0" & position.row) < (3 * signed(("0" & position.col)) / 16 + 479)) else false;
-                         --            y =   m          x        +  b
+
 -- Use your booleans to choose the color
-color <= chicken_rgb        when is_chicken                     else
+color <= chicken_rgb        when (is_chicken) and not (chicken_rgb = MAGENTA)           else
          
-         -- row 0
+         -- row 0 
          water_color        when (row_0 and game_map(0) = "11") else
          road_color         when (row_0 and game_map(0) = "10") else
          dark_grass_color   when (row_0 and game_map(0) = "01") else
@@ -280,6 +351,7 @@ color <= chicken_rgb        when is_chicken                     else
                 
            end if;
         end process;
-                                   
-
+                               
+        led <= std_logic_vector(chicken_col(9 downto 2));
+        
 end color_mapper_arch;

@@ -75,6 +75,7 @@ package ece383_pkg is
   constant GREEN : color_t := x"00FF00";
   constant BLUE : color_t := x"0000FF";
   constant YELLOW : color_t := x"FFFE0E";
+  constant MAGENTA : color_t := x"FF00E1";
   
   constant LGRASS : color_t := x"A1D357";
   constant DGRASS : color_t := x"A9DB5F";
@@ -150,7 +151,8 @@ package ece383_pkg is
             trigger: in trigger_t;
             position: out coordinate_t;
             ch1: in channel_t;
-            ch2: in channel_t);
+            ch2: in channel_t;
+            led: out std_logic_vector(7 downto 0));
 	end component;	  
 	
 	-- Structural component which holds the vga_signal_generator and the color_mapper
@@ -163,7 +165,8 @@ package ece383_pkg is
 			ch1      : in channel_t;
 			ch2      : in channel_t;
 			game_map : in map_array;
-			btn      : in STD_LOGIC_VECTOR(3 downto 0));
+			btn      : in STD_LOGIC_VECTOR(3 downto 0);
+			led      : out std_logic_vector(7 downto 0));
 	end component;
 	
 	-- Component which takes an input signal (monitored signal), a threshold, a clock, and a ready flag and outputs a '1' on 

@@ -58,6 +58,7 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tsbg484-1
 
@@ -77,12 +78,16 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/lec10.vhdl
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl
-  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/clipart2902856_index_rom.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd
@@ -92,7 +97,6 @@ read_vhdl -vhdl2008 -library xil_defaultlib {
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/tdms.vhdl
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd
-  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga_signal_generator.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd
 }

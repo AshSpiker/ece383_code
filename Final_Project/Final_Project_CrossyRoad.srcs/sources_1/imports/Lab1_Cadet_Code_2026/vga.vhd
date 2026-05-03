@@ -17,7 +17,8 @@ entity vga is
             ch1 : in channel_t;
             ch2 : in channel_t;
             game_map : in map_array;
-            btn      : in STD_LOGIC_VECTOR(3 downto 0)
+            btn      : in STD_LOGIC_VECTOR(3 downto 0);
+            led : out std_logic_vector(7 downto 0)
             );
 end vga;
 
@@ -47,7 +48,8 @@ architecture vga_arch of vga is
            ch2      : in channel_t;
            game_map : in map_array;
            btn      : in STD_LOGIC_VECTOR(3 downto 0);
-           reset_n  : in STD_LOGIC
+           reset_n  : in STD_LOGIC;
+           led      : out std_logic_vector(7 downto 0)
            );
     end component color_mapper;
 begin
@@ -69,7 +71,8 @@ begin
         ch2 => ch2,
         game_map => game_map,
         btn     => btn,
-        reset_n => reset_n
+        reset_n => reset_n,
+        led => led
         );
 
     pixel.coordinate <= w_position;

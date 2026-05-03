@@ -46,7 +46,8 @@ entity FinalProject is
 --        data            : in STD_LOGIC;         -- data input line for NES controller
         
         ja              : inout STD_LOGIC_VECTOR(2 downto 0); -- physical JA ports on the board
-        btn             : in STD_LOGIC_VECTOR(3 downto 0)
+        btn             : in STD_LOGIC_VECTOR(3 downto 0);
+        led             : out std_logic_vector(7 downto 0)
   );
 end FinalProject;
 
@@ -103,7 +104,8 @@ architecture Behavioral of FinalProject is
             
             sw              : out STD_LOGIC_VECTOR(4 downto 0);
             cw              : in STD_LOGIC_VECTOR(27 downto 0);
-            btn             : in STD_LOGIC_VECTOR(3 downto 0)
+            btn             : in STD_LOGIC_VECTOR(3 downto 0);
+            led             : out std_logic_vector(7 downto 0)
         );
     end component datapath;
     
@@ -146,7 +148,8 @@ begin
             sw => sw,
             cw => cw,
             
-            btn => btn
+            btn => btn,
+            led => led
         );
             
             

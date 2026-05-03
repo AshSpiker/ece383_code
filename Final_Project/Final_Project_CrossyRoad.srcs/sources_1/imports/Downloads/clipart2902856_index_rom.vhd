@@ -20,8 +20,8 @@ entity clipart2902856_index_rom is
     port (
         clk      : in  std_logic;
         en       : in  std_logic;
-        row_addr : in  unsigned(4 downto 0);
-        col_addr : in  unsigned(4 downto 0);
+        row_addr : in  unsigned(9 downto 0);
+        col_addr : in  unsigned(9 downto 0);
         color_index : out std_logic_vector(7 downto 0)
     );
 end clipart2902856_index_rom;

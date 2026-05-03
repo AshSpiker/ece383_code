@@ -18,8 +18,8 @@ entity video is
             ch1: in channel_t;
             ch2: in channel_t;
             game_map    : in map_array;
-            btn     : in STD_LOGIC_VECTOR(3 downto 0)
-            );
+            btn     : in STD_LOGIC_VECTOR(3 downto 0);
+            led: out std_logic_vector(7 downto 0));
 end video;
 
 architecture structure of video is
@@ -71,8 +71,8 @@ begin
 			ch1 => ch1,
 			ch2 => ch2,
 			game_map => game_map,
-			btn  => btn
-			);
+			btn  => btn,
+			led => led);
 			
 	position <= pixel.coordinate;
 	

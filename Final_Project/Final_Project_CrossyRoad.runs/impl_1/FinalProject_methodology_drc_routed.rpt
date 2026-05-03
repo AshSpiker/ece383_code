@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Apr 30 16:58:00 2026
+| Date         : Sun May  3 11:17:30 2026
 | Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file FinalProject_methodology_drc_routed.rpt -pb FinalProject_methodology_drc_routed.pb -rpx FinalProject_methodology_drc_routed.rpx
 | Design       : FinalProject
@@ -23,80 +23,90 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 13
-+-----------+----------+--------------------------------+--------+
-| Rule      | Severity | Description                    | Checks |
-+-----------+----------+--------------------------------+--------+
-| LUTAR-1   | Warning  | LUT drives async reset alert   | 8      |
-| TIMING-20 | Warning  | Non-clocked latch              | 4      |
-| LATCH-1   | Advisory | Existing latches in the design | 1      |
-+-----------+----------+--------------------------------+--------+
+             Checks found: 14
++-----------+----------+--------------------------------------------+--------+
+| Rule      | Severity | Description                                | Checks |
++-----------+----------+--------------------------------------------+--------+
+| LUTAR-1   | Warning  | LUT drives async reset alert               | 4      |
+| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal | 1      |
+| TIMING-20 | Warning  | Non-clocked latch                          | 8      |
+| LATCH-1   | Advisory | Existing latches in the design             | 1      |
++-----------+----------+--------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/h_blank_is_low_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]_i_3__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0]/PRE
+datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/h_blank_is_low_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1]_i_3__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[0]/PRE
+datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/h_sync_is_low_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]_i_3__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[0]/PRE
+datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#4 Warning
 LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/horizontal_counter_inst/h_sync_is_low_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[0]/PRE
+datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#5 Warning
-LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/v_blank_is_low_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#6 Warning
-LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/v_blank_is_low_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#7 Warning
-LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/v_sync_is_low_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#8 Warning
-LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/vertical_counter_inst/v_sync_is_low_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/L7 (in datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg macro) cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_blank_is_low_reg/L7/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/L7 (in datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg macro) cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/h_sync_is_low_reg/L7/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/L7 (in datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg macro) cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_blank_is_low_reg/L7/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/L7 (in datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg macro) cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/v_sync_is_low_reg/L7/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 4 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 8 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 
