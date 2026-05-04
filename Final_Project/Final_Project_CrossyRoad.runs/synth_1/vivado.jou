@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun May  3 11:13:31 2026
-# Process ID         : 22124
+# Start of session at: Sun May  3 17:53:22 2026
+# Process ID         : 27812
 # Current directory  : C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1
 # Command line       : vivado.exe -log FinalProject.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FinalProject.tcl
 # Log file           : C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/FinalProject.vds
@@ -19,6 +19,6 @@
 # Host memory        : 33585 MB
 # Swap memory        : 5100 MB
 # Total Virtual      : 38685 MB
-# Available Virtual  : 9608 MB
+# Available Virtual  : 10005 MB
 #-----------------------------------------------------------
 source FinalProject.tcl -notrace

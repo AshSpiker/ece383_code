@@ -1,0 +1,145 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+library UNIMACRO;
+use UNIMACRO.vcomponents.all;	
+use work.ece383_pkg.all;
+
+ entity lab2 is
+     Port ( clk : in  STD_LOGIC;
+            reset_n : in  STD_LOGIC;
+		    ac_mclk : out STD_LOGIC;
+		    ac_adc_sdata : in STD_LOGIC;
+		    ac_dac_sdata : out STD_LOGIC;
+		    ac_bclk : out STD_LOGIC;
+		    ac_lrclk : out STD_LOGIC;
+            scl : inout STD_LOGIC;
+            sda : inout STD_LOGIC;
+		    tmds : out  STD_LOGIC_VECTOR (3 downto 0);
+            tmdsb : out  STD_LOGIC_VECTOR (3 downto 0);
+		    switch: in	STD_LOGIC_VECTOR(7 downto 0);
+		    btn: in	STD_LOGIC_VECTOR(4 downto 0);
+		    
+--		    oled_sdin   : out std_logic;
+--            oled_sclk   : out std_logic;
+--            oled_dc     : out std_logic;
+--            oled_res    : out std_logic;
+--            oled_vbat   : out std_logic;
+--            oled_vdd    : out std_logic;
+            
+            tr_volt, tr_time    : out unsigned(10 downto 0);
+            
+            exWrAddr : in std_logic_vector(9 downto 0);
+            exWen    : in std_logic;
+            L_bus_out, R_bus_out: out std_logic_vector(15 downto 0);
+            exLbus, exRbus: in std_logic_vector(15 downto 0);
+            flagClear: in std_logic;
+            flagQ: out std_logic
+            );
+ 
+ end lab2;
+ 
+architecture behavior of lab2 is
+
+	signal sw: std_logic_vector(2 downto 0);
+	signal cw: std_logic_vector (2 downto 0);
+	signal trigger : trigger_t;
+	
+--	    component Lab2_OLED
+--    port (  clk         : in std_logic;
+--            reset_n     : in std_logic;
+--            oled_sdin   : out std_logic;
+--            oled_sclk   : out std_logic;
+--            oled_dc     : out std_logic;
+--            oled_res    : out std_logic;
+--            oled_vbat   : out std_logic;
+--            oled_vdd    : out std_logic;            
+--            switch      : in STD_LOGIC_VECTOR(7 downto 0));
+--    end component;
+
+ component lab2_datapath
+    Port ( clk : in  STD_LOGIC;
+	reset_n : in  STD_LOGIC;
+    ac_mclk : out STD_LOGIC;
+    ac_adc_sdata : in STD_LOGIC;
+    ac_dac_sdata : out STD_LOGIC;
+    ac_bclk : out STD_LOGIC;
+    ac_lrclk : out STD_LOGIC;
+    scl : inout STD_LOGIC;
+    sda : inout STD_LOGIC;    
+    tmds : out  STD_LOGIC_VECTOR (3 downto 0);
+    tmdsb : out  STD_LOGIC_VECTOR (3 downto 0);
+    sw: out std_logic_vector(2 downto 0);
+    cw: in std_logic_vector (2 downto 0);
+    btn: in    STD_LOGIC_VECTOR(4 downto 0);
+    switch: in    STD_LOGIC_VECTOR(7 downto 0);
+    exWrAddr: in std_logic_vector(9 downto 0);
+    exWen, exSel: in std_logic;
+    L_bus_out, R_bus_out: out std_logic_vector(15 downto 0);
+    exLbus, exRbus: in std_logic_vector(15 downto 0);
+    flagQ: out std_logic;   
+    flagClear: in std_logic;
+    tr_volt, tr_time    : out unsigned(10 downto 0)); 
+    
+end component;
+
+component lab2_fsm
+    Port ( clk : in  STD_LOGIC;
+           reset_n : in  STD_LOGIC;
+           sw : in  STD_LOGIC_VECTOR (2 downto 0);
+           cw : out  STD_LOGIC_VECTOR (2 downto 0));
+end component;
+	
+begin
+
+	datapath: lab2_datapath port map(
+		clk => clk,
+		reset_n => reset_n,
+		ac_mclk => ac_mclk,
+		ac_adc_sdata => ac_adc_sdata,
+		ac_dac_sdata => ac_dac_sdata,
+		ac_bclk => ac_bclk,
+		ac_lrclk => ac_lrclk,
+        scl => scl,
+        sda => sda,
+		tmds => tmds,
+		tmdsb => tmdsb,
+		sw => sw,
+		cw => cw,
+		btn => btn, 
+		switch => switch,
+		exWrAddr => exWrAddr,
+		exWen => exWen,
+		exSel => switch(EXT_SWITCH),
+		L_bus_out => L_bus_out,
+		R_bus_out => R_bus_out,
+		exLbus => exLbus,
+		exRbus => exRbus,		
+		flagQ => flagQ,
+		flagClear => flagClear,
+		tr_volt => trigger.v,
+        tr_time => trigger.t);
+		
+			  
+	control: lab2_fsm port map( 
+		clk => clk,
+		reset_n => reset_n,
+		sw => sw,
+		cw => cw);
+		
+
+--    oled: Lab2_OLED
+--    port map (  clk => clk,
+--            reset_n => reset_n,
+--            oled_sdin => oled_sdin,
+--            oled_sclk => oled_sclk,
+--            oled_dc => oled_dc,
+--            oled_res => oled_res,
+--            oled_vbat => oled_vbat,
+--            oled_vdd => oled_vdd,            
+--            switch => switch);
+	
+    tr_volt <= trigger.v;
+    tr_time <= trigger.t;
+end behavior;

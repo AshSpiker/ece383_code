@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Sun May  3 11:13:32 2026
+  **** Start of session at: Sun May  3 17:53:22 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -16,27 +16,26 @@ source FinalProject.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/utils_1/imports/synth_1/FinalProject.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/utils_1/imports/synth_1/FinalProject.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+read_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 305.914 ; gain = 0.000
 Command: synth_design -top FinalProject -part xc7a200tsbg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Device 21-403] Loading part xc7a200tsbg484-1
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15992
+INFO: [Synth 8-7075] Helper process launched with PID 7812
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.281 ; gain = 470.203
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.984 ; gain = 468.023
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'FinalProject' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:54]
 INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:32' bound to instance 'datapath_uut' of component 'datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:125]
 INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:62]
 INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:11' bound to instance 'video_uut' of component 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:163]
 INFO: [Synth 8-638] synthesizing module 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:25]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-22124-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:54]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-22124-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-22124-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-27812-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:54]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-27812-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-27812-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
 INFO: [Synth 8-3491] module 'vga' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:65]
 INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:25]
 INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:8' bound to instance 'vga_signal_generator_inst' of component 'vga_signal_generator' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:56]
@@ -58,64 +57,148 @@ INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [C:
 INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:15]
 INFO: [Synth 8-3491] module 'color_mapper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:11' bound to instance 'color_mapper_inst' of component 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:64]
 INFO: [Synth 8-638] synthesizing module 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:26]
-INFO: [Synth 8-3491] module 'chicken_forward_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:19' bound to instance 'chicken_forward' of component 'chicken_forward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:104]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_0' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'car_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_1' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:180]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_2' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:189]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_3' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:198]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_4' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:207]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_5' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:216]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_6' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:225]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_7' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:234]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_8' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:243]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_9' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:252]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_10' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:261]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_11' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:270]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_12' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:279]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_13' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:288]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_14' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:297]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_15' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:306]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_16' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:315]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_17' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:324]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_18' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:333]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_19' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:342]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_20' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:351]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_21' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:360]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_22' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:369]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_23' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:378]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_24' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:387]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_25' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:396]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_26' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:405]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_27' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:414]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_28' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:423]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_29' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:432]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_30' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:441]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_31' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:450]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_32' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:459]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_33' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:468]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_34' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:477]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_35' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:486]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_36' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:495]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_37' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:504]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_38' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:513]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_39' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:522]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_40' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:531]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_41' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:540]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_42' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:549]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_43' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:558]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_44' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:567]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_45' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:576]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_46' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:585]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_47' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:594]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_48' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:603]
+INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_49' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:612]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_0' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:629]
+INFO: [Synth 8-638] synthesizing module 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'log_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_1' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:638]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_2' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:647]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_3' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:656]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_4' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:665]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_5' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:674]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_6' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:683]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_7' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:692]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_8' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:701]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_9' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:710]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_10' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:719]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_11' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:728]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_12' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:737]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_13' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:746]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_14' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:755]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_15' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:764]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_16' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:773]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_17' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:782]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_18' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:791]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_19' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:800]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_20' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:809]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_21' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:818]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_22' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:827]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_23' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:836]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_24' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:845]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_25' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:854]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_26' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:863]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_27' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:872]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_28' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:881]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_29' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:890]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_30' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:899]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_31' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:908]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_32' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:917]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_33' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:926]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_34' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:935]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_35' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:944]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_36' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:953]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_37' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:962]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_38' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:971]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_39' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:980]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_40' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:989]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_41' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:998]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'lilypad_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/lilypad_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'lilypad_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/lilypad_index_rom.vhd:29]
 INFO: [Synth 8-638] synthesizing module 'chicken_forward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:29]
 INFO: [Synth 8-256] done synthesizing module 'chicken_forward_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:29]
-INFO: [Synth 8-3491] module 'chicken_backward_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:19' bound to instance 'chicken_backward' of component 'chicken_backward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:113]
 INFO: [Synth 8-638] synthesizing module 'chicken_backward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:29]
 INFO: [Synth 8-256] done synthesizing module 'chicken_backward_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:29]
-INFO: [Synth 8-3491] module 'chicken_left_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:19' bound to instance 'chicken_left' of component 'chicken_left_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:122]
 INFO: [Synth 8-638] synthesizing module 'chicken_left_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:29]
 INFO: [Synth 8-256] done synthesizing module 'chicken_left_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:29]
-INFO: [Synth 8-3491] module 'chicken_right_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:19' bound to instance 'chicken_right' of component 'chicken_right_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:131]
 INFO: [Synth 8-638] synthesizing module 'chicken_right_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:29]
 INFO: [Synth 8-256] done synthesizing module 'chicken_right_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:29]
-INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'chicken_color' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:147]
 INFO: [Synth 8-638] synthesizing module 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:27]
 INFO: [Synth 8-256] done synthesizing module 'clipart2902856_palette' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:27]
-WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd:111]
+WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd:112]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 449 - type: integer 
 	Parameter min_value bound to: 0 - type: integer 
 	Parameter delta bound to: 30 - type: integer 
-INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_row' of component 'numeric_stepper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:155]
 INFO: [Synth 8-638] synthesizing module 'numeric_stepper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:26]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 449 - type: integer 
 	Parameter min_value bound to: 0 - type: integer 
 	Parameter delta bound to: 30 - type: integer 
-INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:22' bound to instance 'debouncer_up' of component 'button_debounce' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:44]
 INFO: [Synth 8-638] synthesizing module 'button_debounce' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:29]
 	Parameter N bound to: 25 - type: integer 
-INFO: [Synth 8-3491] module 'lec10' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/lec10.vhdl:24' bound to instance 'delay_counter' of component 'lec10' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:53]
 INFO: [Synth 8-638] synthesizing module 'lec10' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/lec10.vhdl:33]
 	Parameter N bound to: 25 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'lec10' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/lec10.vhdl:33]
 INFO: [Synth 8-256] done synthesizing module 'button_debounce' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:29]
-INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:22' bound to instance 'debouncer_down' of component 'button_debounce' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'numeric_stepper' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:26]
-WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd:111]
+WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd:112]
 	Parameter num_bits bound to: 11 - type: integer 
 	Parameter max_value bound to: 609 - type: integer 
 	Parameter min_value bound to: 0 - type: integer 
 	Parameter delta bound to: 30 - type: integer 
-INFO: [Synth 8-3491] module 'numeric_stepper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:8' bound to instance 'numeric_stepper_col' of component 'numeric_stepper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:171]
 INFO: [Synth 8-638] synthesizing module 'numeric_stepper__parameterized1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:26]
 	Parameter num_bits bound to: 11 - type: integer 
 	Parameter max_value bound to: 609 - type: integer 
 	Parameter min_value bound to: 0 - type: integer 
 	Parameter delta bound to: 30 - type: integer 
-INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:22' bound to instance 'debouncer_up' of component 'button_debounce' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:44]
-INFO: [Synth 8-3491] module 'button_debounce' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:22' bound to instance 'debouncer_down' of component 'button_debounce' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'numeric_stepper__parameterized1' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd:26]
 INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:26]
 INFO: [Synth 8-256] done synthesizing module 'vga' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:25]
 INFO: [Synth 8-638] synthesizing module 'dvid' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/2Darray_memory/dvid.vhdl:31]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/tdms.vhdl:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/2Darray_memory/dvid.vhdl:56]
 INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/tdms.vhdl:22]
 INFO: [Synth 8-256] done synthesizing module 'TDMS_encoder' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/tdms.vhdl:22]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/tdms.vhdl:14' bound to instance 'TDMS_encoder_green' of component 'TDMS_encoder' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/2Darray_memory/dvid.vhdl:57]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/tdms.vhdl:14' bound to instance 'TDMS_encoder_blue' of component 'TDMS_encoder' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/2Darray_memory/dvid.vhdl:58]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
@@ -139,10 +222,15 @@ INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [
 INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:108]
 INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:25]
 INFO: [Synth 8-256] done synthesizing module 'datapath' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:62]
-INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd:34' bound to instance 'control_unit_uut' of component 'control_unit' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:156]
 INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'FinalProject' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:54]
+WARNING: [Synth 8-3848] Net car_row in module/entity color_mapper does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:145]
+WARNING: [Synth 8-3848] Net car_col in module/entity color_mapper does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:146]
+WARNING: [Synth 8-3848] Net lilypad_row in module/entity color_mapper does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:153]
+WARNING: [Synth 8-3848] Net lilypad_col in module/entity color_mapper does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:154]
+WARNING: [Synth 8-3848] Net log_row in module/entity color_mapper does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:160]
+WARNING: [Synth 8-3848] Net log_col in module/entity color_mapper does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:161]
 WARNING: [Synth 8-3848] Net ac_mclk in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:37]
 WARNING: [Synth 8-3848] Net ac_dac_sdata in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:39]
 WARNING: [Synth 8-3848] Net ac_bclk in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:40]
@@ -270,18 +358,18 @@ WARNING: [Synth 8-7129] Port ch1[to_bram][11] in module color_mapper is either u
 WARNING: [Synth 8-7129] Port ch1[to_bram][10] in module color_mapper is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1142.008 ; gain = 596.930
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1195.660 ; gain = 649.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1142.008 ; gain = 596.930
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1195.660 ; gain = 649.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1142.008 ; gain = 596.930
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1195.660 ; gain = 649.699
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1142.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.430 . Memory (MB): peak = 1195.660 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
@@ -300,24 +388,22 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/FinalProject_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1235.906 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1292.039 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1235.906 ; gain = 0.000
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1292.039 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1235.906 ; gain = 690.828
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1292.039 ; gain = 746.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1235.906 ; gain = 690.828
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1292.039 ; gain = 746.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -326,7 +412,16 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/C
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
 Applied set_property KEEP_HIERARCHY = SOFT for datapath_uut/video_uut/mmcm_adv_inst_display_clocks. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1235.906 ; gain = 690.828
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1292.039 ; gain = 746.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1535.062 ; gain = 989.102
+---------------------------------------------------------------------------------
+color_mapper__GCB1color_mapper__GCB7color_mapper__GCB4control_unit__GDcolor_mapper__GCB2log_index_romcolor_mapper__GCB0color_mapper__GCB6color_mapper__GCB9vga_signal_generatorvideo__GC0color_mapper__GCB3color_mapper__GCB5---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1548.441 ; gain = 1002.480
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'button_debounce'
 ---------------------------------------------------------------------------------------------------
@@ -341,63 +436,91 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'butto
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'button_debounce'
 WARNING: [Synth 8-327] inferring latch for variable 'cw_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:58]
+WARNING: [Synth 8-327] inferring latch for variable 'chicken_index_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:1399]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1235.906 ; gain = 690.828
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1573.973 ; gain = 1028.012
 ---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1573.973 ; gain = 1028.012
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++------+----------------+------------+----------+----------+
+|      |Changed Modules |Replication |Instances |Changed % |
++------+----------------+------------+----------+----------+
+|1     |color_mapper    |           1|    525139|  100.2618|
++------+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 523768
+   Resynthesis Design Size (number of cells) : 22704
+   Resynth % : 4.3347,  Reuse % : 95.6653
+
+3. Reference Checkpoint Information
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/utils_1/imports/synth_1/FinalProject.dcp |
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2024.2 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |color_mapper__GCB8           |           1|     22700|
+|2     |vga_signal_generator_#REUSE# |           1|         0|
+|3     |log_index_rom__1_#REUSE#     |          60|         0|
+|4     |color_mapper__GCB0_#REUSE#   |           1|         0|
+|5     |color_mapper__GCB1_#REUSE#   |           1|         0|
+|6     |color_mapper__GCB2_#REUSE#   |           1|         0|
+|7     |color_mapper__GCB3_#REUSE#   |           1|         0|
+|8     |color_mapper__GCB4_#REUSE#   |           1|         0|
+|9     |color_mapper__GCB5_#REUSE#   |           1|         0|
+|10    |color_mapper__GCB6_#REUSE#   |           1|         0|
+|11    |color_mapper__GCB7_#REUSE#   |           1|         0|
+|12    |color_mapper__GCB9_#REUSE#   |           1|         0|
+|13    |video__GC0_#REUSE#           |           1|         0|
+|14    |control_unit__GD_#REUSE#     |           1|         0|
++------+-----------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   31 Bit       Adders := 1     
-	   2 Input   25 Bit       Adders := 4     
-	   3 Input   23 Bit       Adders := 1     
-	   2 Input   22 Bit       Adders := 21    
-	   2 Input   13 Bit       Adders := 2     
-	   2 Input   12 Bit       Adders := 2     
-	   2 Input   11 Bit       Adders := 1     
-	   3 Input   11 Bit       Adders := 2     
-	   2 Input   10 Bit       Adders := 5     
-	   2 Input    5 Bit       Adders := 2     
-	   8 Input    4 Bit       Adders := 3     
-	   9 Input    4 Bit       Adders := 3     
-	  11 Input    4 Bit       Adders := 3     
-	   4 Input    4 Bit       Adders := 3     
-	  10 Input    4 Bit       Adders := 3     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 42    
+	   3 Input   11 Bit       Adders := 48    
+	   2 Input    7 Bit       Adders := 16    
+	   3 Input    7 Bit       Adders := 28    
+	   3 Input    6 Bit       Adders := 16    
+	   2 Input    6 Bit       Adders := 16    
+	   2 Input    5 Bit       Adders := 16    
+	   3 Input    5 Bit       Adders := 29    
 +---Registers : 
-	               25 Bit    Registers := 4     
-	               24 Bit    Registers := 1     
-	               11 Bit    Registers := 1     
-	               10 Bit    Registers := 13    
-	                8 Bit    Registers := 4     
-	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 9     
-+---ROMs : 
-	                    ROMs := 1     
+	                8 Bit    Registers := 8     
 +---Muxes : 
-	   2 Input   31 Bit        Muxes := 1     
-	   3 Input   25 Bit        Muxes := 4     
-	   2 Input   22 Bit        Muxes := 1     
-	   2 Input   11 Bit        Muxes := 3     
-	   2 Input   10 Bit        Muxes := 15    
-	   3 Input   10 Bit        Muxes := 1     
-	   5 Input   10 Bit        Muxes := 6     
-	   4 Input   10 Bit        Muxes := 3     
-	   2 Input    9 Bit        Muxes := 6     
-	  30 Input    8 Bit        Muxes := 39    
-	  30 Input    7 Bit        Muxes := 1     
-	   2 Input    6 Bit        Muxes := 2     
-	  30 Input    5 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 9     
-	   6 Input    3 Bit        Muxes := 4     
-	   2 Input    3 Bit        Muxes := 4     
-	   5 Input    2 Bit        Muxes := 4     
-	   2 Input    1 Bit        Muxes := 33    
-	   4 Input    1 Bit        Muxes := 4     
-	   5 Input    1 Bit        Muxes := 4     
-	   6 Input    1 Bit        Muxes := 4     
+	  45 Input    8 Bit        Muxes := 72    
+	   2 Input    1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -413,83 +536,233 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5546] ROM "sprite_rom[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sprite_rom[0][3]" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 1276.152 ; gain = 731.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:41 . Memory (MB): peak = 1573.973 ; gain = 1028.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 ROM: Preliminary Mapping Report
-+---------------------------+-------------------+---------------+----------------+
-|Module Name                | RTL Object        | Depth x Width | Implemented As | 
-+---------------------------+-------------------+---------------+----------------+
-|chicken_forward_index_rom  | sprite_rom[0][8]  | 32x8          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][9]  | 32x7          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][10] | 32x7          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][11] | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][9]  | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][10] | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][11] | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][12] | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][13] | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][14] | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][16] | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][16] | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][19] | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][20] | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][10] | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][11] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][14] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][17] | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][18] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][19] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][20] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][21] | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][22] | 32x7          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][9]  | 32x7          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][11] | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][10] | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][12] | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][13] | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][16] | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][16] | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][19] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][10] | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][11] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][14] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][17] | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][18] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][19] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][20] | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][21] | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][22] | 32x7          | LUT            | 
-|clipart2902856_palette     | rgb_reg           | 256x24        | Block RAM      | 
-+---------------------------+-------------------+---------------+----------------+
++---------------------------+--------------------+---------------+----------------+
+|Module Name                | RTL Object         | Depth x Width | Implemented As | 
++---------------------------+--------------------+---------------+----------------+
+|car_index_rom              | sprite_rom[0][4]   | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][5]   | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][6]   | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][7]   | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][8]   | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][9]   | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][10]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][11]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][12]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][13]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][14]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][15]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][16]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][17]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][18]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][19]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][20]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][21]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][22]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][23]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][24]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][25]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][26]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][27]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][28]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][29]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][30]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][31]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][32]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][33]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][34]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][35]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][36]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][37]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][38]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][39]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][40]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][41]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][42]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][43]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][44]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][45]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][46]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][47]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][48]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][49]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][50]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][51]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][52]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][53]  | 64x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][12]  | 32x5          | LUT            | 
+|log_index_rom              | sprite_rom[0][15]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][18]  | 32x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][19]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][24]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][28]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][29]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][32]  | 32x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][33]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][34]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][35]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][36]  | 32x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][62]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][63]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][70]  | 32x5          | LUT            | 
+|log_index_rom              | sprite_rom[0][73]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][74]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][75]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][76]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][77]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][96]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][99]  | 32x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][101] | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][103] | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][104] | 32x6          | LUT            | 
+|lilypad_index_rom          | sprite_rom[0][17]  | 32x8          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][8]   | 32x8          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][9]   | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][10]  | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][11]  | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][9]   | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][10]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][11]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][12]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][13]  | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][14]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][16]  | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][16]  | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][19]  | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][20]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][10]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][11]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][14]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][17]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][18]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][19]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][20]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][21]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][22]  | 32x7          | LUT            | 
++---------------------------+--------------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:36 ; elapsed = 00:01:42 . Memory (MB): peak = 1573.973 ; gain = 1028.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 1333.066 ; gain = 787.988
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:52 . Memory (MB): peak = 1722.039 ; gain = 1176.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1354.801 ; gain = 809.723
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:53 . Memory (MB): peak = 1722.203 ; gain = 1176.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+CRITICAL WARNING: [Synth 8-3321] create_generated_clock attempting to set clock on an unknown port/pin for constraint at line 2 of c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc. [c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:2]
+CRITICAL WARNING: [Synth 8-3321] create_generated_clock attempting to set clock on an unknown port/pin for constraint at line 3 of c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc. [c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:3]
+CRITICAL WARNING: [Synth 8-3321] create_generated_clock attempting to set clock on an unknown port/pin for constraint at line 4 of c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc. [c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:4]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 1379.344 ; gain = 834.266
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:02:04 . Memory (MB): peak = 1731.309 ; gain = 1185.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:47 ; elapsed = 00:02:06 . Memory (MB): peak = 1731.309 ; gain = 1185.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -503,42 +776,143 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_49_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_49_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_48_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_48_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_47_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_47_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_46_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_46_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_45_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_45_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_44_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_44_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_43_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_43_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_42_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_42_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_41_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_41_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_40_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_40_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_39_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_39_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_0_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_0_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_19_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_19_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_18_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_18_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_17_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_17_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_16_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_16_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_15_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_15_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_14_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_14_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_13_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_13_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_12_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_12_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_29_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_29_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_28_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_28_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_27_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_27_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_26_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_26_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_25_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_25_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_24_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_24_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_23_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_23_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_22_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_22_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_21_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_21_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_20_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_20_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_19_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_19_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_18_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_18_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_17_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_17_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_16_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_16_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_15_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_15_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_14_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_14_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_13_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_13_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_12_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_12_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_11_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_11_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_10_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_10_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_9_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_9_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_8_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_8_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_7_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_7_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_6_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_6_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_5_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_5_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_4_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_4_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_3_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_3_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_2_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_2_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_11_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_11_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_10_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_10_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-4649] Removing BlackBox instance control_unit_uut of module control_unit having unconnected or no output ports
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1559.961 ; gain = 1014.883
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:02:24 . Memory (MB): peak = 1863.176 ; gain = 1317.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1559.961 ; gain = 1014.883
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:02:24 . Memory (MB): peak = 1863.176 ; gain = 1317.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1559.961 ; gain = 1014.883
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:02:36 . Memory (MB): peak = 1932.242 ; gain = 1386.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1559.961 ; gain = 1014.883
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:02:40 . Memory (MB): peak = 1932.242 ; gain = 1386.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1561.941 ; gain = 1016.863
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:02:44 . Memory (MB): peak = 1952.191 ; gain = 1406.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1561.941 ; gain = 1016.863
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:02:44 . Memory (MB): peak = 1952.191 ; gain = 1406.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -556,34 +930,35 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |clk_wiz  |     1|
-|2     |CARRY4   |   303|
-|3     |LUT1     |    40|
-|4     |LUT2     |   758|
-|5     |LUT3     |   340|
-|6     |LUT4     |   424|
-|7     |LUT5     |   125|
-|8     |LUT6     |   267|
-|9     |MUXF7    |    11|
-|10    |MUXF8    |     1|
+|2     |CARRY4   |  1923|
+|3     |LUT1     |  2680|
+|4     |LUT2     |  3522|
+|5     |LUT3     |  1651|
+|6     |LUT4     |  2793|
+|7     |LUT5     | 17721|
+|8     |LUT6     | 39458|
+|9     |MUXF7    | 13810|
+|10    |MUXF8    |  3896|
 |11    |ODDR2    |     4|
-|12    |RAMB18E1 |     1|
-|13    |FDRE     |   276|
+|12    |RAMB18E1 |   131|
+|13    |FDRE     |  1405|
 |14    |FDSE     |     5|
-|15    |LDP      |     8|
-|16    |IBUF     |     5|
-|17    |OBUF     |     8|
-|18    |OBUFDS   |     4|
-|19    |OBUFT    |     4|
+|15    |LD       |     8|
+|16    |LDP      |     8|
+|17    |IBUF     |     5|
+|18    |OBUF     |     8|
+|19    |OBUFDS   |     4|
+|20    |OBUFT    |     4|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1561.941 ; gain = 1016.863
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:02:44 . Memory (MB): peak = 1952.191 ; gain = 1406.230
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 259 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1561.941 ; gain = 922.965
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 1561.941 ; gain = 1016.863
+Synthesis finished with 0 errors, 3 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:02:39 . Memory (MB): peak = 1952.191 ; gain = 1309.852
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:02:46 . Memory (MB): peak = 1952.191 ; gain = 1406.230
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1567.125 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 332 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1960.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19784 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
@@ -591,19 +966,22 @@ WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1577.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2011.195 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 16 instances were transformed.
+  A total of 24 instances were transformed.
+  LD => LDCE: 8 instances
   LDP => LDPE: 8 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Synth Design complete | Checksum: aa8579fb
+Synth Design complete | Checksum: 77336587
 INFO: [Common 17-83] Releasing license: Synthesis
-103 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+361 Infos, 143 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:01:09 . Memory (MB): peak = 1577.383 ; gain = 1272.145
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1577.383 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:03:17 . Memory (MB): peak = 2011.195 ; gain = 1705.281
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.358 . Memory (MB): peak = 2011.195 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/FinalProject.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2011.195 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_utilization -file FinalProject_utilization_synth.rpt -pb FinalProject_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May  3 11:14:54 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun May  3 17:57:04 2026...

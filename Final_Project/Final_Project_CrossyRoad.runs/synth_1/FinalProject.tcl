@@ -78,12 +78,15 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/lec10.vhdl
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/lilypad_index_rom.vhd
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {

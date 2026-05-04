@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sun May  3 11:17:30 2026
+| Date         : Sun May  3 18:12:47 2026
 | Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file FinalProject_methodology_drc_routed.rpt -pb FinalProject_methodology_drc_routed.pb -rpx FinalProject_methodology_drc_routed.rpx
 | Design       : FinalProject
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 14
+             Checks found: 152
 +-----------+----------+--------------------------------------------+--------+
 | Rule      | Severity | Description                                | Checks |
 +-----------+----------+--------------------------------------------+--------+
 | LUTAR-1   | Warning  | LUT drives async reset alert               | 4      |
-| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal | 1      |
-| TIMING-20 | Warning  | Non-clocked latch                          | 8      |
+| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal | 131    |
+| TIMING-20 | Warning  | Non-clocked latch                          | 16     |
 | LATCH-1   | Advisory | Existing latches in the design             | 1      |
 +-----------+----------+--------------------------------------------+--------+
 
@@ -37,76 +37,766 @@ Table of Contents
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]_i_3__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0]/PRE
+LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]_i_3__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0]/PRE
 datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1]_i_3__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[0]/PRE
+LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[0]/PRE
 datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]_i_3__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[0]/PRE
+LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]_i_3__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[0]/PRE
 datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#4 Warning
 LUT drives async reset alert  
-LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[0]/PRE
+LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]_i_3__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[0]/PRE
 datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 SYNTH-6#1 Warning
 Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_0_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_10_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_11_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_12_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_13_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_14_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_15_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_16_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_17_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_18_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_19_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_1_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_20_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_21_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_22_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_23_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_24_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_25_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#19 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_26_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#20 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_27_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#21 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_28_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#22 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_29_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_2_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_30_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_31_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_32_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#27 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_33_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#28 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_34_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#29 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_35_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#30 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_36_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#31 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_37_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#32 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_38_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#33 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_39_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#34 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_3_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#35 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_40_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#36 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_41_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#37 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_42_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#38 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_43_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#39 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_44_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#40 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_45_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#41 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_46_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#42 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_47_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#43 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_48_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#44 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_49_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#45 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_4_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#46 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_5_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#47 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_6_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#48 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_7_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#49 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_8_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#50 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_9_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#51 Warning
+Timing of a RAM block might be sub-optimal  
 The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#52 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_0_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#53 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_10_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#54 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_11_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#55 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_12_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#56 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_13_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#57 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_14_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#58 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_15_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#59 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_16_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#60 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_17_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#61 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_18_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#62 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_19_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#63 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_1_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#64 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_2_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#65 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_3_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#66 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_4_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#67 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_5_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#68 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_6_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#69 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_7_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#70 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_8_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#71 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_9_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#72 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_0_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#73 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_10_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#74 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_11_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#75 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_12_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#76 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_13_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#77 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_14_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#78 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_15_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#79 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_16_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#80 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_17_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#81 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_18_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#82 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_19_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#83 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_1_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#84 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_20_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#85 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_21_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#86 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_22_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#87 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_23_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#88 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_24_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#89 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_25_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#90 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_26_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#91 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_27_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#92 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_28_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#93 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_29_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#94 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_2_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#95 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_30_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#96 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_31_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#97 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_32_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#98 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_33_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#99 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_34_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#100 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_35_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#101 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_36_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#102 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_37_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#103 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_38_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#104 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_39_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#105 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_3_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#106 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_40_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#107 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_41_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#108 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_42_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#109 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_43_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#110 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_44_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#111 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_45_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#112 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_46_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#113 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_47_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#114 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_48_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#115 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_49_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#116 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_4_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#117 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_50_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#118 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_51_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#119 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_52_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#120 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_53_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#121 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_54_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#122 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_55_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#123 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_56_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#124 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_57_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#125 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_58_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#126 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_59_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#127 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_5_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#128 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_6_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#129 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_7_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#130 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_8_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#131 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_9_color/rgb_reg, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0]/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[0]/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[2] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1]/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[3] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[0]/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[4] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[5] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[0]/G is not reached by a timing clock
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[6] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[7] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[0] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
 Non-clocked latch  
 The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 8 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 16 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 

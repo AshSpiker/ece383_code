@@ -95,16 +95,16 @@ architecture Behavioral of datapath is
         );
 	end component;
 	
---    component NES
---	    Port (
---	        clk         : in STD_LOGIC;                     -- clk input for the FSM in the NES
---	        reset_n     : in STD_LOGIC;                     -- active low reset
---	        data_in     : in STD_LOGIC;                     -- 1 bit input from NES controller 
---	        data_out    : out STD_LOGIC_VECTOR(4 downto 0); -- 5 bit output to be sent on sw to control unit
---	        latch       : out STD_LOGIC;                    -- 1 bit output to be sent to the NES to control data reading/ data transmission
---	        clk_pulse   : out STD_LOGIC                     -- clock pulse to be sent out to the NES controller to control shift register data transmission
---	    );
---    end component NES;
+    component NES
+	    Port (
+	        clk         : in STD_LOGIC;                     -- clk input for the FSM in the NES
+	        reset_n     : in STD_LOGIC;                     -- active low reset
+	        data_in     : in STD_LOGIC;                     -- 1 bit input from NES controller 
+	        data_out    : out STD_LOGIC_VECTOR(4 downto 0); -- 5 bit output to be sent on sw to control unit
+	        latch       : out STD_LOGIC;                    -- 1 bit output to be sent to the NES to control data reading/ data transmission
+	        clk_pulse   : out STD_LOGIC                     -- clock pulse to be sent out to the NES controller to control shift register data transmission
+	    );
+    end component NES;
     
 --    component Two_Darray_Mem 
 --        Port (
@@ -139,15 +139,15 @@ begin
     -- init of audio codec here
     
     
---    NES_uut : NES
---        port map (
---            clk         => clk,         
---            reset_n     => reset_n,
---            data_in     => data_in,     -- connected directly to the exterior of the board through the upper level
---            data_out    => sw,          -- sends to the control unit
---            latch       => latch,       -- connected directly to the exterior of the board through the upper level
---            clk_pulse   => clk_pulse    -- connected directly to the exterior of the board through the upper level
---        );
+    NES_uut : NES
+        port map (
+            clk         => clk,         
+            reset_n     => reset_n,
+            data_in     => data_in,     -- connected directly to the exterior of the board through the upper level
+            data_out    => sw,          -- sends to the control unit
+            latch       => latch,       -- connected directly to the exterior of the board through the upper level
+            clk_pulse   => clk_pulse    -- connected directly to the exterior of the board through the upper level
+        );
         
 --    Two_Darray_Mem_uut : Two_Darray_Mem
 --        port map (
