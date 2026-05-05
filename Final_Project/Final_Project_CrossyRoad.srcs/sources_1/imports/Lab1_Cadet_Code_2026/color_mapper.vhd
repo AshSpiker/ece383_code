@@ -162,21 +162,80 @@ signal log_col          : unsigned(599 downto 0):= (others => '1');           --
 signal log_index        : std_logic_vector(479 downto 0);   -- 8 bits per
 signal log_rgb          : std_logic_vector(1439 downto 0);    -- all look the same
 
-
-constant ROW_BITS : integer := 9;
-constant COL_BITS : integer := 10;
 -- location arrays (refers to what row 
 
 begin
-car_component_uuts : for i in 0 to 49 generate
+
+
+-- 4 different directions of chicken sprite rom instationans 
+chicken_forward : chicken_forward_index_rom
+    port map (
+        clk => clk,
+        en => '1',
+        row_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        col_addr => (position.col(4 downto 0) - unsigned(chicken_col(4 downto 0))),
+        color_index => chicken_forward_out
+    );
+    
+chicken_backward : chicken_backward_index_rom
+    port map (
+        clk => clk,
+        en => '1',
+        row_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        col_addr => (position.col(4 downto 0) - unsigned(chicken_col(4 downto 0))),
+        color_index => chicken_backward_out
+    );
+    
+chicken_left : chicken_left_index_rom
+    port map (
+        clk => clk,
+        en => '1',
+        row_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        col_addr => (position.col(4 downto 0) - unsigned(chicken_col(4 downto 0))),
+        color_index => chicken_left_out
+    );
+    
+chicken_right : chicken_right_index_rom
+    port map (
+        clk => clk,
+        en => '1',
+        row_addr => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
+        col_addr => (position.col(4 downto 0) - unsigned(chicken_col(4 downto 0))),
+        color_index => chicken_right_out
+    );
+    
+-- MUX FOR CHOOSING CHICKEN DIRECTION:
+chicken_index <= chicken_forward_out    when (button_pressed = "1000") else
+                 chicken_backward_out   when (button_pressed = "0100") else
+                 chicken_right_out      when (button_pressed = "0010") else
+                 chicken_left_out       when (button_pressed = "0001");
+    
+-- palate instation
+chicken_color : clipart2902856_palette
+    port map (
+        clk => clk,
+        en => '1',
+        color_index => chicken_index,
+        rgb => chicken_rgb
+    );
+    
+-- log color instations 
+is_log_generate : for i in 0 to 59 generate
     begin
-        car_uut : car_index_rom
+        is_log(i) <= '1' when (
+            (position.row >= log_row((i*9 + 8) downto (i*9)) and position.row < log_row((i*9 + 8) downto (i*9)) + 45) and 
+            (position.col >= log_col((i*10 + 9) downto (i*10)) and position.col < log_col((i*10 + 9) downto (i*10)) + 60)
+        ) else '0';
+    end generate;
+
+log_color_uuts : for i in 0 to 59 generate
+    begin
+        log_color_uut : clipart2902856_palette
             port map(
                 clk         => clk,
                 en          => '1',
-                row_addr    => position.row(5 downto 0) - car_row((i*6 + 5) downto (i*6)),
-                col_addr    => position.col(5 downto 0) - car_col((i*6 + 5) downto (i*6)),
-                color_index => car_index((8*i + 7) downto (8*i))
+                color_index => log_index((i*8 + 7) downto (i*8)),
+                rgb         => log_rgb((i*24 + 23) downto (i*24))
             );
     end generate;
 
@@ -191,7 +250,27 @@ log_component_uuts : for i in 0 to 59 generate
                 color_index => log_index((8*i + 7) downto (8*i))
             );
     end generate;
+   
+-- lily pad color palletes 
+is_lilypad_generate : for i in 0 to 19 generate
+    begin
+        is_lilypad(i) <= '1' when (
+            (position.row >= lilypad_row((i*9 + 8) downto (i*9)) and position.row < lilypad_row((i*9 + 8) downto (i*9)) + 45) and 
+            (position.col >= lilypad_col((i*10 + 9) downto (i*10)) and position.col < lilypad_col((i*10 + 9) downto (i*10)) + 60)
+        ) else '0';
+    end generate;
 
+lilypad_color_uuts : for i in 0 to 19 generate
+    begin
+        lilypad_color_uut : clipart2902856_palette
+            port map(
+                clk         => clk,
+                en          => '1',
+                color_index => lilypad_index((i*8 +7) downto (i*8)),
+                rgb         => lilypad_rgb((i*24 + 23) downto (i*24))
+            );
+    end generate;
+    
 lilypad_component_uuts : for i in 0 to 19 generate
     begin
         lilypad_uut : lilypad_index_rom
@@ -204,69 +283,13 @@ lilypad_component_uuts : for i in 0 to 19 generate
             );
     end generate;
 
-
--- 4 different directions of chicken sprite rom instationans 
-chicken_forward : chicken_forward_index_rom
-    port map (
-        clk         => clk,
-        en          => '1',
-        row_addr    => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
-        col_addr    => (position.col(4 downto 0) - unsigned(chicken_col(4 downto 0))),
-        color_index => chicken_forward_out
-    );
-    
-chicken_backward : chicken_backward_index_rom
-    port map (
-        clk         => clk,
-        en          => '1',
-        row_addr    => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
-        col_addr    => (position.col(4 downto 0) - unsigned(chicken_col(4 downto 0))),
-        color_index => chicken_backward_out
-    );
-    
-chicken_left : chicken_left_index_rom
-    port map (
-        clk         => clk,
-        en          => '1',
-        row_addr    => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
-        col_addr    => (position.col(4 downto 0) - unsigned(chicken_col(4 downto 0))),
-        color_index => chicken_left_out
-    );
-    
-chicken_right : chicken_right_index_rom
-    port map (
-        clk         => clk,
-        en          => '1',
-        row_addr    => (position.row(4 downto 0) - unsigned(chicken_row(4 downto 0))),
-        col_addr    => (position.col(4 downto 0) - unsigned(chicken_col(4 downto 0))),
-        color_index => chicken_right_out
-    );
-    
--- MUX FOR CHOOSING CHICKEN DIRECTION:
-chicken_index <= chicken_forward_out    when (button_pressed = "1000") else
-                 chicken_backward_out   when (button_pressed = "0100") else
-                 chicken_right_out      when (button_pressed = "0010") else
-                 chicken_left_out       when (button_pressed = "0001");
-    
--- palate instation
-chicken_color : clipart2902856_palette
-    port map (
-        clk         => clk,
-        en          => '1',
-        color_index => chicken_index,
-        rgb         => chicken_rgb
-    );
-    
--- log color instations 
-log_color_uuts : for i in 0 to 59 generate
+-- car color palltets 
+is_car_generate : for i in 0 to 49 generate
     begin
-        log_color_uut : clipart2902856_palette
-            port map(
-                clk         => clk,
-                en          => '1',
-                color_index => log_index((i*8 + 7) downto (i*8)),
-                rgb         => log_rgb((i*24 + 23) downto (i*24))
-            );
+        is_car(i) <= '1' when (
+            (position.row >= car_row((i*9 + 8) downto (i*9)) and position.row < car_row((i*9 + 8) downto (i*9)) + 45) and 
+            (position.col >= car_col((i*10 + 9) downto (i*10)) and position.col < car_col((i*10 + 9) downto (i*10)) + 60)
+        ) else '0';
     end generate;
 
 car_color_uuts : for i in 0 to 49 generate
@@ -280,19 +303,17 @@ car_color_uuts : for i in 0 to 49 generate
             );
     end generate;
     
-lilypad_color_uuts : for i in 0 to 19 generate
+car_component_uuts : for i in 0 to 49 generate
     begin
-        lilypad_color_uut : clipart2902856_palette
+        car_uut : car_index_rom
             port map(
                 clk         => clk,
                 en          => '1',
-                color_index => lilypad_index((i*8 +7) downto (i*8)),
-                rgb         => lilypad_rgb((i*24 + 23) downto (i*24))
+                row_addr    => position.row(5 downto 0) - car_row((i*6 + 5) downto (i*6)),
+                col_addr    => position.col(5 downto 0) - car_col((i*6 + 5) downto (i*6)),
+                color_index => car_index((8*i + 7) downto (8*i))
             );
     end generate;
-    
-
-
 
     
 -- numeric steppers for controlling chicken with the buttons 
@@ -333,31 +354,6 @@ numeric_stepper_col : numeric_stepper
 is_chicken  <= true when ((position.row >= unsigned(chicken_row) and position.row < unsigned(chicken_row) + 30) and ((position.col >= unsigned(chicken_col(9 downto 0)) and position.col < unsigned(chicken_col(9 downto 0)) + 30))) else false;
 
 -- car bools
-is_car_generate : for i in 0 to 49 generate
-    begin
-        is_car(i) <= '1' when (
-            (position.row >= car_row((i*9 + 8) downto (i*9)) and position.row < car_row((i*9 + 8) downto (i*9)) + 45) and 
-            (position.col >= car_col((i*10 + 9) downto (i*10)) and position.col < car_col((i*10 + 9) downto (i*10)) + 60)
-        ) else '0';
-    end generate;
-
--- log bools
-is_log_generate : for i in 0 to 59 generate
-    begin
-        is_log(i) <= '1' when (
-            (position.row >= log_row((i*9 + 8) downto (i*9)) and position.row < log_row((i*9 + 8) downto (i*9)) + 45) and 
-            (position.col >= log_col((i*10 + 9) downto (i*10)) and position.col < log_col((i*10 + 9) downto (i*10)) + 60)
-        ) else '0';
-    end generate;
-
--- lilypad bools
-is_lilypad_generate : for i in 0 to 19 generate
-    begin
-        is_lilypad(i) <= '1' when (
-            (position.row >= lilypad_row((i*9 + 8) downto (i*9)) and position.row < lilypad_row((i*9 + 8) downto (i*9)) + 45) and 
-            (position.col >= lilypad_col((i*10 + 9) downto (i*10)) and position.col < lilypad_col((i*10 + 9) downto (i*10)) + 60)
-        ) else '0';
-    end generate;
 
 -- row positions. Row 19 is closest to top of screen, row 0 is on the bottom of the screen
 row_19      <= true when (signed("0" & position.row) > (3 * signed(("0" & position.col)) / 16 - 120) and signed("0" & position.row) < (3 * signed(("0" & position.col)) / 16 - 90))  else false;
@@ -385,12 +381,6 @@ row_0       <= true when (signed("0" & position.row) > (3 * signed(("0" & positi
 color <= chicken_rgb        when (is_chicken) and not (chicken_rgb = MAGENTA or chicken_rgb = BLACK)           else
          
          -- lilypads, logs, and cars (will eventually want to give cars priority over chicken, but leave lilypads and logs having precedence under chicken
-         
-    
---log_rgb_generate : for i in 0 to 59 generate
---    begin
---        log_rgb((i*24 + 23) downto (i*24)) when (is_log(i) = '1' and not (log_rgb((i*24) + 23 downto (i*24))) = MAGENTA)
---    end generate;
          
         log_rgb(23 downto 0) when is_log(0) = '1' and not (log_rgb(23 downto 0) = MAGENTA) else
         log_rgb(47 downto 24) when is_log(1) = '1' and not (log_rgb(47 downto 24) = MAGENTA) else
@@ -669,7 +659,7 @@ color <= chicken_rgb        when (is_chicken) and not (chicken_rgb = MAGENTA or 
 
 
         -- debugging
-        --led <= std_logic_vector(chicken_row(9 downto 2));
+        led <= std_logic_vector(chicken_row(9 downto 2));
         
         -- last button pressed 1 hot decoder register process
         process (clk)

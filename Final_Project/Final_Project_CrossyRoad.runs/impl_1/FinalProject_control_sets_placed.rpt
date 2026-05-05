@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue May  5 07:43:28 2026
+| Date         : Tue May  5 10:29:27 2026
 | Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file FinalProject_control_sets_placed.rpt
 | Design       : FinalProject
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    23 |
-|    Minimum number of control sets                        |    23 |
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   113 |
+| Unused register locations in slices containing registers |    99 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,13 +39,13 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    23 |
+| Total control sets |    20 |
 | >= 0 to < 4        |     5 |
-| >= 4 to < 6        |     1 |
+| >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     1 |
-| >= 10 to < 12      |     5 |
-| >= 12 to < 14      |     1 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
 | >= 16              |     9 |
 +--------------------+-------+
@@ -60,10 +60,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |             110 |           37 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              83 |           53 |
+| No           | Yes                   | No                     |              83 |           58 |
 | Yes          | No                    | No                     |               1 |            1 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             157 |           47 |
+| Yes          | Yes                   | No                     |             131 |           38 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,29 +73,26 @@ Table of Contents
 +------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 |                                                Clock Signal                                                |                                             Enable Signal                                            |                                          Set/Reset Signal                                          | Slice Load Count | Bel Load Count | Bels / Slice |
 +------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/button_pressed[3]_i_1_n_0                                            |                                                                                                    |                1 |              1 |         1.00 |
-|  datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]_i_2__0_n_0 |                                                                                                      | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw__0         |                1 |              2 |         2.00 |
-|  datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]_i_2_n_0      |                                                                                                      | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw__0           |                1 |              2 |         2.00 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/color_mapper_inst/button_pressed[3]_i_1_n_0                          |                                                                                                    |                1 |              1 |         1.00 |
 |  datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]_i_2__2_n_0 |                                                                                                      | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw__0         |                1 |              2 |         2.00 |
 |  datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw_reg[1]_i_2__1_n_0   |                                                                                                      | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw__0           |                1 |              2 |         2.00 |
-|  clk_IBUF                                                                                                  | datapath_uut/NES_uut/ctrl_7                                                                          | datapath_uut/NES_uut/FSM_onehot_state_reg_n_0_[1]                                                  |                1 |              4 |         4.00 |
+|  datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]_i_2_n_0      |                                                                                                      | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw__0           |                1 |              2 |         2.00 |
+|  datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw_reg[1]_i_2__0_n_0 |                                                                                                      | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw__0         |                2 |              2 |         1.00 |
 |  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out2                                         |                                                                                                      | datapath_uut/video_uut/inst_dvid/shift_red[9]_i_1_n_0                                              |                3 |              6 |         2.00 |
-|  datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[7]_i_2_n_0                            |                                                                                                      |                                                                                                    |                4 |              8 |         2.00 |
-|  clk_IBUF                                                                                                  | datapath_uut/NES_uut/counter_6us/ctrl                                                                | datapath_uut/NES_uut/counter_6us/SR[0]                                                             |                4 |             10 |         2.50 |
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/vertical_counter/SR[0]                   |                4 |             10 |         2.50 |
+|  datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_index_reg[7]_i_2_n_0                            |                                                                                                      |                                                                                                    |                2 |              8 |         4.00 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/i_/processQ[9]_i_1_n_0                   |                4 |             10 |         2.50 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/horizontal_counter/E[0]                    | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/i_/processQ[9]_i_1_n_0                   |                3 |             10 |         3.33 |
 |  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/prev_down_reg_0 | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/prev_down_reg |                4 |             10 |         2.50 |
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/horizontal_counter/E[0]                    | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/vertical_counter/SR[0]                   |                3 |             10 |         3.33 |
 |  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/prev_down_reg_0 | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/prev_down_reg |                3 |             11 |         3.67 |
-|  clk_IBUF                                                                                                  | datapath_uut/NES_uut/counter_6us/E[0]                                                                | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/vertical_counter/SR[0]                   |                4 |             12 |         3.00 |
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      | datapath_uut/video_uut/Inst_vga/color_index[7]_i_1__0_n_0                                          |               15 |             16 |         1.07 |
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      | datapath_uut/video_uut/Inst_vga/color_index[7]_i_1_n_0                                             |               12 |             16 |         1.33 |
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw[0]           | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw[1]         |                7 |             25 |         3.57 |
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw[0]             | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw[1]           |                7 |             25 |         3.57 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/horizontal_counter/SR[0]                 |               15 |             16 |         1.07 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/vertical_counter/process_q_reg[4]_0[0]   |               13 |             16 |         1.23 |
 |  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw[0]           | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw[1]         |                7 |             25 |         3.57 |
 |  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw[0]             | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_up/cw[1]           |                7 |             25 |         3.57 |
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/blank                                    |               15 |             27 |         1.80 |
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out2                                         |                                                                                                      |                                                                                                    |                5 |             34 |         6.80 |
-|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      |                                                                                                    |               28 |             68 |         2.43 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw[0]             | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw[1]           |                7 |             25 |         3.57 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw[0]           | datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_down/cw[1]         |                7 |             25 |         3.57 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      | datapath_uut/video_uut/Inst_vga/vga_signal_generator_inst/vga_reg[blank]_0                         |               18 |             27 |         1.50 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out2                                         |                                                                                                      |                                                                                                    |                6 |             34 |         5.67 |
+|  datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_out1                                         |                                                                                                      |                                                                                                    |               29 |             68 |         2.34 |
 +------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 
 

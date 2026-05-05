@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue May  5 07:44:30 2026
+| Date         : Tue May  5 10:30:30 2026
 | Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file FinalProject_methodology_drc_routed.rpt -pb FinalProject_methodology_drc_routed.pb -rpx FinalProject_methodology_drc_routed.rpx
 | Design       : FinalProject
@@ -23,162 +23,18 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 51
-+-----------+------------------+------------------------------------------------------------------+--------+
-| Rule      | Severity         | Description                                                      | Checks |
-+-----------+------------------+------------------------------------------------------------------+--------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 26     |
-| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                        | 1      |
-| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1      |
-| LUTAR-1   | Warning          | LUT drives async reset alert                                     | 4      |
-| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal                       | 1      |
-| TIMING-20 | Warning          | Non-clocked latch                                                | 16     |
-| XDCC-2    | Warning          | Scoped Non-Timing constraint/property overwritten                | 1      |
-| LATCH-1   | Advisory         | Existing latches in the design                                   | 1      |
-+-----------+------------------+------------------------------------------------------------------+--------+
+             Checks found: 22
++-----------+----------+--------------------------------------------+--------+
+| Rule      | Severity | Description                                | Checks |
++-----------+----------+--------------------------------------------+--------+
+| LUTAR-1   | Warning  | LUT drives async reset alert               | 4      |
+| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal | 1      |
+| TIMING-20 | Warning  | Non-clocked latch                          | 16     |
+| LATCH-1   | Advisory | Existing latches in the design             | 1      |
++-----------+----------+--------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-17#1 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#2 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[10]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#3 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[11]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#4 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#5 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#6 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#7 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#8 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#9 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#10 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#11 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#12 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/FSM_onehot_state_reg[9]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#13 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#14 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#15 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#16 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#17 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#18 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#19 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#20 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#21 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#22 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_6us/processQ_reg[9]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#23 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_7/processQ_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#24 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_7/processQ_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#25 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_7/processQ_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#26 Critical Warning
-Non-clocked sequential cell  
-The clock pin datapath_uut/NES_uut/counter_7/processQ_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-27#1 Critical Warning
-Invalid primary clock on hierarchical pin  
-A primary clock datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_in1 is created on an inappropriate internal pin datapath_uut/video_uut/mmcm_adv_inst_display_clocks/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
-Related violations: <none>
-
-CKLD-2#1 Warning
-Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
-Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, datapath_uut/clk
-Related violations: <none>
-
 LUTAR-1#1 Warning
 LUT drives async reset alert  
 LUT cell datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[1]_i_3__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_col/debouncer_down/cw_reg[0]/PRE
@@ -286,13 +142,6 @@ Related violations: <none>
 TIMING-20#16 Warning
 Non-clocked latch  
 The latch datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1] cannot be properly analyzed as its control pin datapath_uut/video_uut/Inst_vga/color_mapper_inst/numeric_stepper_row/debouncer_up/cw_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-XDCC-2#1 Warning
-Scoped Non-Timing constraint/property overwritten  
-A new XDC property IOSTANDARD on reset_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
-New Source: C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/constrs_1/imports/lab2_code_for_cadets_2026/Lab2.xdc (Line: 38)
-Previous Source: c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc (Line: 4)
 Related violations: <none>
 
 LATCH-1#1 Advisory

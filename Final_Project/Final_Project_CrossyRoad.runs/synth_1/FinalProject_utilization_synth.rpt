@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue May  5 07:42:46 2026
+| Date         : Tue May  5 10:28:45 2026
 | Host         : C28-2TK4150H12 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file FinalProject_utilization_synth.rpt -pb FinalProject_utilization_synth.pb
 | Design       : FinalProject
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 1793 |     0 |          0 |    134600 |  1.33 |
-|   LUT as Logic          | 1793 |     0 |          0 |    134600 |  1.33 |
+| Slice LUTs*             | 1777 |     0 |          0 |    134600 |  1.32 |
+|   LUT as Logic          | 1777 |     0 |          0 |    134600 |  1.32 |
 |   LUT as Memory         |    0 |     0 |          0 |     46200 |  0.00 |
-| Slice Registers         |  361 |     0 |          0 |    269200 |  0.13 |
-|   Register as Flip Flop |  345 |     0 |          0 |    269200 |  0.13 |
+| Slice Registers         |  325 |     0 |          0 |    269200 |  0.12 |
+|   Register as Flip Flop |  309 |     0 |          0 |    269200 |  0.11 |
 |   Register as Latch     |   16 |     0 |          0 |    269200 | <0.01 |
 | F7 Muxes                |   76 |     0 |          0 |     67300 |  0.11 |
 | F8 Muxes                |   12 |     0 |          0 |     33650 |  0.04 |
@@ -59,8 +59,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 8     |          Yes |           - |          Set |
 | 8     |          Yes |           - |        Reset |
-| 6     |          Yes |         Set |            - |
-| 339   |          Yes |       Reset |            - |
+| 5     |          Yes |         Set |            - |
+| 304   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -94,7 +94,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   29 |     0 |          0 |       285 | 10.18 |
+| Bonded IOB                  |   27 |     0 |          0 |       285 |  9.47 |
 | Bonded IPADs                |    0 |     0 |          0 |        14 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         8 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |        10 |  0.00 |
@@ -154,25 +154,25 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  774 |                 LUT |
-| LUT6     |  475 |                 LUT |
-| LUT4     |  451 |                 LUT |
-| LUT3     |  352 |                 LUT |
-| FDRE     |  339 |        Flop & Latch |
-| LUT5     |  329 |                 LUT |
+| LUT2     |  715 |                 LUT |
+| LUT6     |  466 |                 LUT |
+| LUT4     |  450 |                 LUT |
+| LUT5     |  317 |                 LUT |
+| FDRE     |  304 |        Flop & Latch |
 | CARRY4   |  303 |          CarryLogic |
+| LUT3     |  283 |                 LUT |
 | MUXF7    |   76 |               MuxFx |
 | LUT1     |   40 |                 LUT |
-| OBUFT    |   12 |                  IO |
 | MUXF8    |   12 |               MuxFx |
 | OBUFDS   |    8 |                  IO |
+| OBUF     |    8 |                  IO |
 | LDPE     |    8 |        Flop & Latch |
 | LDCE     |    8 |        Flop & Latch |
-| IBUF     |    7 |                  IO |
-| FDSE     |    6 |        Flop & Latch |
+| OBUFT    |    6 |                  IO |
+| IBUF     |    5 |                  IO |
+| FDSE     |    5 |        Flop & Latch |
 | ODDR     |    4 |                  IO |
 | INV      |    4 |                 LUT |
-| OBUF     |    2 |                  IO |
 | RAMB18E1 |    1 |        Block Memory |
 +----------+------+---------------------+
 

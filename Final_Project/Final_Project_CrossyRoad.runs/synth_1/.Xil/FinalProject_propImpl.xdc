@@ -25,8 +25,6 @@ set_property src_info {type:XDC file:1 line:36 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN D14 IOSTANDARD LVCMOS12 } [get_ports { btn[3] }]; #IO_L6P_T0_16 Sch=btnr
 set_property src_info {type:XDC file:1 line:37 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN F15 IOSTANDARD LVCMOS12 } [get_ports { btn[0] }]; #IO_0_16 Sch=btnu
-set_property src_info {type:XDC file:1 line:38 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN G4  IOSTANDARD LVCMOS12 } [get_ports { reset_n }]; #IO_L12N_T1_MRCC_35 Sch=cpu_resetn
 set_property src_info {type:XDC file:1 line:79 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN U1    IOSTANDARD TMDS_33     } [get_ports { tmdsb[3] }]; #IO_L1N_T0_34 Sch=hdmi_tx_clk_n # Clock
 set_property src_info {type:XDC file:1 line:80 export:INPUT save:INPUT read:READ} [current_design]

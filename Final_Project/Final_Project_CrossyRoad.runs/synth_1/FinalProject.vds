@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue May  5 07:41:41 2026
-# Process ID         : 23228
+# Start of session at: Tue May  5 10:27:38 2026
+# Process ID         : 22888
 # Current directory  : C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1
 # Command line       : vivado.exe -log FinalProject.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FinalProject.tcl
 # Log file           : C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/FinalProject.vds
@@ -19,7 +19,7 @@
 # Host memory        : 33585 MB
 # Swap memory        : 5100 MB
 # Total Virtual      : 38685 MB
-# Available Virtual  : 11541 MB
+# Available Virtual  : 13946 MB
 #-----------------------------------------------------------
 source FinalProject.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -43,34 +43,18 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15212
+INFO: [Synth 8-7075] Helper process launched with PID 32388
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.848 ; gain = 469.605
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.590 ; gain = 470.039
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'FinalProject' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:57]
 INFO: [Synth 8-3491] module 'datapath' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:32' bound to instance 'datapath_uut' of component 'datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:128]
 INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:62]
-INFO: [Synth 8-3491] module 'NES' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/NES.vhd:31' bound to instance 'NES_uut' of component 'NES' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'NES' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/NES.vhd:42]
-	Parameter num_bits bound to: 10 - type: integer 
-	Parameter max_value bound to: 600 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'counter_6us' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/NES.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
-	Parameter num_bits bound to: 10 - type: integer 
-	Parameter max_value bound to: 600 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
-	Parameter num_bits bound to: 4 - type: integer 
-	Parameter max_value bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'counter_7' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/NES.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
-	Parameter num_bits bound to: 4 - type: integer 
-	Parameter max_value bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'NES' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/NES.vhd:42]
 INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:11' bound to instance 'video_uut' of component 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:165]
 INFO: [Synth 8-638] synthesizing module 'video' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:25]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-23228-C28-2TK4150H12/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:54]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-23228-C28-2TK4150H12/realtime/clk_wiz_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-22888-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:54]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-22888-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/.Xil/Vivado-22888-C28-2TK4150H12/realtime/clk_wiz_0_stub.v:6]
 INFO: [Synth 8-3491] module 'vga' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:11' bound to instance 'Inst_vga' of component 'vga' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/video.vhdl:65]
 INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:25]
 INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:8' bound to instance 'vga_signal_generator_inst' of component 'vga_signal_generator' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:56]
@@ -78,126 +62,129 @@ INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [C:/Users/C28Ashe
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
 INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'horizontal_counter' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:24]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized3' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized3' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 524 - type: integer 
 INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:35' bound to instance 'vertical_counter' of component 'counter' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized5' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 524 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized5' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/new/counter.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd:15]
 INFO: [Synth 8-3491] module 'color_mapper' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:11' bound to instance 'color_mapper_inst' of component 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/vga.vhd:64]
 INFO: [Synth 8-638] synthesizing module 'color_mapper' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:26]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-638] synthesizing module 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'car_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:29]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'car_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:19' bound to instance 'car_uut' of component 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:173]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
+INFO: [Synth 8-3491] module 'chicken_forward_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:19' bound to instance 'chicken_forward' of component 'chicken_forward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'chicken_forward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'chicken_forward_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'chicken_backward_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:19' bound to instance 'chicken_backward' of component 'chicken_backward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'chicken_backward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'chicken_backward_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'chicken_left_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:19' bound to instance 'chicken_left' of component 'chicken_left_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'chicken_left_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'chicken_left_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'chicken_right_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:19' bound to instance 'chicken_right' of component 'chicken_right_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'chicken_right_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'chicken_right_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:29]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'chicken_color' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'clipart2902856_palette' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:27]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'clipart2902856_palette' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:18' bound to instance 'log_color_uut' of component 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:233]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
 INFO: [Synth 8-638] synthesizing module 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:29]
 INFO: [Synth 8-256] done synthesizing module 'log_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:29]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
-INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:185]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
+INFO: [Synth 8-3491] module 'log_index_rom' declared at 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/log_index_rom.vhd:19' bound to instance 'log_uut' of component 'log_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:244]
 INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-638] synthesizing module 'lilypad_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/lilypad_index_rom.vhd:29]
 INFO: [Synth 8-256] done synthesizing module 'lilypad_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/lilypad_index_rom.vhd:29]
-INFO: [Synth 8-638] synthesizing module 'chicken_forward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'chicken_forward_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_forward_index_rom.vhd:29]
-INFO: [Synth 8-638] synthesizing module 'chicken_backward_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'chicken_backward_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_backward_index_rom.vhd:29]
-INFO: [Synth 8-638] synthesizing module 'chicken_left_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'chicken_left_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_left_index_rom.vhd:29]
-INFO: [Synth 8-638] synthesizing module 'chicken_right_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'chicken_right_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/chicken_right_index_rom.vhd:29]
-INFO: [Synth 8-638] synthesizing module 'clipart2902856_palette' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:27]
-INFO: [Synth 8-256] done synthesizing module 'clipart2902856_palette' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/pallette.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'car_index_rom' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'car_index_rom' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/car_index_rom.vhd:29]
 WARNING: [Synth 8-5640] Port 'btn' is missing in component declaration [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd:112]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 449 - type: integer 
@@ -257,13 +244,13 @@ INFO: [Synth 8-256] done synthesizing module 'datapath' (0#1) [C:/Users/C28Asher
 INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'FinalProject' (0#1) [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/FinalProject.vhd:57]
-WARNING: [Synth 8-6014] Unused sequential element all_shift_vals_reg was removed.  [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/NES.vhd:268]
-WARNING: [Synth 8-3848] Net led in module/entity NES does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/NES.vhd:38]
-WARNING: [Synth 8-3848] Net led in module/entity color_mapper does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:22]
 WARNING: [Synth 8-3848] Net ac_mclk in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:37]
 WARNING: [Synth 8-3848] Net ac_dac_sdata in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:39]
 WARNING: [Synth 8-3848] Net ac_bclk in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:40]
 WARNING: [Synth 8-3848] Net ac_lrclk in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:41]
+WARNING: [Synth 8-3848] Net clk_pulse in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:49]
+WARNING: [Synth 8-3848] Net latch in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:50]
+WARNING: [Synth 8-3848] Net sw in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:52]
 WARNING: [Synth 8-3848] Net ch1[to_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
 WARNING: [Synth 8-3848] Net ch1[from_ac] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
 WARNING: [Synth 8-3848] Net ch1[incoming_sample] in module/entity datapath does not have driver. [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/datapath.vhd:73]
@@ -292,14 +279,6 @@ WARNING: [Synth 8-7129] Port btn[3] in module numeric_stepper is either unconnec
 WARNING: [Synth 8-7129] Port btn[2] in module numeric_stepper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[1] in module numeric_stepper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[0] in module numeric_stepper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[7] in module color_mapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[6] in module color_mapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[5] in module color_mapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[4] in module color_mapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[3] in module color_mapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[2] in module color_mapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[1] in module color_mapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[0] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][17] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][16] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][15] in module color_mapper is either unconnected or has no load
@@ -382,20 +361,28 @@ WARNING: [Synth 8-7129] Port ch1[prev_sample][5] in module color_mapper is eithe
 WARNING: [Synth 8-7129] Port ch1[prev_sample][4] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[prev_sample][3] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[prev_sample][2] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[prev_sample][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[prev_sample][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][15] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][14] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][13] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][12] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][11] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][10] in module color_mapper is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1177.406 ; gain = 632.164
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1175.996 ; gain = 628.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1177.406 ; gain = 632.164
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1175.996 ; gain = 628.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1177.406 ; gain = 632.164
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1175.996 ; gain = 628.445
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.355 . Memory (MB): peak = 1177.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.367 . Memory (MB): peak = 1175.996 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
@@ -412,26 +399,28 @@ Parsing XDC File [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project
 Finished Parsing XDC File [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/constrs_1/imports/lab2_code_for_cadets_2026/Lab2.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/constrs_1/imports/lab2_code_for_cadets_2026/Lab2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FinalProject_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/FinalProject_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1276.133 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1274.355 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1276.133 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1274.355 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1276.133 ; gain = 730.891
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1274.355 ; gain = 726.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1276.133 ; gain = 730.891
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1274.355 ; gain = 726.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -440,27 +429,9 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/C
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
 Applied set_property KEEP_HIERARCHY = SOFT for datapath_uut/video_uut/mmcm_adv_inst_display_clocks. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1276.133 ; gain = 730.891
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1274.355 ; gain = 726.805
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'NES'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'button_debounce'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               set_latch |                     000000010000 |                             0000
-               wait_6u_1 |                     000010000000 |                             0001
-             clear_latch |                     000000001000 |                             0010
-               wait_6u_2 |                     000000000001 |                             0011
-          init_counter_7 |                     000000000010 |                             0100
-               read_data |                     000000000100 |                             0101
-         set_clock_pulse |                     100000000000 |                             0110
-               wait_6u_3 |                     000100000000 |                             0111
-       clear_clock_pulse |                     001000000000 |                             1000
-               wait_6u_4 |                     010000000000 |                             1001
-                     cmp |                     000001000000 |                             1010
-             load_values |                     000000100000 |                             1011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'NES'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -473,59 +444,10 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'button_debounce'
 WARNING: [Synth 8-327] inferring latch for variable 'cw_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl:58]
-WARNING: [Synth 8-327] inferring latch for variable 'chicken_index_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:246]
+WARNING: [Synth 8-327] inferring latch for variable 'chicken_index_reg' [C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd:208]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1276.133 ; gain = 730.891
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1274.355 ; gain = 726.805
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[1].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[2].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[3].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[4].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[5].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[6].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[7].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[8].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[9].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[10].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[11].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[12].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[13].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[14].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[15].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[16].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[17].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[18].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[19].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[20].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[21].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[22].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[23].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[24].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[25].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[26].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[27].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[28].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[29].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[30].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[31].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[32].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[33].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[34].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[35].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[36].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[37].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[38].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[39].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[40].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[41].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[42].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[43].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[44].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[45].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[46].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[47].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[48].car_uut'
-INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[49].car_uut'
 INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[1].log_uut'
 INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[2].log_uut'
 INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[3].log_uut'
@@ -577,6 +499,55 @@ INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_ma
 INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[49].log_uut'
 INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[50].log_uut'
 INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[51].log_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[52].log_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[53].log_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[54].log_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[55].log_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[56].log_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[57].log_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[58].log_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[0].log_uut' (log_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/log_component_uuts[59].log_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[1].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[2].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[3].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[4].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[5].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[6].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[7].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[8].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[9].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[10].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[11].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[12].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[13].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[14].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[15].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[16].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[17].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[18].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[0].lilypad_uut' (lilypad_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/lilypad_component_uuts[19].lilypad_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[1].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[2].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[3].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[4].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[5].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[6].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[7].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[8].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[9].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[10].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[11].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[12].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[13].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[14].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[15].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[16].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[17].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[18].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[19].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[20].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[21].car_uut'
+INFO: [Synth 8-223] decloning instance 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[0].car_uut' (car_index_rom) to 'datapath_uut/video_uut/Inst_vga/color_mapper_inst/car_component_uuts[22].car_uut'
 INFO: [Common 17-14] Message 'Synth 8-223' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -589,14 +560,13 @@ Detailed RTL Component Info :
 	   2 Input   22 Bit       Adders := 21    
 	   2 Input   13 Bit       Adders := 2     
 	   2 Input   12 Bit       Adders := 2     
-	   2 Input   11 Bit       Adders := 1     
 	   3 Input   11 Bit       Adders := 2     
-	   2 Input   10 Bit       Adders := 6     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 5     
 	   2 Input    7 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 2     
-	   3 Input    5 Bit       Adders := 2     
 	   2 Input    5 Bit       Adders := 2     
-	   2 Input    4 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 2     
 	   8 Input    4 Bit       Adders := 3     
 	   9 Input    4 Bit       Adders := 3     
 	  11 Input    4 Bit       Adders := 3     
@@ -606,47 +576,41 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 42    
 +---Registers : 
 	               25 Bit    Registers := 4     
-	               24 Bit    Registers := 4     
+	               24 Bit    Registers := 131   
 	               11 Bit    Registers := 1     
-	               10 Bit    Registers := 14    
-	                9 Bit    Registers := 1     
+	               10 Bit    Registers := 13    
 	                8 Bit    Registers := 7     
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 5     
-	                1 Bit    Registers := 11    
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 9     
 +---ROMs : 
-	                    ROMs := 4     
+	                    ROMs := 131   
 +---Muxes : 
 	   2 Input   31 Bit        Muxes := 1     
 	   3 Input   25 Bit        Muxes := 4     
 	   2 Input   22 Bit        Muxes := 1     
-	  12 Input   12 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 1     
 	   2 Input   11 Bit        Muxes := 3     
-	   2 Input   10 Bit        Muxes := 16    
-	   3 Input   10 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 15    
+	   3 Input   10 Bit        Muxes := 1     
 	   5 Input   10 Bit        Muxes := 6     
 	   4 Input   10 Bit        Muxes := 3     
-	   2 Input    9 Bit        Muxes := 7     
-	  45 Input    8 Bit        Muxes := 9     
+	   2 Input    9 Bit        Muxes := 6     
+	  30 Input    8 Bit        Muxes := 39    
 	  27 Input    8 Bit        Muxes := 58    
 	  20 Input    8 Bit        Muxes := 23    
-	  30 Input    8 Bit        Muxes := 39    
-	  27 Input    7 Bit        Muxes := 2     
+	  45 Input    8 Bit        Muxes := 9     
 	  30 Input    7 Bit        Muxes := 1     
+	  27 Input    7 Bit        Muxes := 2     
 	  27 Input    6 Bit        Muxes := 11    
 	   2 Input    6 Bit        Muxes := 2     
 	  30 Input    5 Bit        Muxes := 1     
-	   3 Input    4 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 10    
-	   6 Input    3 Bit        Muxes := 4     
 	   2 Input    3 Bit        Muxes := 5     
-	   5 Input    2 Bit        Muxes := 4     
+	   6 Input    3 Bit        Muxes := 4     
 	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 42    
-	  12 Input    1 Bit        Muxes := 1     
-	   4 Input    1 Bit        Muxes := 4     
+	   5 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 167   
 	   5 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 4     
 	   6 Input    1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -665,7 +629,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.172 ; gain = 754.930
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 1325.047 ; gain = 777.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -675,6 +639,55 @@ ROM: Preliminary Mapping Report
 +---------------------------+--------------------+---------------+----------------+
 |Module Name                | RTL Object         | Depth x Width | Implemented As | 
 +---------------------------+--------------------+---------------+----------------+
+|chicken_forward_index_rom  | sprite_rom[0][8]   | 32x8          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][9]   | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][10]  | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][11]  | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][9]   | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][10]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][11]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][12]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][13]  | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][14]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][16]  | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][16]  | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][19]  | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][20]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][10]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][11]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][14]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][17]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][18]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][19]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][20]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][21]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][22]  | 32x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][12]  | 32x5          | LUT            | 
+|log_index_rom              | sprite_rom[0][15]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][18]  | 32x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][19]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][24]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][28]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][29]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][32]  | 32x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][33]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][34]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][35]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][36]  | 32x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][62]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][63]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][70]  | 32x5          | LUT            | 
+|log_index_rom              | sprite_rom[0][73]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][74]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][75]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][76]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][77]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][96]  | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][99]  | 32x7          | LUT            | 
+|log_index_rom              | sprite_rom[0][101] | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][103] | 32x6          | LUT            | 
+|log_index_rom              | sprite_rom[0][104] | 32x6          | LUT            | 
+|lilypad_index_rom          | sprite_rom[0][17]  | 32x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][4]   | 64x7          | LUT            | 
 |car_index_rom              | sprite_rom[0][5]   | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][6]   | 64x7          | LUT            | 
@@ -725,6 +738,90 @@ ROM: Preliminary Mapping Report
 |car_index_rom              | sprite_rom[0][51]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][52]  | 64x7          | LUT            | 
 |car_index_rom              | sprite_rom[0][53]  | 64x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][8]   | 32x8          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][9]   | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][10]  | 32x7          | LUT            | 
+|chicken_forward_index_rom  | sprite_rom[0][11]  | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][9]   | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][10]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][11]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][12]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][13]  | 32x7          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][14]  | 32x8          | LUT            | 
+|chicken_backward_index_rom | sprite_rom[0][16]  | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][16]  | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][19]  | 32x8          | LUT            | 
+|chicken_left_index_rom     | sprite_rom[0][20]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][10]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][11]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][14]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][17]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][18]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][19]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][20]  | 32x8          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][21]  | 32x7          | LUT            | 
+|chicken_right_index_rom    | sprite_rom[0][22]  | 32x7          | LUT            | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
 |log_index_rom              | sprite_rom[0][12]  | 32x5          | LUT            | 
 |log_index_rom              | sprite_rom[0][15]  | 32x6          | LUT            | 
 |log_index_rom              | sprite_rom[0][18]  | 32x7          | LUT            | 
@@ -750,30 +847,27 @@ ROM: Preliminary Mapping Report
 |log_index_rom              | sprite_rom[0][101] | 32x6          | LUT            | 
 |log_index_rom              | sprite_rom[0][103] | 32x6          | LUT            | 
 |log_index_rom              | sprite_rom[0][104] | 32x6          | LUT            | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
+|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
 |lilypad_index_rom          | sprite_rom[0][17]  | 32x8          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][8]   | 32x8          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][9]   | 32x7          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][10]  | 32x7          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][11]  | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][9]   | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][10]  | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][11]  | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][12]  | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][13]  | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][14]  | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][16]  | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][16]  | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][19]  | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][20]  | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][10]  | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][11]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][14]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][17]  | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][18]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][19]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][20]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][21]  | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][22]  | 32x7          | LUT            | 
 |car_index_rom              | sprite_rom[0][4]   | 64x7          | LUT            | 
 |car_index_rom              | sprite_rom[0][5]   | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][6]   | 64x7          | LUT            | 
@@ -785,12 +879,30 @@ ROM: Preliminary Mapping Report
 |car_index_rom              | sprite_rom[0][12]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][13]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][14]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][15]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][16]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][17]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][18]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][19]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][20]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][21]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][22]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][23]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][24]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][25]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][26]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][27]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][28]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][29]  | 64x7          | LUT            | 
+|car_index_rom              | sprite_rom[0][30]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][31]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][32]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][33]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][34]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][35]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][36]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][37]  | 64x8          | LUT            | 
+|car_index_rom              | sprite_rom[0][38]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][39]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][40]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][41]  | 64x8          | LUT            | 
@@ -806,58 +918,6 @@ ROM: Preliminary Mapping Report
 |car_index_rom              | sprite_rom[0][51]  | 64x8          | LUT            | 
 |car_index_rom              | sprite_rom[0][52]  | 64x7          | LUT            | 
 |car_index_rom              | sprite_rom[0][53]  | 64x7          | LUT            | 
-|log_index_rom              | sprite_rom[0][12]  | 32x5          | LUT            | 
-|log_index_rom              | sprite_rom[0][15]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][18]  | 32x7          | LUT            | 
-|log_index_rom              | sprite_rom[0][19]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][24]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][28]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][29]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][32]  | 32x7          | LUT            | 
-|log_index_rom              | sprite_rom[0][33]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][34]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][35]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][36]  | 32x7          | LUT            | 
-|log_index_rom              | sprite_rom[0][62]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][63]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][70]  | 32x5          | LUT            | 
-|log_index_rom              | sprite_rom[0][73]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][74]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][75]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][76]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][77]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][96]  | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][99]  | 32x7          | LUT            | 
-|log_index_rom              | sprite_rom[0][101] | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][103] | 32x6          | LUT            | 
-|log_index_rom              | sprite_rom[0][104] | 32x6          | LUT            | 
-|lilypad_index_rom          | sprite_rom[0][17]  | 32x8          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][8]   | 32x8          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][9]   | 32x7          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][10]  | 32x7          | LUT            | 
-|chicken_forward_index_rom  | sprite_rom[0][11]  | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][9]   | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][10]  | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][11]  | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][12]  | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][13]  | 32x7          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][14]  | 32x8          | LUT            | 
-|chicken_backward_index_rom | sprite_rom[0][16]  | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][16]  | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][19]  | 32x8          | LUT            | 
-|chicken_left_index_rom     | sprite_rom[0][20]  | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][10]  | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][11]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][14]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][17]  | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][18]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][19]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][20]  | 32x8          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][21]  | 32x7          | LUT            | 
-|chicken_right_index_rom    | sprite_rom[0][22]  | 32x7          | LUT            | 
-|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
-|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
-|clipart2902856_palette     | rgb_reg            | 256x24        | Block RAM      | 
 +---------------------------+--------------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
@@ -867,13 +927,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 1356.578 ; gain = 811.336
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 1361.340 ; gain = 813.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 1378.480 ; gain = 833.238
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 1385.695 ; gain = 838.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -881,7 +941,7 @@ Start Technology Mapping
 INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance datapath_uut/video_uut/Inst_vga/color_mapper_inst/chicken_color/rgb_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 1413.289 ; gain = 868.047
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 1416.883 ; gain = 869.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -900,37 +960,37 @@ INFO: [Synth 8-4649] Removing BlackBox instance control_unit_uut of module contr
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1582.398 ; gain = 1037.156
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 1585.102 ; gain = 1037.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1582.398 ; gain = 1037.156
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 1585.102 ; gain = 1037.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1582.398 ; gain = 1037.156
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 1585.102 ; gain = 1037.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1582.398 ; gain = 1037.156
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 1585.102 ; gain = 1037.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1585.363 ; gain = 1040.121
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 1587.281 ; gain = 1039.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1585.363 ; gain = 1040.121
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 1587.281 ; gain = 1039.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -944,38 +1004,38 @@ Report BlackBoxes:
 +------+--------------+----------+
 
 Report Cell Usage: 
-+------+---------------+------+
-|      |Cell           |Count |
-+------+---------------+------+
-|1     |clk_wiz_0_bbox |     1|
-|2     |CARRY4         |   303|
-|3     |LUT1           |    40|
-|4     |LUT2           |   774|
-|5     |LUT3           |   352|
-|6     |LUT4           |   451|
-|7     |LUT5           |   329|
-|8     |LUT6           |   475|
-|9     |MUXF7          |    76|
-|10    |MUXF8          |    12|
-|11    |ODDR2          |     4|
-|12    |RAMB18E1       |     1|
-|13    |FDRE           |   339|
-|14    |FDSE           |     6|
-|15    |LD             |     8|
-|16    |LDP            |     8|
-|17    |IBUF           |     6|
-|18    |OBUF           |     2|
-|19    |OBUFDS         |     4|
-|20    |OBUFT          |    12|
-+------+---------------+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |clk_wiz  |     1|
+|2     |CARRY4   |   303|
+|3     |LUT1     |    40|
+|4     |LUT2     |   715|
+|5     |LUT3     |   283|
+|6     |LUT4     |   450|
+|7     |LUT5     |   317|
+|8     |LUT6     |   466|
+|9     |MUXF7    |    76|
+|10    |MUXF8    |    12|
+|11    |ODDR2    |     4|
+|12    |RAMB18E1 |     1|
+|13    |FDRE     |   304|
+|14    |FDSE     |     5|
+|15    |LD       |     8|
+|16    |LDP      |     8|
+|17    |IBUF     |     5|
+|18    |OBUF     |     8|
+|19    |OBUFDS   |     4|
+|20    |OBUFT    |     6|
++------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1585.363 ; gain = 1040.121
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 1587.281 ; gain = 1039.730
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 265 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1585.363 ; gain = 941.395
-Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1585.363 ; gain = 1040.121
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1587.281 ; gain = 941.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 1587.281 ; gain = 1039.730
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1590.578 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1592.410 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 416 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
@@ -983,9 +1043,8 @@ WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath_uut/video_uut/inst_dvid/ODDR2_red' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1600.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1602.684 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   LD => LDCE: 8 instances
@@ -993,12 +1052,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Synth Design complete | Checksum: c896bce7
+Synth Design complete | Checksum: 9a5e05bb
 INFO: [Common 17-83] Releasing license: Synthesis
-301 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
+293 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:01 . Memory (MB): peak = 1600.801 ; gain = 1295.648
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1600.801 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:02 . Memory (MB): peak = 1602.684 ; gain = 1296.539
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1602.684 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.runs/synth_1/FinalProject.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file FinalProject_utilization_synth.rpt -pb FinalProject_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue May  5 07:42:46 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue May  5 10:28:45 2026...
