@@ -25,6 +25,8 @@ set_property src_info {type:XDC file:1 line:36 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN D14 IOSTANDARD LVCMOS12 } [get_ports { btn[3] }]; #IO_L6P_T0_16 Sch=btnr
 set_property src_info {type:XDC file:1 line:37 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN F15 IOSTANDARD LVCMOS12 } [get_ports { btn[0] }]; #IO_0_16 Sch=btnu
+set_property src_info {type:XDC file:1 line:38 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN G4  IOSTANDARD LVCMOS12 } [get_ports { reset_n }]; #IO_L12N_T1_MRCC_35 Sch=cpu_resetn
 set_property src_info {type:XDC file:1 line:79 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN U1    IOSTANDARD TMDS_33     } [get_ports { tmdsb[3] }]; #IO_L1N_T0_34 Sch=hdmi_tx_clk_n # Clock
 set_property src_info {type:XDC file:1 line:80 export:INPUT save:INPUT read:READ} [current_design]
@@ -52,11 +54,11 @@ set_property -dict { PACKAGE_PIN U5    IOSTANDARD LVCMOS33 } [get_ports { ac_lrc
 set_property src_info {type:XDC file:1 line:105 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN U6    IOSTANDARD LVCMOS33 } [get_ports { ac_mclk }]; #IO_L16P_T2_34 Sch=ac_mclk #mclk
 set_property src_info {type:XDC file:1 line:109 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN AB22  IOSTANDARD LVCMOS33 } [get_ports { ja[0] }]; #IO_L10N_T1_D15_14 Sch=ja[1]
+set_property -dict { PACKAGE_PIN AB22  IOSTANDARD LVCMOS33 } [get_ports { latch }]; #IO_L10N_T1_D15_14 Sch=ja[1]
 set_property src_info {type:XDC file:1 line:110 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN AB21  IOSTANDARD LVCMOS33 } [get_ports { ja[1] }]; #IO_L10P_T1_D14_14 Sch=ja[2]
+set_property -dict { PACKAGE_PIN AB21  IOSTANDARD LVCMOS33 } [get_ports { clk_pulse }]; #IO_L10P_T1_D14_14 Sch=ja[2]
 set_property src_info {type:XDC file:1 line:111 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN AB20  IOSTANDARD LVCMOS33 } [get_ports { ja[2] }]; #IO_L15N_T2_DQS_DOUT_CSO_B_14 Sch=ja[3]
+set_property -dict { PACKAGE_PIN AB20  IOSTANDARD LVCMOS33 } [get_ports { data_in }]; #IO_L15N_T2_DQS_DOUT_CSO_B_14 Sch=ja[3]
 set_property src_info {type:XDC file:1 line:212 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN W5 IOSTANDARD LVCMOS33} [get_ports { scl }];
 set_property src_info {type:XDC file:1 line:213 export:INPUT save:INPUT read:READ} [current_design]

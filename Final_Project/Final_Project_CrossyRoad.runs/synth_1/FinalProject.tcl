@@ -58,7 +58,6 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tsbg484-1
 
@@ -70,9 +69,16 @@ set_property webtalk.parent_dir C:/Users/C28Asher.Speicher/Documents/ece383_code
 set_property parent.project_path C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
+set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/C28Asher.Speicher/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:nexys_video:part0:1.2 [current_project]
+set_property ip_repo_paths {
+  c:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/Final_Project_IP_200_slave_registers_1_0
+  c:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/Final_Project_IP_200_slave_registers_1_0
+  c:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/Final_Project_IP_200_slaves_1_0
+  c:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/Final_Project_1_0
+} [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
@@ -90,6 +96,7 @@ read_vhdl -library xil_defaultlib {
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Downloads/vga_signal_generator.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/NES.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/imports/Homework_7/button_debounce.vhdl
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd
   C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.srcs/sources_1/new/control_unit.vhd

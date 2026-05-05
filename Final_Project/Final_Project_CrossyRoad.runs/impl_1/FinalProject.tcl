@@ -97,7 +97,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -118,6 +117,13 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.cache/wt [current_project]
   set_property parent.project_path C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.xpr [current_project]
+  set_property ip_repo_paths {
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/Final_Project_IP_200_slave_registers_1_0
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/Final_Project_IP_200_slave_registers_1_0
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/Final_Project_IP_200_slaves_1_0
+  C:/Users/C28Asher.Speicher/Documents/ece383_code/ip_repo/Final_Project_1_0
+} [current_project]
+  update_ip_catalog
   set_property ip_output_repo C:/Users/C28Asher.Speicher/Documents/ece383_code/Final_Project/Final_Project_CrossyRoad.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]

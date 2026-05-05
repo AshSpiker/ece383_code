@@ -45,7 +45,10 @@ entity FinalProject is
 --        clk_pulse       : out STD_LOGIC;        -- clock pulse for NES controller
 --        data            : in STD_LOGIC;         -- data input line for NES controller
         
-        ja              : inout STD_LOGIC_VECTOR(2 downto 0); -- physical JA ports on the board
+        --ja              : inout STD_LOGIC_VECTOR(2 downto 0); -- physical JA ports on the board
+        latch           : out std_logic; -- mapped to ja(0)
+        clk_pulse       : out std_logic; -- mapeed to ja(1)
+        data_in         : in std_logic; -- mapped to ja(2)
         btn             : in STD_LOGIC_VECTOR(3 downto 0);
         led             : out std_logic_vector(7 downto 0)
   );
@@ -140,9 +143,9 @@ begin
             tmdsb => tmdsb,
             
             
-            data_in => ja(2),
-            clk_pulse => ja(1),
-            latch => ja(0),
+            data_in => data_in,
+            clk_pulse => clk_pulse,
+            latch => latch,
             
             
             sw => sw,

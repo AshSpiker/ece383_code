@@ -54,7 +54,6 @@ begin
         if(rising_edge(clk)) then -- only on rising edge of clock 
             if(reset_n = '1') then -- check if reset = 1
                 if(ctrl = '1') then
-                    roll <= '0';
                     processQ <= processQ + 1;
                     if(processQ = max_value - 1) then
                         roll <= '1';

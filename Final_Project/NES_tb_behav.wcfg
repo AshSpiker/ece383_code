@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="NES_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="NES_tb" />
+            <top_module name="ece383_pkg" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5,978.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="6,113.601 ns"></ZoomEndTime>
+      <Cursor1Time time="6,100.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="269"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/NES_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/data_in" type="logic">
+      <obj_property name="ElementShortName">data_in</obj_property>
+      <obj_property name="ObjectShortName">data_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/latch" type="logic">
+      <obj_property name="ElementShortName">latch</obj_property>
+      <obj_property name="ObjectShortName">latch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/clk_pulse" type="logic">
+      <obj_property name="ElementShortName">clk_pulse</obj_property>
+      <obj_property name="ObjectShortName">clk_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/led" type="array">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/test_pattern" type="array">
+      <obj_property name="ElementShortName">test_pattern[7:0]</obj_property>
+      <obj_property name="ObjectShortName">test_pattern[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/UUT/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/UUT/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/UUT/counter_6us_reset_n" type="logic">
+      <obj_property name="ElementShortName">counter_6us_reset_n</obj_property>
+      <obj_property name="ObjectShortName">counter_6us_reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/UUT/counter_7_reset_n" type="logic">
+      <obj_property name="ElementShortName">counter_7_reset_n</obj_property>
+      <obj_property name="ObjectShortName">counter_7_reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/UUT/Q_7" type="array">
+      <obj_property name="ElementShortName">Q_7[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Q_7[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/UUT/Q_6us" type="array">
+      <obj_property name="ElementShortName">Q_6us[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Q_6us[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/UUT/all_values" type="array">
+      <obj_property name="ElementShortName">all_values[7:0]</obj_property>
+      <obj_property name="ObjectShortName">all_values[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/UUT/been_6us" type="logic">
+      <obj_property name="ElementShortName">been_6us</obj_property>
+      <obj_property name="ObjectShortName">been_6us</obj_property>
+   </wvobject>
+   <wvobject fp_name="/NES_tb/UUT/been_7" type="logic">
+      <obj_property name="ElementShortName">been_7</obj_property>
+      <obj_property name="ObjectShortName">been_7</obj_property>
+   </wvobject>
+</wave_config>
